@@ -1,0 +1,31 @@
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap&subset=latin-ext');
+</style>
+
+font-family: 'Roboto', sans-serif;
+
+
+---------------------------------------------------------------------------------------------------------
+
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700&display=swap&subset=latin-ext');
+</style>
+
+font-family: 'Lora', serif;
+
+---------------------------------------------------------------------------------------------------------------
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin-ext');
+</style>
+
+
+
+font-family: 'Open Sans', sans-serif;
