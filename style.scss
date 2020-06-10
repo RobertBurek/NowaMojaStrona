@@ -282,3 +282,30 @@ figure{
 .diplomas-item:hover:before, .diplomas-item:hover figcaption {
   display: block;
 }
+
+// FLEX WZÓR Ramek
+
+.flex-container {
+  width: 900px;
+  height: 500px;
+  background-color: gray;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.dyplomPion{
+  height: 50%;
+}
+.dyplomPoziom{
+  height: 33%;
+}
+.pion{
+  width: 20%;
+}
+.poziom{
+  width: 30%;
+}
+.flex-item {
+  background-color: red;
+  border: 1px black solid;
+}
