@@ -285,9 +285,17 @@ figure{
 
 // FLEX WZÓR Ramek
 
+section {
+  display: flex;
+  justify-content: center;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
 .flex-container {
   width: 900px;
-  height: 500px;
+  height: 420px;
   background-color: gray;
   padding: 10px;
   display: flex;
@@ -295,17 +303,68 @@ figure{
 }
 .dyplomPion{
   height: 50%;
+  border: 1px black solid;
 }
 .dyplomPoziom{
-  height: 33%;
+  height: 33.1%;
+  border: 1px black solid;
 }
-.pion{
-  width: 20%;
+.pion {
+  width: 18.5%;
 }
-.poziom{
-  width: 30%;
+.poziom {
+  width: 25%;
 }
 .flex-item {
   background-color: red;
+}
+
+.dyplomPion.leftTop:hover{
+    background-color: blue;
   border: 1px black solid;
+/*       filter:blur(0); */
+/*     z-index: 1000; */
+    transition: transform 1.5s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateX(50%) translateY(50%) scale(2,2);
+}
+.dyplomPion.leftBottom:hover{
+    background-color: blue;
+  border: 1px black solid;
+/*         filter:blur(0); */
+    transform: translateX(37.5%) translateY(-37.5%) scale(1.75,1.75);
+}
+
+.dyplomPion.rightTop:hover{
+    background-color: blue;
+  border: 1px black solid;
+/*         filter:blur(0); */
+    transform: translateX(-37.5%) translateY(37.5%) scale(1.75,1.75);
+}
+.dyplomPion.rightBottom:hover{
+    background-color: blue;
+  border: 1px black solid;
+/*         filter:blur(0); */
+    transform: translateX(-37.5%) translateY(-37.5%) scale(1.75,1.75);
+}
+
+.dyplomPoziom.centerTop:hover {
+    background-color: blue;
+  border: 1px black solid;
+/*         filter:blur(0); */
+/*   filter: contrast(140%) saturate(150%); */
+  transition: transform 1.5s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateY(100%) translateX(50%) scale(3,3);
+/*   z-index: 1000; */
+}
+.dyplomPoziom.centerCenter:hover{
+    background-color: blue;
+  border: 1px black solid;
+/*         filter:blur(0); */
+    transform: scale(1.75,1.75);
+}
+.dyplomPoziom.centerBottom:hover{
+    background-color: blue;
+  border: 1px black solid;
+/*         filter:blur(0); */
+    transform: translateY(-35%) scale(1.75,1.75);
 }
