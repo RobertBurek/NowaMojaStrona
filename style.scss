@@ -295,19 +295,20 @@ img{
 }
 .flex-container {
   width: 900px;
-  height: 420px;
+  height: 400px;
   background-color: gray;
-  padding: 10px;
+  padding-bottom: 4px;
   display: flex;
   justify-content: center;
+  border: 1px solid black;
 }
 .dyplomPion{
   height: 50%;
-  border: 1px black solid;
+  border: 1px solid black;
 }
 .dyplomPoziom{
   height: 33.1%;
-  border: 1px black solid;
+  border: 1px solid black;
 }
 .pion {
   width: 18.5%;
@@ -315,56 +316,65 @@ img{
 .poziom {
   width: 25%;
 }
-.flex-item {
-  background-color: red;
-}
 
+/* 1 kolumna */
 .dyplomPion.leftTop:hover{
-    background-color: blue;
-  border: 1px black solid;
-/*       filter:blur(0); */
-/*     z-index: 1000; */
-    transition: transform 1.5s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
     transform: translateX(50%) translateY(50%) scale(2,2);
 }
 .dyplomPion.leftBottom:hover{
-    background-color: blue;
-  border: 1px black solid;
-/*         filter:blur(0); */
-    transform: translateX(37.5%) translateY(-37.5%) scale(1.75,1.75);
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateX(50%) translateY(-50%) scale(2,2);
 }
 
+/* 2 kolumna */
+.dyplomPoziom.leftTop:hover {
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateY(60%) scale(2.2,2.2);
+}
+.dyplomPoziom.leftCenter:hover {
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: scale(2.2,2.2);
+}
+.dyplomPoziom.leftBottom:hover {
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateY(-60%) scale(2.2,2.2);
+}
+
+/* 3  kolumna */
+.dyplomPoziom.centerTop:hover {
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateY(60%) scale(2.2,2.2);
+}
+.dyplomPoziom.centerCenter:hover {
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: scale(2.2,2.2);
+}
+.dyplomPoziom.centerBottom:hover {
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateY(-60%) scale(2.2,2.2);
+}
+
+/* 4  kolumna */
+.dyplomPoziom.rightTop:hover{
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateY(60%) scale(2.2,2.2);
+}
+.dyplomPoziom.rightCenter:hover{
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: scale(2.2,2.2);
+}
+.dyplomPoziom.rightBottom:hover{
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateY(-60%) scale(2.2,2.2);
+}
+
+/* 5  kolumna */
 .dyplomPion.rightTop:hover{
-    background-color: blue;
-  border: 1px black solid;
-/*         filter:blur(0); */
-    transform: translateX(-37.5%) translateY(37.5%) scale(1.75,1.75);
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateX(-50%) translateY(50%) scale(2,2);
 }
 .dyplomPion.rightBottom:hover{
-    background-color: blue;
-  border: 1px black solid;
-/*         filter:blur(0); */
-    transform: translateX(-37.5%) translateY(-37.5%) scale(1.75,1.75);
-}
-
-.dyplomPoziom.centerTop:hover {
-    background-color: blue;
-  border: 1px black solid;
-/*         filter:blur(0); */
-/*   filter: contrast(140%) saturate(150%); */
-  transition: transform 1.5s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transform: translateY(100%) translateX(50%) scale(3,3);
-/*   z-index: 1000; */
-}
-.dyplomPoziom.centerCenter:hover{
-    background-color: blue;
-  border: 1px black solid;
-/*         filter:blur(0); */
-    transform: scale(1.75,1.75);
-}
-.dyplomPoziom.centerBottom:hover{
-    background-color: blue;
-  border: 1px black solid;
-/*         filter:blur(0); */
-    transform: translateY(-35%) scale(1.75,1.75);
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateX(-50%) translateY(-50%) scale(2,2);
 }

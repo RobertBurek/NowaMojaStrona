@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin-ext");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body, html {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+  height: 100%;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: #FFC312;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.section-title {
+  position: relative;
+  margin: 0 0 60px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.splash {
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 24px;
+  background-image: url("https://i.postimg.cc/cCFM2pjN/Tlo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.page-intro {
+  margin: auto;
+  text-align: center;
+}
+
+.main-title {
+  font-family: "Roboto", sans-serif;
+  color: #FFC312;
+  margin: 0;
+  letter-spacing: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  font-weight: 900;
+  font-size: 52px;
+  padding: 0 24px;
+}
+
+.main-subtitle {
+  font-family: "Lora", serif;
+  letter-spacing: 2px;
+  margin: 24px 0 60px 0;
+  font-weight: normal;
+  color: #f7f1e3;
+  font-size: 32px;
+  font-weight: 700;
+  font-variant: small-caps;
+}
+
+.btn {
+  font-family: "Lora", serif;
+  padding: 16px 24px 16px 24px;
+  font-size: 16px;
+  background-color: #FFC312;
+  color: #000000;
+  font-weight: 700;
+  -webkit-box-shadow: 2px 4px 4px #ffffff;
+          box-shadow: 2px 4px 4px #ffffff;
+  -webkit-box-shadow: 0 4px gray;
+          box-shadow: 0 4px gray;
+  letter-spacing: 1px;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: #e8ad00;
+  color: #000000;
+}
+
+.section-title:after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 50px;
+  height: 7px;
+  background: #FFC312;
+  left: 50%;
+  bottom: -12px;
+  margin-left: -25px;
+}
+
+.section-intro {
+  margin: 36px 0 0 0;
+}
+
+.features-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feature {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333333%;
+          flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  text-align: center;
+  margin: 24px 0 0 0;
+}
+
+.feature i {
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  font-size: 64px;
+  background-color: #FFC312;
+  border-radius: 50%;
+}
+
+.feature-title {
+  margin: 24px 0 0 0;
+}
+
+.feature-description {
+  margin: 24px 0 0 0;
+  padding: 0 24px;
+}
+
+.statement {
+  background-image: url("https://i.postimg.cc/cCFM2pjN/Tlo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.statement p {
+  margin: 0;
+  text-align: center;
+  font-family: "Lora", serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffe6;
+  letter-spacing: 2px;
+}
+
+.quotes-wrapper {
+  margin: 72px 0 0 0;
+}
+
+.quote blockquote {
+  padding: 0 36px;
+  margin: 52px 0 0 0;
+  color: #000000;
+}
+
+.quote footer {
+  margin: 24px 0 0 0;
+  padding: 0 24px;
+  font-weight: 700;
+}
+
+.quotes {
+  background-color: #ffffe6;
+}
+
+section.diplomas {
+  padding: 60px 0 0 0;
+}
+
+.diplomas-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 72px 0 0 0;
+}
+
+figure {
+  position: relative;
+  margin: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  max-width: 25%;
+  text-align: center;
+}
+
+.diplomas-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.diplomas-item:before {
+  position: absolute;
+  display: block;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.4;
+}
+
+.diplomas-item figcaption {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.diplomas-item:hover:before, .diplomas-item:hover figcaption {
+  display: block;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.flex-container {
+  width: 900px;
+  height: 400px;
+  background-color: gray;
+  padding-bottom: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid black;
+}
+
+.dyplomPion {
+  height: 50%;
+  border: 1px solid black;
+}
+
+.dyplomPoziom {
+  height: 33.1%;
+  border: 1px solid black;
+}
+
+.pion {
+  width: 18.5%;
+}
+
+.poziom {
+  width: 25%;
+}
+
+/* 1 kolumna */
+.dyplomPion.leftTop:hover {
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  -webkit-transform: translateX(50%) translateY(50%) scale(2, 2);
+          transform: translateX(50%) translateY(50%) scale(2, 2);
+}
+
+.dyplomPion.leftBottom:hover {
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  -webkit-transform: translateX(50%) translateY(-50%) scale(2, 2);
+          transform: translateX(50%) translateY(-50%) scale(2, 2);
+}
+
+/* 2 kolumna */
+.dyplomPoziom.leftTop:hover {
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  -webkit-transform: translateY(60%) scale(2.2, 2.2);
+          transform: translateY(60%) scale(2.2, 2.2);
+}
+
+.dyplomPoziom.leftCenter:hover {
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  -webkit-transform: scale(2.2, 2.2);
+          transform: scale(2.2, 2.2);
+}
+
+.dyplomPoziom.leftBottom:hover {
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  -webkit-transform: translateY(-60%) scale(2.2, 2.2);
+          transform: translateY(-60%) scale(2.2, 2.2);
+}
+
+/* 3  kolumna */
+.dyplomPoziom.centerTop:hover {
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  -webkit-transform: translateY(60%) scale(2.2, 2.2);
+          transform: translateY(60%) scale(2.2, 2.2);
+}
+
+.dyplomPoziom.centerCenter:hover {
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  -webkit-transform: scale(2.2, 2.2);
+          transform: scale(2.2, 2.2);
+}
+
+.dyplomPoziom.centerBottom:hover {
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  -webkit-transform: translateY(-60%) scale(2.2, 2.2);
+          transform: translateY(-60%) scale(2.2, 2.2);
+}
+
+/* 4  kolumna */
+.dyplomPoziom.rightTop:hover {
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  -webkit-transform: translateY(60%) scale(2.2, 2.2);
+          transform: translateY(60%) scale(2.2, 2.2);
+}
+
+.dyplomPoziom.rightCenter:hover {
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  -webkit-transform: scale(2.2, 2.2);
+          transform: scale(2.2, 2.2);
+}
+
+.dyplomPoziom.rightBottom:hover {
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  -webkit-transform: translateY(-60%) scale(2.2, 2.2);
+          transform: translateY(-60%) scale(2.2, 2.2);
+}
+
+/* 5  kolumna */
+.dyplomPion.rightTop:hover {
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  -webkit-transform: translateX(-50%) translateY(50%) scale(2, 2);
+          transform: translateX(-50%) translateY(50%) scale(2, 2);
+}
+
+.dyplomPion.rightBottom:hover {
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(2, 2);
+          transform: translateX(-50%) translateY(-50%) scale(2, 2);
+}
+/*# sourceMappingURL=style.css.map */
