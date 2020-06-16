@@ -268,8 +268,7 @@ img {
 }
 
 .flex-container {
-  width: 900px;
-  height: 400px;
+  height: 510px;
   background-color: gray;
   padding-bottom: 4px;
   display: -webkit-box;
@@ -292,11 +291,11 @@ img {
 }
 
 .pion {
-  width: 18.5%;
+  width: 11.1111111%;
 }
 
 .poziom {
-  width: 25%;
+  width: 22.222222222%;
 }
 
 /* 1 kolumna */
