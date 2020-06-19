@@ -19,8 +19,8 @@
   </script>
 
 </head>
-<body>
-  <section class="splash">
+<body data-spy="scroll" data-offset="10">
+  <section class="splash" id="header">
     <div class="page-intro">
       <h1 class="main-title">Java Web Developer</h1>
       <h2 class="main-subtitle">Robert Burek</h2>
@@ -41,17 +41,17 @@
       <h2 class="section-title">Cieszę się gdy</h2>
       <div class="features-wrapper">
         <article class="feature">
-          <i class="fas fa-laptop-code"></i>
+          <i class="fas fa-laptop-code i-animation"></i>
           <h3 class="feature-title">Moje prace</h3>
           <p class="feature-description">Podobnie jak elementy HTML, reguły CSS mają własną strukturę, której należy się trzymać, aby kod działał poprawnie. Spójrz na przykład poniżej:</p>
         </article>
         <article class="feature">
-          <i class="fas fa-graduation-cap"></i>
+          <i class="fas fa-graduation-cap i-animation"></i>
           <h3 class="feature-title">Curriculum Vitae</h3>
           <p class="feature-description">CSS (ang. Cascading Style Sheets – kaskadowe arkusze stylów) służy do opisywania, jak elementy HTML powinny prezentować się na ekranie: jakie powinny mieć rozmiary, kolory, obramowanie... CSS daje nam mnóstwo możliwości. W wyzwaniu poznamy tylko niektóre z nich – jeżeli chcesz dowiedzieć się więcej, zajrzyj</p>
         </article>
         <article class="feature">
-          <i class="fas fa-file-contract"></i>
+          <i class="fas fa-file-contract i-animation"></i>
           <h3 class="feature-title">Moje dyplomy</h3>
           <p class="feature-description">Witaj w drugim dniu wyzwania Zacznij kodować z Kodillą! Poprzednim razem stworzyliśmy HTML trzech sekcji naszej strony. Przykładowe rozwiązanie</p>
         </article>
@@ -92,7 +92,7 @@
       </div>
     </div>
   </section>
-  <section class="diplomas" id="diplomas">
+  <!-- <section class="diplomas" id="diplomas">
     <h2 class="section-title">Moje dyplomy</h2>
     <div class="diplomas-wrapper">
       <figure class="diplomas-item">
@@ -128,11 +128,12 @@
         <figcaption>Kurs MongoDB nowoczesne Bazy Danych</figcaption>
       </figure>
     </div>
-  </section>
+  </section> -->
 
 
-
+  <h2 class="section-title" style="margin-top: 40px; margin-bottom: 10px;">Moje dyplomy</h2>
   <section class="diplomas">
+
     <div class="flex-container">
       
 <!--       1 kolumna -->
@@ -147,64 +148,65 @@
       
 <!--       2 kolumna -->
       <div class="flex-item poziom">
-        <div class="dyplomPoziom leftTop">
+        <div class="dyplomPoziom Top">
  <img src="http://www.robertburek.pl/image/Dyplomy/JavaDeveloper_strefaKursow.png" alt="image">
         </div>
-        <div class="dyplomPoziom leftCenter">
+        <div class="dyplomPoziom Center">
  <img src="http://www.robertburek.pl/image/Dyplomy/AdministratorBazDanych_strefaKursow.png" alt="image">
         </div>
-        <div class="dyplomPoziom leftBottom">
+        <div class="dyplomPoziom Bottom">
                    
         </div>
       </div>
       
 <!--       3 kolumna -->
       <div class="flex-item poziom">
-             <div class="dyplomPoziom centerTop">  
+             <div class="dyplomPoziom Top">  
             </div>
-            <div class="dyplomPoziom centerCenter"></div>
-            <div class="dyplomPoziom centerBottom">
+            <div class="dyplomPoziom Center"></div>
+            <div class="dyplomPoziom Bottom">
   <img src="http://www.robertburek.pl/image/Dyplomy/AdministratorBazDanych_strefaKursow.png" alt="image">
           </div>
       </div>
 
-      <!--       1 kolumna -->
+<!--       4 kolumna -->
       <div class="flex-item pion">
-        <div class="dyplomPion leftTop">
+        <div class="dyplomPion Top">
 <img src="http://www.robertburek.pl/image/Dyplomy/AplikacjeWeboweWJezykuJava.jpg" alt="image">
         </div>
-        <div class="dyplomPion leftBottom">
+        <div class="dyplomPion Bottom">
 <img src="http://www.robertburek.pl/image/Dyplomy/AplikacjeWeboweWJezykuJava.jpg" alt="image">
         </div>
       </div>
 
-      <!--       3 kolumna -->
+<!--       5 kolumna -->
       <div class="flex-item poziom">
-        <div class="dyplomPoziom centerTop">  
-       </div>
-       <div class="dyplomPoziom centerCenter"></div>
-       <div class="dyplomPoziom centerBottom">
+        <div class="dyplomPoziom Top"></div>
+       <div class="dyplomPoziom Center"></div>
+       <div class="dyplomPoziom Bottom">
 <img src="http://www.robertburek.pl/image/Dyplomy/AdministratorBazDanych_strefaKursow.png" alt="image">
      </div>
  </div>
       
-<!--       4 kolumna -->
+<!--       6 kolumna -->
        <div class="flex-item poziom">
-             <div class="dyplomPoziom rightTop">
+             <div class="dyplomPoziom Top">
  <img src="http://www.robertburek.pl/image/Dyplomy/JavaDeveloper_strefaKursow.png" alt="image">
              </div>
-            <div class="dyplomPoziom rightCenter"></div>
-            <div class="dyplomPoziom rightBottom"></div>
+            <div class="dyplomPoziom Center"></div>
+            <div class="dyplomPoziom Bottom"></div>
       </div>
       
-<!--       5 kolumna -->
+<!--       7 kolumna -->
       <div class="flex-item pion">
         <div class="dyplomPion rightTop"></div>
         <div class="dyplomPion rightBottom"></div>
       </div>
     </div>
   </section>
-  
-      
+
+  <a data-scroll href="#header" id="scroll-to-top" class="i-animation"><i class="fas fa-arrow-up"></i></a>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="main.js"></script>    
 </body>
 </html>
