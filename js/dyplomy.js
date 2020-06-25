@@ -2,100 +2,124 @@
 var index = 1;
 
 const dyplomyPion = [];
-dyplomy[12] = ['image/Dyplomy/RoleWZespoleProgramistycznym_altkom.jpg', 'altkom']
-dyplomy[11] = ['image/Dyplomy/Wzorce projektowe, narzędzia pracy grupowej_altkom.jpg', 'altkom']
-dyplomy[10] = ['image/Dyplomy/AplikacjeWeboweWJezykuJava.jpg', 'altkom']
-dyplomy[9] = ['image/Dyplomy/Bazy danych relacyjne i nierelacyjne. Język SQL_altkom.jpg', 'altkom']
-dyplomy[8] = ['image/Dyplomy/Podstawy programowania - back end_altkom.jpg', 'altkom']
-dyplomy[6] = ['image/Dyplomy/EComerceWPraktyce_uouw.jpg', 'uouw']
-dyplomy[6] = ['image/Dyplomy/CertyfikatGIT_eduwebpl.jpg', 'pionowo']
-dyplomy[5] = ['image/Dyplomy/AngOdZeraDoBohatIA2_uouw.jpg', 'uouw']
-dyplomy[4] = ['image/Dyplomy/AngielskiPoLatachA1_uouw.jpg', 'uouw']
-dyplomy[3] = ['image/Dyplomy/AngOdZeraDoBohatIIIA1A2_uouw.jpg', 'uouw']
-dyplomy[2] = ['image/Dyplomy/JakCięWidząAutoprezentacja_uouw.jpg', 'uouw']
-dyplomy[1] = ['image/Dyplomy/AngOdZeraDoBohatIIA1_uouw.jpg', 'uouw']
-dyplomy[0] = ['image/Dyplomy/ScenaDlaKażdego_uouw.jpg', 'uouw']
+dyplomyPion[11] = ['img/Dyplomy/RoleWZespoleProgramistycznym_altkom.jpg']
+dyplomyPion[10] = ['img/Dyplomy/Wzorce projektowe, narzędzia pracy grupowej_altkom.jpg']
+ dyplomyPion[9] = ['img/Dyplomy/AplikacjeWeboweWJezykuJava.jpg']
+ dyplomyPion[8] = ['img/Dyplomy/Bazy danych relacyjne i nierelacyjne. Język SQL_altkom.jpg']
+ dyplomyPion[6] = ['img/Dyplomy/Podstawy programowania - back end_altkom.jpg']
+ dyplomyPion[6] = ['img/Dyplomy/EComerceWPraktyce_uouw.jpg']
+ dyplomyPion[5] = ['img/Dyplomy/CertyfikatGIT_eduwebpl.jpg']
+ dyplomyPion[4] = ['img/Dyplomy/AngOdZeraDoBohatIA2_uouw.jpg']
+ dyplomyPion[3] = ['img/Dyplomy/AngielskiPoLatachA1_uouw.jpg']
+ dyplomyPion[2] = ['img/Dyplomy/AngOdZeraDoBohatIIIA1A2_uouw.jpg']
+ dyplomyPion[1] = ['img/Dyplomy/JakCięWidząAutoprezentacja_uouw.jpg']
+ dyplomyPion[0] = ['img/Dyplomy/AngOdZeraDoBohatIIA1_uouw.jpg']
 
 const dyplomyPoziom = [];
-dyplomy[25] = ['image/Dyplomy/JavaDeveloper_strefaKursow.png', 'strefaKursow']
-dyplomy[24] = ['image/Dyplomy/AdministratorBazDanych_strefaKursow.png', 'strefaKursow']
-dyplomy[23] = ['image/Dyplomy/SzybkiKursHTML5CSS3_udemy.jpg', 'udemy']
-dyplomy[22] = ['image/Dyplomy/KursMicrosoftSQLServerOdPodstaw_strefaKursow.jpg', 'strefaKursow']
-dyplomy[21] = ['image/Dyplomy/KursMongoDBnowoczesneBazyDanych_strefaKursow.jpg', 'strefaKursow']
-dyplomy[20] = ['image/Dyplomy/KursBazyDanychMySQLodPodstaw_strefaKursow.jpg', 'strefaKursow']
-dyplomy[19] = ['image/Dyplomy/KursSQLnowoczesneBazyDanych_strefaKursow.jpg', 'strefaKursow']
-dyplomy[18] = ['image/Dyplomy/Java-ambitnyStart-aplikacjaWebowa_udemy.jpg', 'udemy']
-dyplomy[17] = ['image/Dyplomy/JavaPoziom2_strefaKursow.jpg', 'strefaKursow']
-dyplomy[16] = ['image/Dyplomy/KursJAVAHibernateAplikacjeBazodanowe_strefaKursow.jpg', 'strefaKursow']
-dyplomy[15] = ['image/Dyplomy/WprowadzenieDoGitIGitHub_udamy.jpg', 'udemy']
-dyplomy[14] = ['image/Dyplomy/WireframingWithBalsamiq_udemy.jpg', 'udemy']
-dyplomy[13] = ['image/Dyplomy/NajpopularniejszeBibliotekiJAVA_strefaKursow.jpg', 'strefaKursow']
-dyplomy[12] = ['image/Dyplomy/SpringFrameworkOdPodstaw_strefaKursow.jpg', 'strefaKursow']
-dyplomy[11] = ['image/Dyplomy/KursJAVATestyJednostkowe_strefaKursow.jpg', 'strefaKursow']
-dyplomy[10] = ['image/Dyplomy/BeginnerJavaJavaFXMavenJenkins_udemy.jpg', 'udemy']
-dyplomy[9] = ['image/Dyplomy/JavaOdPodstawDoEksperta_udemy.jpg', 'udemy']
-dyplomy[8] = ['image/Dyplomy/JavaWzorceProjektowe_strefaKursow.jpg', 'strefaKursow']
-dyplomy[7] = ['image/Dyplomy/JavaŚredniozaawansowana_strefaKursow.jpg', 'strefaKursow']
-dyplomy[6] = ['image/Dyplomy/DobrePraktykiPracyWZespole_strefaKursow.jpg', 'strefaKursow']
-dyplomy[5] = ['image/Dyplomy/KursJavaNarzędziaDevelopera_strefaKursow.jpg', 'strefaKursow']
-dyplomy[4] = ['image/Dyplomy/JDBCandMySQL_udemy.jpg', 'udemy']
-dyplomy[3] = ['image/Dyplomy/JDBCinSimpleWay _udemy.jpg', 'udemy']
-dyplomy[2] = ['image/Dyplomy/FundamentyJezykaJava_strefaKursow.jpg', 'strefaKursow']
-dyplomy[1] = ['image/Dyplomy/Certyfikat_codeORG.jpg', 'strefaKursow']
-dyplomy[0] = ['image/Dyplomy/KursProgramowaniaWJava_strefaKursow.jpg', 'strefaKursow']
+dyplomyPoziom[23] = ['img/Dyplomy/JavaDeveloper_strefaKursow.png']
+dyplomyPoziom[22] = ['img/Dyplomy/AdministratorBazDanych_strefaKursow.png']
+dyplomyPoziom[21] = ['img/Dyplomy/SzybkiKursHTML5CSS3_udemy.jpg']
+dyplomyPoziom[20] = ['img/Dyplomy/KursMicrosoftSQLServerOdPodstaw_strefaKursow.jpg']
+dyplomyPoziom[19] = ['img/Dyplomy/KursMongoDBnowoczesneBazyDanych_strefaKursow.jpg']
+dyplomyPoziom[18] = ['img/Dyplomy/KursBazyDanychMySQLodPodstaw_strefaKursow.jpg']
+dyplomyPoziom[17] = ['img/Dyplomy/KursSQLnowoczesneBazyDanych_strefaKursow.jpg']
+dyplomyPoziom[16] = ['img/Dyplomy/Java-ambitnyStart-aplikacjaWebowa_udemy.jpg']
+dyplomyPoziom[15] = ['img/Dyplomy/JavaPoziom2_strefaKursow.jpg']
+dyplomyPoziom[14] = ['img/Dyplomy/KursJAVAHibernateAplikacjeBazodanowe_strefaKursow.jpg']
+dyplomyPoziom[13] = ['img/Dyplomy/WprowadzenieDoGitIGitHub_udamy.jpg']
+dyplomyPoziom[12] = ['img/Dyplomy/NajpopularniejszeBibliotekiJAVA_strefaKursow.jpg']
+dyplomyPoziom[11] = ['img/Dyplomy/SpringFrameworkOdPodstaw_strefaKursow.jpg']
+dyplomyPoziom[10] = ['img/Dyplomy/KursJAVATestyJednostkowe_strefaKursow.jpg']
+ dyplomyPoziom[9] = ['img/Dyplomy/BeginnerJavaJavaFXMavenJenkins_udemy.jpg']
+ dyplomyPoziom[8] = ['img/Dyplomy/JavaOdPodstawDoEksperta_udemy.jpg']
+ dyplomyPoziom[7] = ['img/Dyplomy/JavaWzorceProjektowe_strefaKursow.jpg']
+ dyplomyPoziom[6] = ['img/Dyplomy/JavaŚredniozaawansowana_strefaKursow.jpg']
+ dyplomyPoziom[5] = ['img/Dyplomy/DobrePraktykiPracyWZespole_strefaKursow.jpg']
+ dyplomyPoziom[4] = ['img/Dyplomy/KursJavaNarzędziaDevelopera_strefaKursow.jpg']
+ dyplomyPoziom[3] = ['img/Dyplomy/JDBCandMySQL_udemy.jpg']
+ dyplomyPoziom[2] = ['img/Dyplomy/JDBCinSimpleWay _udemy.jpg']
+ dyplomyPoziom[1] = ['img/Dyplomy/FundamentyJezykaJava_strefaKursow.jpg']
+ dyplomyPoziom[0] = ['img/Dyplomy/KursProgramowaniaWJava_strefaKursow.jpg']
 
-const div = document.querySelector(".wstawiany");
+const ukladDyplomow = [];
+ukladDyplomow[0] = document.querySelector("#k1w1");
+ukladDyplomow[1] = document.querySelector("#k1w2");
+ukladDyplomow[2] = document.querySelector("#k2w1");
+ukladDyplomow[3] = document.querySelector("#k2w2");
+ukladDyplomow[4] = document.querySelector("#k2w3");
+ukladDyplomow[5] = document.querySelector("#k3w1");
+ukladDyplomow[6] = document.querySelector("#k3w2");
+ukladDyplomow[7] = document.querySelector("#k3w3");
+ukladDyplomow[8] = document.querySelector("#k4w1");
+ukladDyplomow[9] = document.querySelector("#k4w2");
+ukladDyplomow[10] = document.querySelector("#k5w1");
+ukladDyplomow[11] = document.querySelector("#k5w2");
+ukladDyplomow[12] = document.querySelector("#k5w3");
+ukladDyplomow[13] = document.querySelector("#k6w1");
+ukladDyplomow[14] = document.querySelector("#k6w2");
+ukladDyplomow[15] = document.querySelector("#k6w3");
+ukladDyplomow[16] = document.querySelector("#k7w1");
+ukladDyplomow[17] = document.querySelector("#k7w2");
 
-for (let i = dyplomy.length - 1; i >= 0; i--) {
-    var img = document.createElement('img');
-    img.src = dyplomy[i][0];
-    img.classList = dyplomy[i][1];
-    img.alt = (dyplomy[i][0]).substr(14, (dyplomy[i][0]).length - 18);
-    div.appendChild(img);
-    // console.log('obrazek:', dyplomy[i][0], ' class:', dyplomy[i][1], ' i:', i)
-}
+
+const div = document.querySelector("#k1w1");
+var img = document.createElement('img');
+img.src = dyplomyPion[12][0];
+// img.classList = dyplomy[i][1];
+// img.alt = (dyplomy[i][0]).substr(14, (dyplomy[i][0]).length - 18);
+img.alt = ("image");
+div.appendChild(img);
+
+// for (let i = dyplomy.length - 1; i >= 0; i--) {
+//     var img = document.createElement('img');
+//     img.src = dyplomy[i][0];
+//     img.classList = dyplomy[i][1];
+//     img.alt = (dyplomy[i][0]).substr(14, (dyplomy[i][0]).length - 18);
+//     div.appendChild(img);
+//     // console.log('obrazek:', dyplomy[i][0], ' class:', dyplomy[i][1], ' i:', i)
+// }
 
 
-var images = document.querySelectorAll('img');
-// console.log('ilość dyplomów', dyplomy.length)
+// var images = document.querySelectorAll('img');
+// // console.log('ilość dyplomów', dyplomy.length)
 
-function showImage(n) {
-    images[n].classList.add('visible');
-}
+// function showImage(n) {
+//     images[n].classList.add('visible');
+// }
 
-function hideImage(n) {
-    images[n].classList.remove('visible');
-}
+// function hideImage(n) {
+//     images[n].classList.remove('visible');
+// }
 
-images[0].classList.add('visible');
-showImage(1);
+// images[0].classList.add('visible');
+// showImage(1);
 
-function update() {
-    if (index === images.length - 1)
-        index = 1;
-    if (index === 1)
-        index = images.length - 1;
-}
+// function update() {
+//     if (index === images.length - 1)
+//         index = 1;
+//     if (index === 1)
+//         index = images.length - 1;
+// }
 
-function goNext() {
-    hideImage(index);
-    if (index === images.length - 1)
-        index = 0;
-    index++;
-    showImage(index);
-    // console.log(index)
-}
+// function goNext() {
+//     hideImage(index);
+//     if (index === images.length - 1)
+//         index = 0;
+//     index++;
+//     showImage(index);
+//     // console.log(index)
+// }
 
-function goPrev() {
-    hideImage(index);
-    if (index === 1)
-        index = images.length;
-    index--;
-    showImage(index);
-    // console.log(index)
-}
+// function goPrev() {
+//     hideImage(index);
+//     if (index === 1)
+//         index = images.length;
+//     index--;
+//     showImage(index);
+//     // console.log(index)
+// }
 
-var next = document.querySelector('#next');
-var prev = document.querySelector('#prev');
-next.addEventListener('click', goNext);
-prev.addEventListener('click', goPrev);
+// var next = document.querySelector('#next');
+// var prev = document.querySelector('#prev');
+// next.addEventListener('click', goNext);
+// prev.addEventListener('click', goPrev);
