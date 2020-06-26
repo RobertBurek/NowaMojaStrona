@@ -42,95 +42,95 @@ dyplomyPoziom[10] = ['img/Dyplomy/KursJAVATestyJednostkowe_strefaKursow.jpg']
  dyplomyPoziom[0] = ['img/Dyplomy/KursProgramowaniaWJava_strefaKursow.jpg']
 
 
-let imgk1w1 = document.createElement('img');
-imgk1w1.alt = ("dyplom");
-imgk1w1.src = dyplomyPion[11];
-document.querySelector("#k1w1").appendChild(imgk1w1);
+let imgk1w1Slide1 = document.createElement('img');
+imgk1w1Slide1.alt = ("dyplom");
+imgk1w1Slide1.src = dyplomyPion[11];
+document.querySelector("#k1w1Slide1").appendChild(imgk1w1Slide1);
 
-let imgk1w2 = document.createElement('img');
-imgk1w2.alt = ("dyplom");
-imgk1w2.src = dyplomyPion[10];
-document.querySelector("#k1w2").appendChild(imgk1w2);
+let imgk1w2Slide1 = document.createElement('img');
+imgk1w2Slide1.alt = ("dyplom");
+imgk1w2Slide1.src = dyplomyPion[10];
+document.querySelector("#k1w2Slide1").appendChild(imgk1w2Slide1);
 
-let imgk2w1 = document.createElement('img');
-imgk2w1.alt = ("dyplom");
-imgk2w1.src = dyplomyPoziom[23];
-document.querySelector("#k2w1").appendChild(imgk2w1);
+let imgk2w1Slide1 = document.createElement('img');
+imgk2w1Slide1.alt = ("dyplom");
+imgk2w1Slide1.src = dyplomyPoziom[23];
+document.querySelector("#k2w1Slide1").appendChild(imgk2w1Slide1);
 
-let imgk2w2 = document.createElement('img');
-imgk2w2.alt = ("dyplom");
-imgk2w2.src = dyplomyPoziom[22];
-document.querySelector("#k2w2").appendChild(imgk2w2);
+let imgk2w2Slide1 = document.createElement('img');
+imgk2w2Slide1.alt = ("dyplom");
+imgk2w2Slide1.src = dyplomyPoziom[22];
+document.querySelector("#k2w2Slide1").appendChild(imgk2w2Slide1);
 
-let imgk2w3 = document.createElement('img');
-imgk2w3.alt = ("dyplom");
-imgk2w3.src = dyplomyPoziom[21];
-document.querySelector("#k2w3").appendChild(imgk2w3);
+let imgk2w3Slide1 = document.createElement('img');
+imgk2w3Slide1.alt = ("dyplom");
+imgk2w3Slide1.src = dyplomyPoziom[21];
+document.querySelector("#k2w3Slide1").appendChild(imgk2w3Slide1);
 
-let imgk3w1 = document.createElement('img');
-imgk3w1.alt = ("dyplom");
-imgk3w1.src = dyplomyPoziom[20];
-document.querySelector("#k3w1").appendChild(imgk3w1);
+let imgk3w1Slide1 = document.createElement('img');
+imgk3w1Slide1.alt = ("dyplom");
+imgk3w1Slide1.src = dyplomyPoziom[20];
+document.querySelector("#k3w1Slide1").appendChild(imgk3w1Slide1);
 
-let imgk3w2 = document.createElement('img');
-imgk3w2.alt = ("dyplom");
-imgk3w2.src = dyplomyPoziom[19];
-document.querySelector("#k3w2").appendChild(imgk3w2);
+let imgk3w2Slide1 = document.createElement('img');
+imgk3w2Slide1.alt = ("dyplom");
+imgk3w2Slide1.src = dyplomyPoziom[19];
+document.querySelector("#k3w2Slide1").appendChild(imgk3w2Slide1);
 
-let imgk3w3 = document.createElement('img');
-imgk3w3.alt = ("dyplom");
-imgk3w3.src = dyplomyPoziom[18];
-document.querySelector("#k3w3").appendChild(imgk3w3);
+let imgk3w3Slide1 = document.createElement('img');
+imgk3w3Slide1.alt = ("dyplom");
+imgk3w3Slide1.src = dyplomyPoziom[18];
+document.querySelector("#k3w3Slide1").appendChild(imgk3w3Slide1);
 
-let imgk4w1 = document.createElement('img');
-imgk4w1.alt = ("dyplom");
-imgk4w1.src = dyplomyPion[9];
-document.querySelector("#k4w1").appendChild(imgk4w1);
+let imgk4w1Slide1 = document.createElement('img');
+imgk4w1Slide1.alt = ("dyplom");
+imgk4w1Slide1.src = dyplomyPion[9];
+document.querySelector("#k4w1Slide1").appendChild(imgk4w1Slide1);
 
-let imgk4w2 = document.createElement('img');
-imgk4w2.alt = ("dyplom");
-imgk4w2.src = dyplomyPion[8];
-document.querySelector("#k4w2").appendChild(imgk4w2);
+let imgk4w2Slide1 = document.createElement('img');
+imgk4w2Slide1.alt = ("dyplom");
+imgk4w2Slide1.src = dyplomyPion[8];
+document.querySelector("#k4w2Slide1").appendChild(imgk4w2Slide1);
 
-let imgk5w1 = document.createElement('img');
-imgk5w1.alt = ("dyplom");
-imgk5w1.src = dyplomyPoziom[17];
-document.querySelector("#k5w1").appendChild(imgk5w1);
+let imgk5w1Slide1 = document.createElement('img');
+imgk5w1Slide1.alt = ("dyplom");
+imgk5w1Slide1.src = dyplomyPoziom[17];
+document.querySelector("#k5w1Slide1").appendChild(imgk5w1Slide1);
 
-let imgk5w2 = document.createElement('img');
-imgk5w2.alt = ("dyplom");
-imgk5w2.src = dyplomyPoziom[16];
-document.querySelector("#k5w2").appendChild(imgk5w2);
+let imgk5w2Slide1 = document.createElement('img');
+imgk5w2Slide1.alt = ("dyplom");
+imgk5w2Slide1.src = dyplomyPoziom[16];
+document.querySelector("#k5w2Slide1").appendChild(imgk5w2Slide1);
 
-let imgk5w3 = document.createElement('img');
-imgk5w3.alt = ("dyplom");
-imgk5w3.src = dyplomyPoziom[15];
-document.querySelector("#k5w3").appendChild(imgk5w3);
+let imgk5w3Slide1 = document.createElement('img');
+imgk5w3Slide1.alt = ("dyplom");
+imgk5w3Slide1.src = dyplomyPoziom[15];
+document.querySelector("#k5w3Slide1").appendChild(imgk5w3Slide1);
 
-let imgk6w1 = document.createElement('img');
-imgk6w1.alt = ("dyplom");
-imgk6w1.src = dyplomyPoziom[14];
-document.querySelector("#k6w1").appendChild(imgk6w1);
+let imgk6w1Slide1 = document.createElement('img');
+imgk6w1Slide1.alt = ("dyplom");
+imgk6w1Slide1.src = dyplomyPoziom[14];
+document.querySelector("#k6w1Slide1").appendChild(imgk6w1Slide1);
 
-let imgk6w2 = document.createElement('img');
-imgk6w2.alt = ("dyplom");
-imgk6w2.src = dyplomyPoziom[13];
-document.querySelector("#k6w2").appendChild(imgk6w2);
+let imgk6w2Slide1 = document.createElement('img');
+imgk6w2Slide1.alt = ("dyplom");
+imgk6w2Slide1.src = dyplomyPoziom[13];
+document.querySelector("#k6w2Slide1").appendChild(imgk6w2Slide1);
 
-let imgk6w3 = document.createElement('img');
-imgk6w3.alt = ("dyplom");
-imgk6w3.src = dyplomyPoziom[12];
-document.querySelector("#k6w3").appendChild(imgk6w3);
+let imgk6w3Slide1 = document.createElement('img');
+imgk6w3Slide1.alt = ("dyplom");
+imgk6w3Slide1.src = dyplomyPoziom[12];
+document.querySelector("#k6w3Slide1").appendChild(imgk6w3Slide1);
 
-let imgk7w1 = document.createElement('img');
-imgk7w1.alt = ("dyplom");
-imgk7w1.src = dyplomyPion[7];
-document.querySelector("#k7w1").appendChild(imgk7w1);
+let imgk7w1Slide1 = document.createElement('img');
+imgk7w1Slide1.alt = ("dyplom");
+imgk7w1Slide1.src = dyplomyPion[7];
+document.querySelector("#k7w1Slide1").appendChild(imgk7w1Slide1);
 
-let imgk7w2 = document.createElement('img');
-imgk7w2.alt = ("dyplom");
-imgk7w2.src = dyplomyPion[6];
-document.querySelector("#k7w2").appendChild(imgk7w2);
+let imgk7w2Slide1 = document.createElement('img');
+imgk7w2Slide1.alt = ("dyplom");
+imgk7w2Slide1.src = dyplomyPion[6];
+document.querySelector("#k7w2Slide1").appendChild(imgk7w2Slide1);
 
 
 // const div = document.querySelector("#k1w1");
