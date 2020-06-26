@@ -6,7 +6,7 @@ dyplomyPion[11] = ['img/Dyplomy/RoleWZespoleProgramistycznym_altkom.jpg']
 dyplomyPion[10] = ['img/Dyplomy/Wzorce projektowe, narzędzia pracy grupowej_altkom.jpg']
  dyplomyPion[9] = ['img/Dyplomy/AplikacjeWeboweWJezykuJava.jpg']
  dyplomyPion[8] = ['img/Dyplomy/Bazy danych relacyjne i nierelacyjne. Język SQL_altkom.jpg']
- dyplomyPion[6] = ['img/Dyplomy/Podstawy programowania - back end_altkom.jpg']
+ dyplomyPion[7] = ['img/Dyplomy/Podstawy programowania - back end_altkom.jpg']
  dyplomyPion[6] = ['img/Dyplomy/EComerceWPraktyce_uouw.jpg']
  dyplomyPion[5] = ['img/Dyplomy/CertyfikatGIT_eduwebpl.jpg']
  dyplomyPion[4] = ['img/Dyplomy/AngOdZeraDoBohatIA2_uouw.jpg']
@@ -41,34 +41,106 @@ dyplomyPoziom[10] = ['img/Dyplomy/KursJAVATestyJednostkowe_strefaKursow.jpg']
  dyplomyPoziom[1] = ['img/Dyplomy/FundamentyJezykaJava_strefaKursow.jpg']
  dyplomyPoziom[0] = ['img/Dyplomy/KursProgramowaniaWJava_strefaKursow.jpg']
 
-const ukladDyplomow = [];
-ukladDyplomow[0] = document.querySelector("#k1w1");
-ukladDyplomow[1] = document.querySelector("#k1w2");
-ukladDyplomow[2] = document.querySelector("#k2w1");
-ukladDyplomow[3] = document.querySelector("#k2w2");
-ukladDyplomow[4] = document.querySelector("#k2w3");
-ukladDyplomow[5] = document.querySelector("#k3w1");
-ukladDyplomow[6] = document.querySelector("#k3w2");
-ukladDyplomow[7] = document.querySelector("#k3w3");
-ukladDyplomow[8] = document.querySelector("#k4w1");
-ukladDyplomow[9] = document.querySelector("#k4w2");
-ukladDyplomow[10] = document.querySelector("#k5w1");
-ukladDyplomow[11] = document.querySelector("#k5w2");
-ukladDyplomow[12] = document.querySelector("#k5w3");
-ukladDyplomow[13] = document.querySelector("#k6w1");
-ukladDyplomow[14] = document.querySelector("#k6w2");
-ukladDyplomow[15] = document.querySelector("#k6w3");
-ukladDyplomow[16] = document.querySelector("#k7w1");
-ukladDyplomow[17] = document.querySelector("#k7w2");
+
+let imgk1w1 = document.createElement('img');
+imgk1w1.alt = ("dyplom");
+imgk1w1.src = dyplomyPion[11];
+document.querySelector("#k1w1").appendChild(imgk1w1);
+
+let imgk1w2 = document.createElement('img');
+imgk1w2.alt = ("dyplom");
+imgk1w2.src = dyplomyPion[10];
+document.querySelector("#k1w2").appendChild(imgk1w2);
+
+let imgk2w1 = document.createElement('img');
+imgk2w1.alt = ("dyplom");
+imgk2w1.src = dyplomyPoziom[23];
+document.querySelector("#k2w1").appendChild(imgk2w1);
+
+let imgk2w2 = document.createElement('img');
+imgk2w2.alt = ("dyplom");
+imgk2w2.src = dyplomyPoziom[22];
+document.querySelector("#k2w2").appendChild(imgk2w2);
+
+let imgk2w3 = document.createElement('img');
+imgk2w3.alt = ("dyplom");
+imgk2w3.src = dyplomyPoziom[21];
+document.querySelector("#k2w3").appendChild(imgk2w3);
+
+let imgk3w1 = document.createElement('img');
+imgk3w1.alt = ("dyplom");
+imgk3w1.src = dyplomyPoziom[20];
+document.querySelector("#k3w1").appendChild(imgk3w1);
+
+let imgk3w2 = document.createElement('img');
+imgk3w2.alt = ("dyplom");
+imgk3w2.src = dyplomyPoziom[19];
+document.querySelector("#k3w2").appendChild(imgk3w2);
+
+let imgk3w3 = document.createElement('img');
+imgk3w3.alt = ("dyplom");
+imgk3w3.src = dyplomyPoziom[18];
+document.querySelector("#k3w3").appendChild(imgk3w3);
+
+let imgk4w1 = document.createElement('img');
+imgk4w1.alt = ("dyplom");
+imgk4w1.src = dyplomyPion[9];
+document.querySelector("#k4w1").appendChild(imgk4w1);
+
+let imgk4w2 = document.createElement('img');
+imgk4w2.alt = ("dyplom");
+imgk4w2.src = dyplomyPion[8];
+document.querySelector("#k4w2").appendChild(imgk4w2);
+
+let imgk5w1 = document.createElement('img');
+imgk5w1.alt = ("dyplom");
+imgk5w1.src = dyplomyPoziom[17];
+document.querySelector("#k5w1").appendChild(imgk5w1);
+
+let imgk5w2 = document.createElement('img');
+imgk5w2.alt = ("dyplom");
+imgk5w2.src = dyplomyPoziom[16];
+document.querySelector("#k5w2").appendChild(imgk5w2);
+
+let imgk5w3 = document.createElement('img');
+imgk5w3.alt = ("dyplom");
+imgk5w3.src = dyplomyPoziom[15];
+document.querySelector("#k5w3").appendChild(imgk5w3);
+
+let imgk6w1 = document.createElement('img');
+imgk6w1.alt = ("dyplom");
+imgk6w1.src = dyplomyPoziom[14];
+document.querySelector("#k6w1").appendChild(imgk6w1);
+
+let imgk6w2 = document.createElement('img');
+imgk6w2.alt = ("dyplom");
+imgk6w2.src = dyplomyPoziom[13];
+document.querySelector("#k6w2").appendChild(imgk6w2);
+
+let imgk6w3 = document.createElement('img');
+imgk6w3.alt = ("dyplom");
+imgk6w3.src = dyplomyPoziom[12];
+document.querySelector("#k6w3").appendChild(imgk6w3);
+
+let imgk7w1 = document.createElement('img');
+imgk7w1.alt = ("dyplom");
+imgk7w1.src = dyplomyPion[7];
+document.querySelector("#k7w1").appendChild(imgk7w1);
+
+let imgk7w2 = document.createElement('img');
+imgk7w2.alt = ("dyplom");
+imgk7w2.src = dyplomyPion[6];
+document.querySelector("#k7w2").appendChild(imgk7w2);
 
 
-const div = document.querySelector("#k1w1");
-var img = document.createElement('img');
-img.src = dyplomyPion[12][0];
+// const div = document.querySelector("#k1w1");
+// var img = document.createElement('img');
+// img.alt = ("dyplom");
+// img.src = dyplomyPion[12][0];
 // img.classList = dyplomy[i][1];
 // img.alt = (dyplomy[i][0]).substr(14, (dyplomy[i][0]).length - 18);
-img.alt = ("image");
-div.appendChild(img);
+
+// div.appendChild(img);
 
 // for (let i = dyplomy.length - 1; i >= 0; i--) {
 //     var img = document.createElement('img');
