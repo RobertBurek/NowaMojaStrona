@@ -1,6 +1,3 @@
-
-var index = 1;
-
 const dyplomyPion = [];
 dyplomyPion[11] = ['img/Dyplomy/RoleWZespoleProgramistycznym_altkom.jpg']
 dyplomyPion[10] = ['img/Dyplomy/Wzorce projektowe, narzędzia pracy grupowej_altkom.jpg']
@@ -224,68 +221,3 @@ let imgk7w2Slide2 = document.createElement('img');
 imgk7w2Slide2.alt = ("dyplom");
 imgk7w2Slide2.src = dyplomyPion[0];
 document.querySelector("#k7w2Slide2").appendChild(imgk7w2Slide2);
-
-
-
-// const div = document.querySelector("#k1w1");
-// var img = document.createElement('img');
-// img.alt = ("dyplom");
-// img.src = dyplomyPion[12][0];
-// img.classList = dyplomy[i][1];
-// img.alt = (dyplomy[i][0]).substr(14, (dyplomy[i][0]).length - 18);
-
-// div.appendChild(img);
-
-// for (let i = dyplomy.length - 1; i >= 0; i--) {
-//     var img = document.createElement('img');
-//     img.src = dyplomy[i][0];
-//     img.classList = dyplomy[i][1];
-//     img.alt = (dyplomy[i][0]).substr(14, (dyplomy[i][0]).length - 18);
-//     div.appendChild(img);
-//     // console.log('obrazek:', dyplomy[i][0], ' class:', dyplomy[i][1], ' i:', i)
-// }
-
-
-// var images = document.querySelectorAll('img');
-// // console.log('ilość dyplomów', dyplomy.length)
-
-// function showImage(n) {
-//     images[n].classList.add('visible');
-// }
-
-// function hideImage(n) {
-//     images[n].classList.remove('visible');
-// }
-
-// images[0].classList.add('visible');
-// showImage(1);
-
-// function update() {
-//     if (index === images.length - 1)
-//         index = 1;
-//     if (index === 1)
-//         index = images.length - 1;
-// }
-
-// function goNext() {
-//     hideImage(index);
-//     if (index === images.length - 1)
-//         index = 0;
-//     index++;
-//     showImage(index);
-//     // console.log(index)
-// }
-
-// function goPrev() {
-//     hideImage(index);
-//     if (index === 1)
-//         index = images.length;
-//     index--;
-//     showImage(index);
-//     // console.log(index)
-// }
-
-// var next = document.querySelector('#next');
-// var prev = document.querySelector('#prev');
-// next.addEventListener('click', goNext);
-// prev.addEventListener('click', goPrev);
