@@ -72,11 +72,11 @@ section {
   font-family: "Roboto", sans-serif;
   color: #FFC312;
   margin: 0;
-  letter-spacing: 3px;
-  background: rgba(255, 255, 255, 0.1);
+  letter-spacing: 4px;
   font-weight: 900;
-  font-size: 52px;
+  font-size: 57px;
   padding: 0 24px;
+  color: white;
 }
 
 .main-subtitle {
@@ -200,7 +200,6 @@ section {
 section.diplomas {
   padding: 60px 0 0 0;
   height: 70%;
-  max-height: 590px;
 }
 
 .diplomas-wrapper {
@@ -327,6 +326,39 @@ figure {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  border: 1px solid #FFC312;
+  width: 50px;
+  height: 50px;
+  line-height: 47px;
+  border-radius: 50%;
+  margin: 0 4%;
+}
+
+.social-links li:hover {
+  background: #FFC312;
+}
+
+.social-links li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.social-links li a:hover {
+  color: #ffffff;
 }
 
 section {

@@ -77,11 +77,12 @@ section {
   font-family: $font-header-roboto;
   color: $color-main-title;
   margin: 0;
-  letter-spacing: 3px;
-  background: rgba(#fff,0.1);
+  letter-spacing: 4px;
+  // background: rgba(#fff,0.1);
   font-weight: 900;
-  font-size: 52px;
+  font-size: 57px;
   padding: 0 24px;
+  color: white;
 }
 
 .main-subtitle {
@@ -348,8 +349,42 @@ figure{
   margin-left: -15px;
 }
 
+//KONTAKT
+.contact {
+  text-align: center;
+}
 
-// FLEX WZÓR Ramek
+.social-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  border: 1px solid $color-main;
+  width: 50px;
+  height: 50px;
+  line-height: 47px;
+  border-radius: 50%;
+  margin: 0 4%;
+}
+
+.social-links li:hover {
+  background: $color-main;
+}
+
+.social-links li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.social-links li a:hover {
+  color: #ffffff;
+}
+
+
+// FLEX WZÓR Ramek SLIDER
 
 section {
   display: flex;
@@ -360,10 +395,7 @@ img{
   height: 100%;
 }
 .flex-container {
-  // width: 900px;
-  // height: 550px;
   background-color: gray;
-  // padding-bottom: 4px;
   display: flex;
   justify-content: center;
   border: 1px solid black;
