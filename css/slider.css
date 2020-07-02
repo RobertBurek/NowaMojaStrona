@@ -19,9 +19,9 @@
     max-width: 1.25rem;
     height: 1.25rem;
     margin-bottom: -3.75rem;
-    background-color: #f5f4f0;
+    background-color: white;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 1px solid #FFC312;
   }
   
   .carousel-multi-item .carousel-indicators .active {

@@ -238,6 +238,7 @@ section {
 section.diplomas{
   padding: 60px 0 0 0;
   height: 70%;
+  max-height: 580px;
 }
 
 .diplomas-wrapper{
@@ -399,15 +400,15 @@ img{
   background-color: gray;
   display: flex;
   justify-content: center;
-  border: 1px solid black;
+  border: 1px solid #FFC312;
 }
 .dyplomPion{
   height: 50%;
-  border: 1px solid black;
+  border: 1px solid #FFC312;
 }
 .dyplomPoziom{
   height: 33.3333333%;
-  border: 1px solid black;
+  border: 1px solid #FFC312;
 }
 .pion {
   width: 11.1111111%;
