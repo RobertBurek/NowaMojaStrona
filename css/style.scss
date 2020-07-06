@@ -342,6 +342,30 @@ figure{
 }
 
 
+//MAP
+#mapid { 
+  height: 250px; 
+  width: 400px;
+  border-radius: 2%;
+}
+.boxes {
+  background-color: #11203E;
+  padding: 80px 0;
+}
+
+.boxes .container{
+  display: flex;
+  align-items: center;
+  max-width: 55%;
+}
+
+.boxes .box {
+  text-align: center;
+  color: $color-main;
+  margin: 0 auto;
+}
+
+
 //FOOTER
 .row {
   display: -webkit-box;
@@ -351,6 +375,10 @@ figure{
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+}
+
+footer p{
+  margin: 15px 0;
 }
 
 //KONTAKT

@@ -322,6 +322,33 @@ figure {
   opacity: 0.8;
 }
 
+#mapid {
+  height: 250px;
+  width: 400px;
+  border-radius: 2%;
+}
+
+.boxes {
+  background-color: #11203E;
+  padding: 80px 0;
+}
+
+.boxes .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 55%;
+}
+
+.boxes .box {
+  text-align: center;
+  color: #FFC312;
+  margin: 0 auto;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -330,6 +357,10 @@ figure {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+}
+
+footer p {
+  margin: 15px 0;
 }
 
 .contact {
