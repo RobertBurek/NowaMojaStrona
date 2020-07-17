@@ -8,4 +8,4 @@ L.marker([52.1828, 21.0191]).addTo(map)
     .bindPopup('Domaniewska 9/11 <br> 02-663 Warszawa');
     // .openPopup();
 
-nPopup();
+// nPopup();

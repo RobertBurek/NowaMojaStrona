@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
   crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
   <link rel="stylesheet" href="css/style.css">
@@ -24,6 +23,34 @@
   </script>
 
 <link rel="stylesheet" href="css/slider.css">
+<link rel="stylesheet" href="css/sliderCarousel.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+ 
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#sliderCarousel").SliderCarousel(
+		{
+      reflectionHeight: 50,
+      // xPosition: 500,
+      // yPosition: 35,
+      leftButton: $('#slider-left-button'),
+      rightButton: $('#slider-right-button'),
+      yRadius: 50,
+      // xRadius: 500,
+      reflectionPadding: -1,
+      reflectionOpacity: 0.3,
+      minimumScale: 0.5,
+      speedRotation: 0.20,
+      widthMax: 250,
+      heightMax: 170,
+      border: '2px solid #3c3838'
+		}
+	);
+});
+</script>
 
 </head>
 <body data-spy="scroll" data-offset="10">
@@ -48,17 +75,17 @@
       <h2 class="section-title">Cieszę się gdy</h2>
       <div class="features-wrapper">
         <article class="feature">
-          <i class="fas fa-laptop-code i-animation"></i>
-          <h3 class="feature-title">Moje prace</h3>
+          <a href="#mojeProjekty"><i class="fas fa-laptop-code i-animation"></i></a>
+          <h3 class="feature-title">Moje projekty</h3>
           <p class="feature-description">Podobnie jak elementy HTML, reguły CSS mają własną strukturę, której należy się trzymać, aby kod działał poprawnie. Spójrz na przykład poniżej:</p>
         </article>
         <article class="feature">
-          <i class="fas fa-graduation-cap i-animation"></i>
+          <a href="#mojeProjekty"><i class="fas fa-graduation-cap i-animation"></i></a>
           <h3 class="feature-title">Curriculum Vitae</h3>
           <p class="feature-description">CSS (ang. Cascading Style Sheets – kaskadowe arkusze stylów) służy do opisywania, jak elementy HTML powinny prezentować się na ekranie: jakie powinny mieć rozmiary, kolory, obramowanie... CSS daje nam mnóstwo możliwości. W wyzwaniu poznamy tylko niektóre z nich – jeżeli chcesz dowiedzieć się więcej, zajrzyj</p>
         </article>
         <article class="feature">
-          <i class="fas fa-file-contract i-animation"></i>
+          <a href="#mojeProjekty"><i class="fas fa-file-contract i-animation"></i></a>
           <h3 class="feature-title">Moje dyplomy</h3>
           <p class="feature-description">Witaj w drugim dniu wyzwania Zacznij kodować z Kodillą! Poprzednim razem stworzyliśmy HTML trzech sekcji naszej strony. Przykładowe rozwiązanie</p>
         </article>
@@ -67,10 +94,7 @@
   </section>
   <section class="statement">
     <div cless="container">
-      <p>
-  <!--      Przyświecają mi poniższe cytaty i motta życiowe -->
-        Cytaty i motta, które mi przyświecają!!!
-      </p>
+      <p class="section-title">Cytaty i motta, które mi przyświecają!!!</p>
     </div>
   </section>
   <section class="quotes" id="quotes">
@@ -100,6 +124,30 @@
     </footer>
   </blockquote>
         </article>
+      </div>
+    </div>
+  </section>
+<div id="mojeProjekty"></div>
+  <section class="statement">
+    <div class="container">
+      <p class="section-title" style="margin-bottom: 60px;">Moje projekty</p>
+      <div id="sliderMyWorks">
+        <div id = "sliderCarousel">
+            <a href="#1" rel="lightbox"><img class="carousel" src="img/slider/01.png" alt="Website 1" title="Website 1"/></a>
+            <a href="#2" rel="lightbox"><img class="carousel" src="img/slider/02.png" alt="Website 2" title="Website 2"/></a>
+            <a href="#3" rel="lightbox"><img class="carousel" src="img/slider/03.png" alt="Website 3" title="Website 3"/></a>
+            <a href="#4" rel="lightbox"><img class="carousel" src="img/slider/04.png" alt="Website 4" title="Website 4"/></a>
+            <a href="#5" rel="lightbox"><img class="carousel" src="img/slider/05.png" alt="Website 5" title="Website 5"/></a>
+            <a href="#6" rel="lightbox"><img class="carousel" src="img/slider/06.png" alt="Website 6" title="Website 6"/></a>
+            <a href="#7" rel="lightbox"><img class="carousel" src="img/slider/07.png" alt="Website 7" title="Website 7"/></a>
+            <a href="#8" rel="lightbox"><img class="carousel" src="img/slider/08.png" alt="Website 8" title="Website 8"/></a>
+            <a href="#9" rel="lightbox"><img class="carousel" src="img/slider/09.jpg" alt="Website 9" title="Website 9"/></a>
+        </div>
+    
+        <div class="centerNavSliderCarousel">
+            <a id="slider-left-button"><i class="fas fa-chevron-circle-left"></i></a>
+            <a id="slider-right-button"><i class="fas fa-chevron-circle-right"></i></a>
+        </div>
       </div>
     </div>
   </section>
@@ -244,19 +292,11 @@
           <div id="mapid"></div>
       </div>
       <div class="box">
-        <!-- <div class="col-lg-3 col-sm-6 sm-padding"> -->
-          <!-- <div class="widget-content"> -->
-              <!-- <h3>Kontakt</h3> -->
-              <!-- <br> -->
-              <!-- <ul class="widget-links"> -->
                   <h6>Domaniewska 9/11</h6>
                   <h6>02-663 Warszawa</h6>
                   <br>
                   <h6>robertburek@wp.pl</h6>
                   <h6>+48 660 672 194</h6>
-              <!-- </ul> -->
-          <!-- </div> -->
-      <!-- </div> -->
       </div>
   </div>
 </section>
@@ -275,9 +315,14 @@
   <a data-scroll href="#header" id="scroll-to-top" class="i-animation"><i class="fas fa-arrow-up"></i></a>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!-- <script type="text/javascript" src="js/jquery-3.5.1.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
+  <!-- <script type="text/javascript" src="js/jquery-3.5.1.js"></script> -->
+  <script type="text/JavaScript" src="js/sliderCarousel.js"></script>
   <script src="js/main.js"></script>
   <script src="js/dyplomy.js"></script>
   <script src="js/mapa.js"></script>

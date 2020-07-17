@@ -35,16 +35,16 @@ a, a:hover {
   color: $color-main;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+// img {
+//   max-width: 100%;
+//   height: auto;
+// }
 
 section {
   padding: 60px 0;
 }
 
-.section-title{
+.section-title {
   position: relative;
   margin: 0 0 60px 0;
   text-align: center;
@@ -163,11 +163,11 @@ section {
   //background-color: $color-bacground;
 }
 
-.section-intro{
+.section-intro {
   margin: 36px 0 0 0;
 }
 
-.features-wrapper{
+.features-wrapper {
   display: flex;
 }
 
@@ -178,26 +178,26 @@ section {
   margin: 24px 0 0 0;
 }
 
-.feature i{
+.feature a > i {
   width: 120px;
   height: 120px;
   line-height: 120px;
   font-size: 64px;
   background-color: $color-main-title;
   border-radius: 50%;
+  color: #444;
 }
 
-.feature-title{
+.feature-title {
   margin: 24px 0 0 0;
 }
 
-.feature-description{
+.feature-description {
   margin: 24px 0 0 0;
   padding: 0 24px;
 }
 
-.statement{
-  // background-image: url('http://i66.tinypic.com/5a3oh.jpg');
+.statement {
   background-image: url('https://i.postimg.cc/cCFM2pjN/Tlo.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -205,7 +205,7 @@ section {
   background-attachment: fixed;
 }
 
-.statement p{
+.statement p {
   margin: 0;
   text-align: center;
   font-family: $font-text-lora;
@@ -215,17 +215,17 @@ section {
   letter-spacing: 2px;
 }
 
-.quotes-wrapper{
+.quotes-wrapper {
   margin: -30px 0 0 0;
 }
 
-.quote blockquote{
+.quote blockquote {
   padding: 0 36px;
   margin: 52px 0 0 0;
   color: #000000;
 }
 
-.quote footer{
+.quote footer {
   margin: 15px 0 0 0;
   padding: 0 30px;
   font-weight: 700;
@@ -233,24 +233,24 @@ section {
 }
 
 .quotes {
-  background-color: $color-quote;
+  // background-color: $color-quote;
   padding-left: 20%;
   padding-right: 20%;
 }
 
-section.diplomas{
+section.diplomas {
   padding: 60px 0 0 0;
   height: 70%;
-  max-height: 580px;
+  max-height: 660px;
 }
 
-.diplomas-wrapper{
+.diplomas-wrapper {
   display: flex;
   flex-wrap: wrap;
   margin: 72px 0 0 0;
 }
 
-figure{
+figure {
   position: relative;
   margin: 0;
   flex: 0 0 25%;
@@ -258,7 +258,7 @@ figure{
   text-align: center;
 }
 
-.diplomas-item img{
+.diplomas-item img {
   display: block;
   width: 100%;
   height: 100%;
@@ -277,7 +277,7 @@ figure{
   opacity: 0.4;
 }
 
-.diplomas-item figcaption{
+.diplomas-item figcaption {
   position: absolute;
   display: block;
   width: 100%;
@@ -291,18 +291,16 @@ figure{
 
 
 //ANIMACJA IKONEK
-
 .i-animation {
   animation-name: i-animation;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   -webkit-animation-name: i-animation; 
-  -webkit-animation-duration: 2s;
+  -webkit-animation-duration: 3s;
   -webkit-animation-iteration-count: infinite; 
   -webkit-animation-timing-function: linear;
 }
-
 @keyframes i-animation {
   0% {
       -webkit-transform: translateY(-20px);
@@ -342,6 +340,86 @@ figure{
 }
 
 
+//MOJE PROJEKTY
+#mojeProjekty {
+  height: 50px;
+}
+#mojeProjekty p {
+  margin-bottom: 60px;
+}
+
+
+// FLEX WZÓR Ramek SLIDER
+section {
+  display: flex;
+  justify-content: center;
+}
+.flex-item img {
+  width: 100%;
+  height: 100%;
+}
+.flex-container {
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #3c3838;
+}
+.dyplomPion{
+  height: 50%;
+  border: 1px solid #3c3838;
+}
+.dyplomPoziom{
+  height: 33.3333333%;
+  border: 1px solid #3c3838;
+}
+.pion {
+  width: 11.1111111%;
+}
+.poziom {
+  width: 16.666666666%;
+}
+/* 1 kolumna */
+.dyplomPion.leftTop:hover{
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateX(50%) translateY(50%) scale(2,2);
+}
+.dyplomPion.leftBottom:hover{
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateX(50%) translateY(-50%) scale(2,2);
+}
+/* 2,3,5,6 kolumna */
+.dyplomPoziom.Top:hover {
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateY(60%) scale(2.2,2.2);
+}
+.dyplomPoziom.Center:hover {
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: scale(2.2,2.2);
+}
+.dyplomPoziom.Bottom:hover {
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateY(-60%) scale(2.2,2.2);
+}
+/* 4 kolumna */
+.dyplomPion.Top:hover{
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transform: translateY(50%) scale(2,2);
+}
+.dyplomPion.Bottom:hover{
+  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+  transform: translateY(-50%) scale(2,2);
+}
+/* 7  kolumna */
+.dyplomPion.rightTop:hover{
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateX(-50%) translateY(50%) scale(2,2);
+}
+.dyplomPion.rightBottom:hover{
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateX(-50%) translateY(-50%) scale(2,2);
+}
+
+
 //MAP
 #mapid { 
   height: 250px; 
@@ -352,13 +430,11 @@ figure{
   background-color: #11203E;
   padding: 80px 0;
 }
-
 .boxes .container{
   display: flex;
   align-items: center;
   max-width: 55%;
 }
-
 .boxes .box {
   text-align: center;
   color: $color-main;
@@ -376,21 +452,19 @@ figure{
   margin-right: -15px;
   margin-left: -15px;
 }
-
-footer p{
+footer p {
   margin: 15px 0;
 }
+
 
 //KONTAKT
 .contact {
   text-align: center;
 }
-
 .social-links {
   list-style-type: none;
   padding: 0;
 }
-
 .social-links li {
   display: inline-block;
   border: 1px solid $color-main;
@@ -401,93 +475,49 @@ footer p{
   margin: 0 4%;
   font-size: 25px;
 }
-
 .social-links li:hover {
   background: $color-main;
 }
-
 .social-links li a {
   display: block;
   width: 100%;
   height: 100%;
 }
-
 .social-links li a:hover {
   color: #ffffff;
 }
 
-
-// FLEX WZÓR Ramek SLIDER
-
-section {
-  display: flex;
-  justify-content: center;
-}
-img{
-  width: 100%;
-  height: 100%;
-}
-.flex-container {
-  background-color: gray;
-  display: flex;
-  justify-content: center;
-  border: 1px solid #FFC312;
-}
-.dyplomPion{
-  height: 50%;
-  border: 1px solid #FFC312;
-}
-.dyplomPoziom{
-  height: 33.3333333%;
-  border: 1px solid #FFC312;
-}
-.pion {
-  width: 11.1111111%;
-}
-.poziom {
-  width: 16.666666666%;
+//MEDIA
+@media (max-width: 1920px){
+  section.diplomas{
+    max-height: 655px;
+  }
+  .box h6 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .boxes.container {
+    width: 65%;
+  }
+  #mapid {
+    height: 300px;
+    width: 550px;
+  }
 }
 
-/* 1 kolumna */
-.dyplomPion.leftTop:hover{
-    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transform: translateX(50%) translateY(50%) scale(2,2);
-}
-.dyplomPion.leftBottom:hover{
-    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transform: translateX(50%) translateY(-50%) scale(2,2);
-}
-
-/* 2,3,5,6 kolumna */
-.dyplomPoziom.Top:hover {
-    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transform: translateY(60%) scale(2.2,2.2);
-}
-.dyplomPoziom.Center:hover {
-    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transform: scale(2.2,2.2);
-}
-.dyplomPoziom.Bottom:hover {
-    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transform: translateY(-60%) scale(2.2,2.2);
-}
-
-/* 4 kolumna */
-.dyplomPion.Top:hover{
-  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-  transform: translateY(50%) scale(2,2);
-}
-.dyplomPion.Bottom:hover{
-  transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-  transform: translateY(-50%) scale(2,2);
-}
-
-/* 7  kolumna */
-.dyplomPion.rightTop:hover{
-    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transform: translateX(-50%) translateY(50%) scale(2,2);
-}
-.dyplomPion.rightBottom:hover{
-    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transform: translateX(-50%) translateY(-50%) scale(2,2);
+@media (max-width: 1600px){
+  section.diplomas{
+    max-height: 475px;
+  }
+  .box h6 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .boxes.container {
+    max-width: 60%;
+  }
+  #mapid {
+    height: 250px; 
+    width: 400px;
+  }
 }
