@@ -51,10 +51,20 @@
 	let ControllerSlider = function(container, images, options) {
 		let	items = [];
 		let	contextInterval = this;
-
+		if (options.widthMax === 0) {
+			options.widthMax = container.offsetWidth / (images.length / 2);
+		} 
+		if (options.heightMax === 0) {
+			options.heightMax = (container.offsetHeight - 25 ) / 1.65;
+			console.log(options.heightMax);
+		} 
+		console.log(options.widthMax);
 		this.controlTimer = 0;
 		this.stopped = false;
 		this.xRadius = options.xRadius;
+		if (options.yRadius === 0) {
+			options.yRadius = (container.offsetHeight - 25 ) / 5.5;
+		}
 		this.yRadius = options.yRadius;
 		this.container = container;
 		if (options.xRadius === 0) {

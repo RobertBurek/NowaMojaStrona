@@ -28,7 +28,8 @@ function odliczanie()
 		
 		var sekunda = dzisiaj.getSeconds();
 		if (sekunda<10) sekunda = "0"+sekunda;
- 		if (((start-sekunda)%coIle)==0) {
+		 
+		if (((start-sekunda)%coIle)==0) {
    			linia1 = tablica[i][0];
    			linia2 = tablica[i][1];
    			autor = tablica[i][2];

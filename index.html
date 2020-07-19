@@ -38,14 +38,14 @@ $(document).ready(function(){
       // yPosition: 35,
       leftButton: $('#slider-left-button'),
       rightButton: $('#slider-right-button'),
-      yRadius: 50,
+      // yRadius: 50,
       // xRadius: 500,
       reflectionPadding: -1,
       reflectionOpacity: 0.3,
       minimumScale: 0.5,
       speedRotation: 0.20,
-      widthMax: 250,
-      heightMax: 170,
+      // widthMax: 250,
+      // heightMax: 170,
       border: '2px solid #3c3838'
 		}
 	);
@@ -53,7 +53,7 @@ $(document).ready(function(){
 </script>
 
 </head>
-<body data-spy="scroll" data-offset="10">
+<body data-spy="scroll" data-offset="10" onload="odliczanie()">
   <section class="splash" id="header">
     <div class="page-intro">
       <h1 class="main-title">Java Web Developer</h1>
@@ -85,7 +85,7 @@ $(document).ready(function(){
           <p class="feature-description">CSS (ang. Cascading Style Sheets – kaskadowe arkusze stylów) służy do opisywania, jak elementy HTML powinny prezentować się na ekranie: jakie powinny mieć rozmiary, kolory, obramowanie... CSS daje nam mnóstwo możliwości. W wyzwaniu poznamy tylko niektóre z nich – jeżeli chcesz dowiedzieć się więcej, zajrzyj</p>
         </article>
         <article class="feature">
-          <a href="#mojeProjekty"><i class="fas fa-file-contract i-animation"></i></a>
+          <a href="#mojeDyplomy"><i class="fas fa-file-contract i-animation"></i></a>
           <h3 class="feature-title">Moje dyplomy</h3>
           <p class="feature-description">Witaj w drugim dniu wyzwania Zacznij kodować z Kodillą! Poprzednim razem stworzyliśmy HTML trzech sekcji naszej strony. Przykładowe rozwiązanie</p>
         </article>
@@ -94,7 +94,7 @@ $(document).ready(function(){
   </section>
   <section class="statement">
     <div cless="container">
-      <p class="section-title">Cytaty i motta, które mi przyświecają!!!</p>
+      <strong class="section-title">Cytaty i motta,</strong><strong class="section-title"> które mi przyświecają!!!</strong>
     </div>
   </section>
   <section class="quotes" id="quotes">
@@ -122,14 +122,22 @@ $(document).ready(function(){
       CARLTON FISK
       <!-- Marilyn Monroe -->
     </footer>
+    <div class="kafelek4">
+      <i id="linia1">"Wybierz pracę, którą kochasz, a nie przepracujesz</br></i>
+      <i id="linia2">ani jednego dnia więcej w Twoim życiu."</i>
+      <i></br></i>
+      <div id="autor">Robert Burek</div>
+    </div>
   </blockquote>
         </article>
       </div>
     </div>
   </section>
+
+  <!-- Slider Carousel -->
 <div id="mojeProjekty"></div>
   <section class="statement">
-    <div class="container">
+    <div class="containerCarousel">
       <p class="section-title" style="margin-bottom: 60px;">Moje projekty</p>
       <div id="sliderMyWorks">
         <div id = "sliderCarousel">
@@ -142,8 +150,10 @@ $(document).ready(function(){
             <a href="#7" rel="lightbox"><img class="carousel" src="img/slider/07.png" alt="Website 7" title="Website 7"/></a>
             <a href="#8" rel="lightbox"><img class="carousel" src="img/slider/08.png" alt="Website 8" title="Website 8"/></a>
             <a href="#9" rel="lightbox"><img class="carousel" src="img/slider/09.jpg" alt="Website 9" title="Website 9"/></a>
+            <!-- <a href="#9" rel="lightbox"><img class="carousel" src="img/slider/09.jpg" alt="Website 9" title="Website 9"/></a> -->
+            <!-- <a href="#9" rel="lightbox"><img class="carousel" src="img/slider/09.jpg" alt="Website 9" title="Website 9"/></a> -->
+            <!-- <a href="#9" rel="lightbox"><img class="carousel" src="img/slider/09.jpg" alt="Website 9" title="Website 9"/></a> -->
         </div>
-    
         <div class="centerNavSliderCarousel">
             <a id="slider-left-button"><i class="fas fa-chevron-circle-left"></i></a>
             <a id="slider-right-button"><i class="fas fa-chevron-circle-right"></i></a>
@@ -153,7 +163,7 @@ $(document).ready(function(){
   </section>
 
 
-<h2 class="section-title" style="margin-top: 40px; margin-bottom: 10px;">Moje dyplomy</h2>
+<h2 id="mojeDyplomy" class="section-title" style="margin-top: 40px; margin-bottom: 10px;">Moje dyplomy</h2>
 
   <!--Carousel Wrapper-->
 <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
@@ -272,6 +282,7 @@ $(document).ready(function(){
 
 <br><br>
 
+<!-- JA w sieci -->
 <section class="contact" id="contact">
   <div class="container">
     <h2 class="section-title">W sieci</h2>
@@ -282,10 +293,9 @@ $(document).ready(function(){
       <li><a href="#"><i class="fab fa-twitter"></i></a></li>
     </ul>
   </div>
-
 </section>
 
-
+<!-- Kontakt MAPA -->
 <section class="statement boxes">
   <div class="container">
       <div class="box">
@@ -312,6 +322,7 @@ $(document).ready(function(){
     </div>
   </footer>
 
+  <!-- Powrót na START -->
   <a data-scroll href="#header" id="scroll-to-top" class="i-animation"><i class="fas fa-arrow-up"></i></a>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

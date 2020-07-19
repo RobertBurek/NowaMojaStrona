@@ -41,6 +41,10 @@ section {
   padding: 0 20px;
 }
 
+.containerCarousel {
+  max-width: 960px;
+}
+
 .splash {
   height: 100vh;
   position: relative;
@@ -163,7 +167,7 @@ section {
   background-attachment: fixed;
 }
 
-.statement p {
+.statement p, strong {
   margin: 0;
   text-align: center;
   font-family: "Lora", serif;
@@ -543,11 +547,20 @@ footer p {
     height: 300px;
     width: 550px;
   }
+  .containerCarousel {
+    max-width: 1600px;
+  }
+  #mojeProjekty {
+    height: 70px;
+  }
+  .centerNavSliderCarousel {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 1600px) {
   section.diplomas {
-    max-height: 475px;
+    max-height: 486px;
   }
   .box h6 {
     font-size: 20px;
@@ -559,6 +572,15 @@ footer p {
   #mapid {
     height: 250px;
     width: 400px;
+  }
+  .containerCarousel {
+    max-width: 1200px;
+  }
+  #mojeProjekty {
+    height: 40px;
+  }
+  .centerNavSliderCarousel {
+    margin-top: 7px;
   }
 }
 /*# sourceMappingURL=style.css.map */
