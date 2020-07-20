@@ -56,9 +56,9 @@
 		} 
 		if (options.heightMax === 0) {
 			options.heightMax = (container.offsetHeight - 25 ) / 1.65;
-			console.log(options.heightMax);
+			// console.log(options.heightMax);
 		} 
-		console.log(options.widthMax);
+		// console.log(options.widthMax);
 		this.controlTimer = 0;
 		this.stopped = false;
 		this.xRadius = options.xRadius;
@@ -74,8 +74,8 @@
 			this.yRadius = ($(container).height() / 15.0);
 		};
 
-		console.log(" "+container.offsetWidth/2);
-		console.log(" "+container.offsetHeight/8);
+		// console.log(" "+container.offsetWidth/2);
+		// console.log(" "+container.offsetHeight/8);
 
 		if (options.xPosition === 0) options.xPosition = container.offsetWidth / 2;
 		this.xCentre = options.xPosition;
