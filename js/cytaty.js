@@ -1,3 +1,10 @@
+let quote1Element = document.getElementById("quote1");
+let autor1Element = document.getElementById("autor1");
+let quote2Element = document.getElementById("quote2");
+let autor2Element = document.getElementById("autor2");
+let quote3Element = document.getElementById("quote3");
+let autor3Element = document.getElementById("autor3");
+
 const tablica = [];
 tablica[0] = ['Wybierz pracę, którą kochasz, a nie przepracujesz ani jednego dnia więcej w Twoim życiu.', 'KONFUCJUSZ'];
 tablica[1] = ['Pomysły są powszechnym towarem. Wprowadzanie ich w życie nie jest.', 'MICHAEL DELL, Dell CEO'];
@@ -35,13 +42,6 @@ let autor3 = tablica[i+2][1];
 function odliczanie()
 	{
 		dzisiaj = new Date();
-
-		// let godzina = dzisiaj.getHours();
-		// if (godzina<10) godzina = "0"+godzina;
-		// if (godzina=="00") godzina = "24";
-		
-		// let minuta = dzisiaj.getMinutes();
-		// if (minuta<10) minuta = "0"+minuta;
 		
 		let sekunda = dzisiaj.getSeconds();
 		 
@@ -53,18 +53,15 @@ function odliczanie()
 			quote1 = tablica[i][0];
 			autor1 = tablica[i][1];
    			i++
-			   if (i==tablica.length) i=0;
+			if (i==tablica.length) i=0;
  		}
 		
-		// document.getElementById("zegar").innerHTML = godzina+":"+minuta+":"+sekunda;
-		document.getElementById("quote1").innerHTML = quote1;
-		document.getElementById("quote2").innerHTML = quote2;
-		document.getElementById("quote3").innerHTML = quote3;
-		document.getElementById("autor1").innerHTML = autor1;
-		document.getElementById("autor2").innerHTML = autor2;
-		document.getElementById("autor3").innerHTML = autor3;
-		// document.getElementById("linia2").innerHTML = linia2;
-		// document.getElementById("autor").innerHTML = autor;
+		quote1Element.innerHTML = quote1;
+		autor1Element.innerHTML = autor1;
+		quote2Element.innerHTML = quote2;
+		autor2Element.innerHTML = autor2;
+		quote3Element.innerHTML = quote3;
+		autor3Element.innerHTML = autor3;
 
 		setTimeout("odliczanie()",1000);
 		
