@@ -1,0 +1,63 @@
+.ukryj {
+    animation-name: ukryj;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-name: ukryj;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+  }
+@-webkit-keyframes ukryj {
+    0% {
+      opacity:100%;
+      opacity:100%;
+    }
+    100% {
+      opacity:0%;
+      opacity:0%;
+    }
+  }
+@keyframes ukryj {
+  0% {
+      opacity:100%;
+      opacity:100%;
+  }
+  100% {
+      opacity:0%;
+      opacity:0%;
+  }
+}
+
+.pokaz {
+  animation-name: pokaz;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-name: pokaz;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes pokaz {
+  0% {
+    opacity:0%;
+    opacity:0%;
+  }
+  100% {
+    opacity:100%;
+    opacity:100%;
+  }
+}
+@keyframes pokaz {
+  0% {
+      opacity:0%;
+      opacity:0%;
+  }
+  100% {
+      opacity:100%;
+      opacity:100%;
+  }
+}

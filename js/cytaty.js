@@ -1,10 +1,3 @@
-let quote1Element = document.getElementById("quote1");
-let autor1Element = document.getElementById("autor1");
-let quote2Element = document.getElementById("quote2");
-let autor2Element = document.getElementById("autor2");
-let quote3Element = document.getElementById("quote3");
-let autor3Element = document.getElementById("autor3");
-
 const tablica = [];
 tablica[0] = ['Wybierz pracę, którą kochasz, a nie przepracujesz ani jednego dnia więcej w Twoim życiu.', 'KONFUCJUSZ'];
 tablica[1] = ['Pomysły są powszechnym towarem. Wprowadzanie ich w życie nie jest.', 'MICHAEL DELL, Dell CEO'];
@@ -28,40 +21,90 @@ tablica[9] = ['Skoro i tak będziesz myśleć, myśl odważnie.', 'DONALD TRUMP'
 // tablica[8] = ['"Nie to, co osiągasz, ale to, co przezwyciężasz,</br>', 'definiuje Twoją karierę."', 'CARLTON FISK'];
 // tablica[9] = ['"Skoro i tak będziesz myśleć,</br>', 'myśl odważnie."', 'DONALD TRUMP'];
 
+let quote1Element = document.getElementById("quote1");
+let autor1Element = document.getElementById("autor1");
+let quote2Element = document.getElementById("quote2");
+let autor2Element = document.getElementById("autor2");
+let quote3Element = document.getElementById("quote3");
+let autor3Element = document.getElementById("autor3");
+
 let coIle = 10;
 let dzisiaj = new Date();
 let start = dzisiaj.getSeconds();
-let i = Math.floor( Math.random() * ( tablica.length - 3));
-let quote1 = tablica[i][0];
-let autor1 = tablica[i][1];
-let quote2 = tablica[i+1][0];
-let autor2 = tablica[i+1][1];
-let quote3 = tablica[i+2][0];
-let autor3 = tablica[i+2][1];
+// let start = new Date().;
 
-function odliczanie()
-	{
-		dzisiaj = new Date();
-		
-		let sekunda = dzisiaj.getSeconds();
+let i = Math.floor(Math.random() * (tablica.length -3)) + 2;
+// console.log(i);
+
+quote1Element.innerHTML = tablica[i][0];
+autor1Element.innerHTML = tablica[i][1];
+// console.log(quote1Element.innerHTML);
+
+quote2Element.innerHTML = tablica[i-1][0];
+autor2Element.innerHTML = tablica[i-1][1];
+// console.log(quote2Element.innerHTML);
+
+quote3Element.innerHTML = tablica[i-2][0];
+autor3Element.innerHTML = tablica[i-2][1];
+// console.log(quote3Element.innerHTML);
+
+function odliczanie() {
+
+
+		let sekunda = new Date().getSeconds();
+		// let sekunda = new Date();
+		// console.log(sekunda);
+		// console.log(start);
+		// console.log(sekunda-start+100);
+		// console.log((sekunda-start+100) % coIle);
 		 
-		if (((start-sekunda)%coIle)==0) {
-			quote3 = quote2;
-			autor3 = autor2;
-			quote2 = quote1;
-			autor2 = autor1;
-			quote1 = tablica[i][0];
-			autor1 = tablica[i][1];
-   			i++
-			if (i==tablica.length) i=0;
- 		}
-		
-		quote1Element.innerHTML = quote1;
-		autor1Element.innerHTML = autor1;
-		quote2Element.innerHTML = quote2;
-		autor2Element.innerHTML = autor2;
-		quote3Element.innerHTML = quote3;
-		autor3Element.innerHTML = autor3;
+		if (((sekunda-start+60) % coIle) == 0 ) {
+			// console.log("1 warunek");
+			quote1Element.classList.remove("pokaz");
+			autor1Element.classList.remove("pokaz");
+			// quote2Element.classList.remove("pokaz");
+			// autor2Element.classList.remove("pokaz");
+			// quote3Element.classList.remove("pokaz");
+			// autor3Element.classList.remove("pokaz");
+			quote1Element.classList.add("ukryj");
+			autor1Element.classList.add("ukryj");
+			// quote2Element.classList.add("ukryj");
+			// autor2Element.classList.add("ukryj");
+			// quote3Element.classList.add("ukryj");
+			// autor3Element.classList.add("ukryj");
+			setTimeout(function(){
+			// console.log("2 warunek");
+			quote1Element.classList.remove("ukryj");
+			autor1Element.classList.remove("ukryj");
+			// quote2Element.classList.remove("ukryj");
+			// autor2Element.classList.remove("ukryj");
+			// quote3Element.classList.remove("ukryj");
+			// autor3Element.classList.remove("ukryj");
+			i++;
+			if (i == tablica.length) i = 0;
+			quote3Element.innerHTML = quote2Element.textContent;
+			autor3Element.innerHTML = autor2Element.textContent;
+			quote2Element.innerHTML = quote1Element.textContent;
+			autor2Element.innerHTML = autor1Element.textContent;
+			quote1Element.innerHTML = tablica[i][0];
+			autor1Element.innerHTML = tablica[i][1];
+			quote1Element.classList.add("pokaz");
+			autor1Element.classList.add("pokaz");
+			// quote2Element.classList.add("pokaz");
+			// autor2Element.classList.add("pokaz");
+			// quote3Element.classList.add("pokaz");
+			// autor3Element.classList.add("pokaz");
+			},3000);
+		}
+
+
+
+		// quote1Element.innerHTML = quote1;
+		// autor1Element.innerHTML = autor1;
+		// quote2Element.innerHTML = quote2;
+		// autor2Element.innerHTML = autor2;
+		// quote3Element.innerHTML = quote3;
+		// autor3Element.innerHTML = autor3;
 
 		setTimeout("odliczanie()",1000);
 		
