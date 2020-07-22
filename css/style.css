@@ -56,7 +56,7 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 24px;
-  background-image: url("/img/Tlo.png");
+  background-image: url("../img/Tlo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -160,7 +160,7 @@ section {
 }
 
 .statement {
-  background-image: url("/img/Tlo.PNG");
+  background-image: url("../img/Tlo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -560,7 +560,7 @@ footer p {
 
 @media (max-width: 1600px) {
   section.diplomas {
-    max-height: 485px;
+    max-height: 538px;
   }
   .box h6 {
     font-size: 20px;
