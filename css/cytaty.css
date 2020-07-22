@@ -11,22 +11,22 @@
   }
 @-webkit-keyframes ukryj {
     0% {
-      opacity:100%;
-      opacity:100%;
+      opacity: 100%;
+      opacity: 100%;
     }
     100% {
-      opacity:0%;
-      opacity:0%;
+      opacity: 0%;
+      opacity: 0%;
     }
   }
 @keyframes ukryj {
   0% {
-      opacity:100%;
-      opacity:100%;
+      opacity: 100%;
+      opacity: 100%;
   }
   100% {
-      opacity:0%;
-      opacity:0%;
+      opacity: 0%;
+      opacity: 0%;
   }
 }
 
@@ -43,21 +43,21 @@
 }
 @-webkit-keyframes pokaz {
   0% {
-    opacity:0%;
-    opacity:0%;
+    opacity: 0%;
+    opacity: 0%;
   }
   100% {
-    opacity:100%;
-    opacity:100%;
+    opacity: 100%;
+    opacity: 100%;
   }
 }
 @keyframes pokaz {
   0% {
-      opacity:0%;
-      opacity:0%;
+      opacity: 0%;
+      opacity: 0%;
   }
   100% {
-      opacity:100%;
-      opacity:100%;
+      opacity: 100%;
+      opacity: 100%;
   }
 }
