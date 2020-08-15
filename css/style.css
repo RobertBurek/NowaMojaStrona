@@ -583,4 +583,42 @@ footer p {
     margin-top: 7px;
   }
 }
+
+@media (max-width: 720px) {
+  .quote blockquote {
+    padding: 0 0px;
+    margin: 40px 0 0 0;
+    color: #000000;
+  }
+  section.diplomas {
+    max-height: 538px;
+  }
+  .box h6 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .boxes.container {
+    max-width: 60%;
+  }
+  #mapid {
+    height: 100px;
+    width: 200px;
+  }
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .containerCarousel {
+    width: 100%;
+  }
+  #mojeProjekty {
+    height: 40px;
+  }
+  .centerNavSliderCarousel {
+    margin-top: 7px;
+  }
+  .boxes .container {
+    max-width: 80%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
