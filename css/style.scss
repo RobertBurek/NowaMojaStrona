@@ -550,6 +550,14 @@ footer p {
 
 // DO ZROBIENIA
 @media (max-width: 720px){
+  .features-wrapper {
+    display: block;
+  }
+  .feature {
+    max-width: 100%;
+    text-align: center;
+    margin: 120px 10% 0 10%;
+  }
   .quote blockquote {
     padding: 0 0px;
     margin: 40px 0 0 0;
