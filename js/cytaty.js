@@ -21,6 +21,7 @@ let coIle = 10;
 let dzisiaj = new Date();
 let start = dzisiaj.getSeconds();
 let i = Math.floor(Math.random() * (tablica.length - 3)) + 2;
+let currentWidth = document.body.offsetWidth;
 
 quote1Element.innerHTML = tablica[i][0];
 autor1Element.innerHTML = tablica[i][1];
@@ -31,7 +32,12 @@ autor3Element.innerHTML = tablica[i-2][1];
 
 function odliczanie() {
 
-	console.log(document.getElementById("sliderCarousel").offsetWidth);
+	// console.log(document.getElementById("sliderCarousel").offsetWidth);
+	// console.log(document.body.offsetWidth);
+	if (document.body.offsetWidth != currentWidth) {
+		currentWidth = document.body.offsetWidth;
+		location.reload(true);
+	}
 
 	let sekunda = new Date().getSeconds();
 

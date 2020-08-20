@@ -584,6 +584,12 @@ footer p {
   }
 }
 
+@media (max-width: 920px) {
+  .containerCarousel {
+    width: 100%;
+  }
+}
+
 @media (max-width: 720px) {
   .section-title {
     display: block;
