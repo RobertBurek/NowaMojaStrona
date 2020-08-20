@@ -20,7 +20,7 @@ let autor3Element = document.getElementById("autor3");
 let coIle = 10;
 let dzisiaj = new Date();
 let start = dzisiaj.getSeconds();
-let i = Math.floor(Math.random() * (tablica.length -3)) + 2;
+let i = Math.floor(Math.random() * (tablica.length - 3)) + 2;
 
 quote1Element.innerHTML = tablica[i][0];
 autor1Element.innerHTML = tablica[i][1];
@@ -31,27 +31,29 @@ autor3Element.innerHTML = tablica[i-2][1];
 
 function odliczanie() {
 
-		let sekunda = new Date().getSeconds();
-		 
-		if (((sekunda-start+60) % coIle) == 0 ) {
-			quote1Element.classList.remove("pokaz");
-			autor1Element.classList.remove("pokaz");
-			quote1Element.classList.add("ukryj");
-			autor1Element.classList.add("ukryj");
-			setTimeout(function(){
-				quote1Element.classList.remove("ukryj");
-				autor1Element.classList.remove("ukryj");
-				i++;
-				if (i == tablica.length) i = 0;
-				quote3Element.innerHTML = quote2Element.textContent;
-				autor3Element.innerHTML = autor2Element.textContent;
-				quote2Element.innerHTML = quote1Element.textContent;
-				autor2Element.innerHTML = autor1Element.textContent;
-				quote1Element.innerHTML = tablica[i][0];
-				autor1Element.innerHTML = tablica[i][1];
-				quote1Element.classList.add("pokaz");
-				autor1Element.classList.add("pokaz");
-			},3000);
-		}
-		setTimeout("odliczanie()",1000);
+	console.log(document.getElementById("sliderCarousel").offsetWidth);
+
+	let sekunda = new Date().getSeconds();
+
+	if (((sekunda - start + 60) % coIle) == 0 ) {
+		quote1Element.classList.remove("pokaz");
+		autor1Element.classList.remove("pokaz");
+		quote1Element.classList.add("ukryj");
+		autor1Element.classList.add("ukryj");
+		setTimeout(function(){
+			quote1Element.classList.remove("ukryj");
+			autor1Element.classList.remove("ukryj");
+			i++;
+			if (i == tablica.length) i = 0;
+			quote3Element.innerHTML = quote2Element.textContent;
+			autor3Element.innerHTML = autor2Element.textContent;
+			quote2Element.innerHTML = quote1Element.textContent;
+			autor2Element.innerHTML = autor1Element.textContent;
+			quote1Element.innerHTML = tablica[i][0];
+			autor1Element.innerHTML = tablica[i][1];
+			quote1Element.classList.add("pokaz");
+			autor1Element.classList.add("pokaz");
+		},3000);
+	}
+	setTimeout("odliczanie()",1000);
 }

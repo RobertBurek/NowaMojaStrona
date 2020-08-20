@@ -585,6 +585,10 @@ footer p {
 }
 
 @media (max-width: 720px) {
+  .section-title {
+    display: block;
+    margin: 0 0 30px 0;
+  }
   .features-wrapper {
     display: block;
   }
@@ -602,19 +606,15 @@ footer p {
     padding-left: 10%;
     padding-right: 10%;
   }
-  section.diplomas {
-    max-height: 538px;
-  }
   .box h6 {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
-  }
-  .boxes.container {
-    max-width: 60%;
+    margin: 0;
+    padding-left: 15px;
   }
   #mapid {
-    height: 100px;
-    width: 200px;
+    height: 130px;
+    width: 230px;
   }
   .container {
     width: 100%;
@@ -623,14 +623,31 @@ footer p {
   .containerCarousel {
     width: 100%;
   }
-  #mojeProjekty {
-    height: 40px;
-  }
-  .centerNavSliderCarousel {
-    margin-top: 7px;
-  }
   .boxes .container {
-    max-width: 80%;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 420px) {
+  .boxes .container {
+    max-width: 100%;
+  }
+  .box h6 {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 15px;
+  }
+  #mapid {
+    height: 150px;
+    width: 190px;
+  }
+  .social-links {
+    width: 50%;
+    margin: 40px auto;
+  }
+  .social-links li {
+    margin: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
