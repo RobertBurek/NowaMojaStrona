@@ -41,6 +41,12 @@ section {
   padding: 0 20px;
 }
 
+.container img {
+  float: left;
+  margin: 0 30px 5px 0;
+  width: 25%;
+}
+
 .containerCarousel {
   max-width: 960px;
 }
