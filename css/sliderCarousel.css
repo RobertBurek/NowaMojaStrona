@@ -55,7 +55,7 @@
   }  
   #sliderCarousel {
       width: 1600px;
-      height: 480px;
+      height: 380px;
   }
 }
 @media (max-width: 1600px){
@@ -64,7 +64,7 @@
   }  
   #sliderCarousel {
       width: 1200px;
-      height: 320px;
+      height: 300px;
   }
 }
 
@@ -82,10 +82,10 @@
 @media (max-width: 720px){
 	#sliderMyWorks {
 	  width: 100%;
-	  height: 280px;
+	  height: 230px;
 	}  
 	#sliderCarousel {
 		width: 100%;
-		height: 280px;
+		height: 200px;
 	}
 }
