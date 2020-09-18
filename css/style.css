@@ -52,6 +52,7 @@ section {
 }
 
 .splash {
+  background-image: url("../img/Tlo.png");
   height: 100vh;
   position: relative;
   display: -webkit-box;
@@ -62,7 +63,6 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 24px;
-  background-image: url("../img/Tlo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -79,7 +79,7 @@ section {
   margin: 0;
   letter-spacing: 4px;
   font-weight: 900;
-  font-size: 57px;
+  font-size: 75px;
   padding: 0 24px;
   color: white;
 }
@@ -90,7 +90,7 @@ section {
   margin: 24px 0 60px 0;
   font-weight: normal;
   color: #f7f1e3;
-  font-size: 32px;
+  font-size: 45px;
   font-weight: 700;
   font-variant: small-caps;
 }
@@ -627,6 +627,12 @@ footer p {
 }
 
 @media (max-width: 720px) {
+  .main-title {
+    font-size: 57px;
+  }
+  .main-subtitle {
+    font-size: 32px;
+  }
   .section-title {
     display: block;
     margin: 0 0 30px 0;

@@ -3,7 +3,7 @@
 }
 
 .centerNavSliderCarousel a {
-	font-size: 25px;
+	font-size: 35px;
 }
 
 #sliderMyWorks {
@@ -29,6 +29,7 @@
 	display: block; 
 	margin-right: 10px; 
 	color: #FFC312;
+	cursor: pointer;
 }
 
 #slider-left-button:hover {
@@ -41,6 +42,7 @@
 	width: 30px; 
 	height: 30px; 
 	color: #FFC312;
+	cursor: pointer;
 }
 
 #slider-right-button:hover {
