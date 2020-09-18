@@ -50,6 +50,10 @@ section {
   text-align: center;
 }
 
+// .section-title strong {
+//   font-size: 2.5rem;
+// }
+
 .container {
   max-width: 980px;
   margin: 0 auto;
@@ -218,13 +222,14 @@ section {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  margin-bottom: 20px;
 }
 
 .statement p, strong {
   margin: 0;
   text-align: center;
   font-family: $font-text-lora;
-  font-size: 32px;
+  font-size: 2.5rem;
   font-weight: 700;
   color: $color-quote;
   letter-spacing: 2px;
@@ -558,6 +563,18 @@ footer p {
 
 // DO ZROBIENIA
 @media (max-width: 920px){
+  .main-title {
+    font-size: 50px;
+  }
+  .main-subtitle {
+    font-size: 32px;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .statement p, strong {
+    font-size: 2rem;
+  }
   .containerCarousel{
     width: 100%;
   }
@@ -593,15 +610,17 @@ footer p {
 }
 
 @media (max-width: 720px){
-  .main-title {
-    font-size: 57px;
-  }
-  .main-subtitle {
-    font-size: 32px;
-  }
+  // .main-title {
+  //   font-size: 50px;
+  // }
+  // .main-subtitle {
+  //   font-size: 32px;
+  // }
   .section-title {
-    display: block;
-    margin: 0 0 30px 0;
+    font-size: 1.6rem;
+  }
+  .statement p, strong {
+    font-size: 1.6rem;
   }
   .features-wrapper {
     display: block;
