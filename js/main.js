@@ -7,49 +7,13 @@ $(window).on( 'scroll', function () {
 });
 
 
-(function(){
-    // 'use strict';
-    
-    var navSelector = '.navigation';
-    var linksSelector = '.navigation a';
-    var scrollSpeed = 50;
-    
-    var timer, targetPosition;
+function scroll(event) {
+var href = $(this).attr('href');
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: $(href).offset().top
+    }, 1000);
+  location.hash = href;
+};
   
-    function scroll() {
-      var delta = targetPosition - document.documentElement.scrollTop;
-      if (delta > 0) {
-        document.documentElement.scrollTop += Math.min(delta, scrollSpeed);
-      }
-      else if (delta < 0) {
-        document.documentElement.scrollTop += Math.max(delta, -scrollSpeed);
-      }
-      else {
-        clearInterval(timer);
-      }
-      
-      if(window.innerHeight >= document.documentElement.scrollHeight - document.documentElement.scrollTop) {
-        clearInterval(timer);
-      }
-    };
-    
-    var onLinkClick = function(event){
-      event.preventDefault();
-      clearInterval(timer)
-      
-      var navHeight = document.querySelector(navSelector).offsetHeight;
-      var target = document.querySelector(this.getAttribute('href'));
-      if(target){
-        targetPosition = Math.max(0, target.offsetTop - navHeight);
-        scroll();
-        timer = setInterval(scroll, 1000/50);
-      }
-    };
-    
-    var links = document.querySelectorAll(linksSelector);
-    
-    for(var i=0; i<links.length; i++){
-      links[i].addEventListener('click', onLinkClick);
-    }
-    
-  })();
+$('a[href*="#"]').click(scroll);
