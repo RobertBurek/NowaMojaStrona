@@ -108,6 +108,8 @@ section {
           box-shadow: 0 4px gray;
   letter-spacing: 1px;
   border-radius: 8px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .btn:hover {
@@ -263,6 +265,35 @@ figure {
 
 .diplomas-item:hover:before, .diplomas-item:hover figcaption {
   display: block;
+}
+
+.navigation {
+  background-color: white;
+  padding: 12px 0;
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation ul li {
+  display: inline-block;
+  margin: 6px;
+}
+
+.navigation ul li a {
+  font-size: 20px;
+  color: black;
+}
+
+.navigation ul li a:hover {
+  color: #FFC312;
 }
 
 .i-animation {
@@ -524,6 +555,8 @@ footer p {
   border-radius: 50%;
   margin: 0 4%;
   font-size: 25px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .social-links li:hover {
@@ -534,6 +567,8 @@ footer p {
   display: block;
   width: 100%;
   height: 100%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .social-links li a:hover {
