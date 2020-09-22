@@ -142,6 +142,7 @@ h2.section-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 60px;
 }
 
 .feature {
@@ -154,7 +155,7 @@ h2.section-title {
 }
 
 #features {
-  height: 50;
+  height: 50px;
 }
 
 .feature a > i {
@@ -291,6 +292,7 @@ figure {
   position: fixed;
   width: 100%;
   z-index: 9999;
+  border-bottom: 1px solid black;
 }
 
 .navigation ul {
@@ -513,6 +515,10 @@ section {
           transform: translateX(-50%) translateY(-50%) scale(2, 2);
 }
 
+#wsieci {
+  height: 50px;
+}
+
 #mapid {
   height: 250px;
   width: 400px;
@@ -558,9 +564,13 @@ footer p {
   text-align: center;
 }
 
+#contact {
+  height: 50px;
+}
+
 .social-links {
   list-style-type: none;
-  padding: 0;
+  padding: 40px 0 0 0;
 }
 
 .social-links li {

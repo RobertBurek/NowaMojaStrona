@@ -13,6 +13,7 @@ $color-main-subtitle: #1B1464;
 $color-splash: #f7f1e3;
 $color-quote: lighten(yellow, 45%);
 $transition: all 1s;
+$heightDiv: 50px;
 
 * {
   box-sizing: border-box;
@@ -193,6 +194,7 @@ h2.section-title {
 
 .features-wrapper {
   display: flex;
+  padding-top: 60px;
 }
 
 .feature {
@@ -203,7 +205,7 @@ h2.section-title {
 }
 
 #features {
-  height: 50;
+  height: $heightDiv;
 }
 
 .feature a > i {
@@ -271,7 +273,7 @@ h2.section-title {
 }
 
 #quotes {
-  height: 50px;
+  height: $heightDiv;
 }
 
 section.diplomas {
@@ -326,7 +328,7 @@ figure {
 }
 
 #mojeDyplomy {
-  height: 50px;
+  height: $heightDiv;
 }
 
 
@@ -334,13 +336,12 @@ figure {
 .navigation {
   // background-color: #000000;
   background-color: white;
-
   padding: 12px 0;
   text-align: right;
   position: fixed;
   width: 100%; 
   z-index: 9999;
-
+  border-bottom: 1px solid black;
 }
 
 .navigation ul {
@@ -419,7 +420,7 @@ figure {
 
 //MOJE PROJEKTY
 #mojeProjekty {
-  height: 50px;
+  height: $heightDiv;
 }
 #mojeProjekty p {
   margin-bottom: 60px;
@@ -496,6 +497,10 @@ section {
     transform: translateX(-50%) translateY(-50%) scale(2,2);
 }
 
+#wsieci {
+  height: $heightDiv;
+}
+
 
 //MAP
 #mapid { 
@@ -538,9 +543,13 @@ footer p {
 .contact {
   text-align: center;
 }
+#contact{
+  height: $heightDiv;
+}
 .social-links {
   list-style-type: none;
-  padding: 0;
+  padding: 40px 0 0 0;
+  // padding-top: 40px;
 }
 .social-links li {
   display: inline-block;
