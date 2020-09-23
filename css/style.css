@@ -50,6 +50,7 @@ h2.section-title {
   float: left;
   margin: 0 30px 5px 0;
   width: 25%;
+  padding-top: 27px;
 }
 
 .containerCarousel {
@@ -285,6 +286,12 @@ figure {
   height: 50px;
 }
 
+.containerNav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .navigation {
   background-color: white;
   padding: 12px 0;
@@ -309,6 +316,9 @@ figure {
 .navigation ul li a {
   font-size: 20px;
   color: black;
+  margin: 0 10px 0 10px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .navigation ul li a:hover {

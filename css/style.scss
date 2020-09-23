@@ -71,6 +71,7 @@ h2.section-title {
   float: left;
   margin: 0 30px 5px 0;
   width: 25%;
+  padding-top: 27px;
 }
 
 .containerCarousel{
@@ -183,10 +184,6 @@ h2.section-title {
 //     background-color: #efc73c;
 // }
 //-------------------------------
-
-.about{
-  //background-color: $color-bacground;
-}
 
 .section-intro {
   margin: 36px 0 0 0;
@@ -333,6 +330,11 @@ figure {
 
 
 //NAWIGACJA
+.containerNav{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 .navigation {
   // background-color: #000000;
   background-color: white;
@@ -359,7 +361,8 @@ figure {
 .navigation ul li a {
   font-size: 20px;
   color: black;
-  // transition: $transition;
+  margin: 0 10px 0 10px;
+  transition: $transition;
 }
 
 .navigation ul li a:hover{
