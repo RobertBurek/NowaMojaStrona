@@ -331,7 +331,7 @@ figure {
 
 //NAWIGACJA
 .containerNav{
-  max-width: 1200px;
+  // max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -359,7 +359,7 @@ figure {
 }
 
 .navigation ul li a {
-  font-size: 20px;
+  font-size: 25px;
   color: black;
   margin: 0 10px 0 10px;
   transition: $transition;
@@ -598,7 +598,7 @@ footer p {
     max-width: 1600px;
   }
   #mojeProjekty {
-    height: 70px;
+    height: 65px;
   }
   .centerNavSliderCarousel {
     margin-top: 10px;
