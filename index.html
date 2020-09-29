@@ -56,18 +56,21 @@ $(document).ready(function(){
 </head>
 <body data-spy="scroll" data-offset="10" onload="odliczanie()">
   <div id="start"></div>
+
   <nav class="navigation">
     <div class="containerNav"> 
-      <ul>
-        <li><a href="#start">Start</a></li>
-        <li><a href="#about">O mnie</a></li>
-        <li><a href="#features">Zajrzyj również</a></li>
-        <li><a href="#quotes">Cytaty i motta</a></li>
-        <li><a href="#mojeProjekty">Wykonane projekty</a></li>
-        <li><a href="#mojeDyplomy">Zdobyte dyplomy</a></li>
-        <li><a href="#wsieci">W sieci</a></li>
-        <li><a href="#contact">Kontakt</a></li>
+      <ul class="show">
+        <li><a href="#start" class="btnNav">Start</a></li>
+        <li><a href="#about" class="btnNav">O mnie</a></li>
+        <li><a href="#features" class="btnNav">Zajrzyj również</a></li>
+        <li><a href="#quotes" class="btnNav">Cytaty i motta</a></li>
+        <li><a href="#myProjects" class="btnNav">Wykonane projekty</a></li>
+        <li><a href="#myDiplomas" class="btnNav">Zdobyte dyplomy</a></li>
+        <li><a href="#onTheWeb" class="btnNav">W sieci</a></li>
+        <li><a href="#contact" class="btnNav">Kontakt</a></li>
+        <!-- <li><img src="img/iconMenu.png" alt="Ikona nawigacji>"></li> -->
       </ul>
+      <a class="showMenu"><img src="img/iconMenu.png" alt="Ikona nawigacji>"></a>
     </div>
   </nav>
   <section class="splash" id="header">
@@ -77,7 +80,8 @@ $(document).ready(function(){
       <a class="btn btn-solid" href="#about">Więcej o mnie</a>
     </div>   
   </section>
-  <section class="about" id="about">
+  <div id="about"></div>
+  <section class="about">
     <div class="container">
       <h2 class="section-title">O mnie</h2>
       <img src="img/slider/JA.JPG" alt="Robert Burek Java Web Developer">
@@ -109,7 +113,7 @@ $(document).ready(function(){
       </h2>
       <div class="features-wrapper">
         <article class="feature">
-          <a href="#mojeProjekty"><i class="fas fa-laptop-code i-animation"></i></a>
+          <a href="#myProjects"><i class="fas fa-laptop-code i-animation"></i></a>
           <h3 class="feature-title">Wykonane projekty</h3>
           <p class="feature-description">
             Programuję w Javie, wykorzystując: <b>Springa</b>, <b>Hibernate</b> oraz <b>wzorce projektowe</b>.
@@ -126,7 +130,7 @@ $(document).ready(function(){
             </p>
         </article>
         <article class="feature">
-          <a href="#mojeDyplomy"><i class="fas fa-file-contract i-animation"></i></a>
+          <a href="#myDiplomas"><i class="fas fa-file-contract i-animation"></i></a>
           <h3 class="feature-title">Zdobyte dyplomy</h3>
           <p class="feature-description">
             Cały czas poszerzam wiedzę w temacie programowania. Liczba kursów i szkoleń, w których brałem udział, jest trudna do zliczenia. 
@@ -171,7 +175,7 @@ $(document).ready(function(){
   </section>
 
   <!-- Slider Carousel -->
-<div id="mojeProjekty"></div>
+<div id="myProjects"></div>
   <section class="statement">
     <div class="containerCarousel">
       <p class="section-title" style="margin-bottom: 60px;">Wykonane projekty</p>
@@ -198,7 +202,7 @@ $(document).ready(function(){
     </div>
   </section>
 
-<div id="mojeDyplomy"></div>
+<div id="myDiplomas"></div>
 <h2 class="section-title" >Zdobyte dyplomy</h2>
 
   <!--Carousel Wrapper-->
@@ -319,7 +323,7 @@ $(document).ready(function(){
 <br><br>
 
 <!-- JA w sieci -->
-<div id="wsieci"></div>
+<div id="onTheWeb"></div>
 <section class="contact">
   <div class="container">
     <h2 class="section-title">W sieci</h2>

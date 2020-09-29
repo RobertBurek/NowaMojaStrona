@@ -224,6 +224,10 @@ h2.section-title {
   padding: 0 24px;
 }
 
+#about {
+  height: $heightDiv;
+}
+
 .statement {
   // background-image: url('https://i.postimg.cc/cCFM2pjN/Tlo.png');
   background-image: url('../img/Tlo.png');
@@ -324,50 +328,70 @@ figure {
   display: block;
 }
 
-#mojeDyplomy {
+#myDiplomas {
   height: $heightDiv;
 }
 
 
 //NAWIGACJA
 .containerNav{
-  // max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 .navigation {
-  // background-color: #000000;
   background-color: white;
-  padding: 12px 0;
   text-align: right;
   position: fixed;
   width: 100%; 
   z-index: 9999;
   border-bottom: 1px solid black;
 }
-
+.btnNav {
+  display: block;
+  float:left;
+  position:relative;
+  padding: 4px 20px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.btnNav:hover {
+  background-color: #ffc312;
+  color: white;
+  transition: $transition;
+}
+.btnNav:active {top: 3px;}
+.hide {display: none;}
+.show {display: block;}
+.showMenu {cursor: pointer;}
+.containerNav img {
+  text-align: left;
+  height: 44px;
+  width: 44px;
+  z-index: 19999;
+  border-radius: 8px;
+  border: 2px solid #ffc312;
+  position: absolute;
+  top: 4px;
+  right: 30px;
+}
+.containerNav img:hover {
+  background-color: #ffedc8;
+  transition: $transition;
+}
 .navigation ul {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-
 .navigation ul li {
   display: inline-block;
   margin: 6px;
-
 }
-
 .navigation ul li a {
   font-size: 25px;
   color: black;
-  margin: 0 10px 0 10px;
-  transition: $transition;
-}
-
-.navigation ul li a:hover{
-  // font-weight: 700;
-  color:#FFC312;
 }
 
 
@@ -422,10 +446,10 @@ figure {
 
 
 //MOJE PROJEKTY
-#mojeProjekty {
+#myProjects {
   height: $heightDiv;
 }
-#mojeProjekty p {
+#myProjects p {
   margin-bottom: 60px;
 }
 
@@ -500,7 +524,7 @@ section {
     transform: translateX(-50%) translateY(-50%) scale(2,2);
 }
 
-#wsieci {
+#onTheWeb {
   height: $heightDiv;
 }
 
@@ -597,7 +621,7 @@ footer p {
   .containerCarousel{
     max-width: 1600px;
   }
-  #mojeProjekty {
+  #myProjects {
     height: 65px;
   }
   .centerNavSliderCarousel {
@@ -606,6 +630,14 @@ footer p {
 }
 
 @media (max-width: 1600px){
+  .btnNav {
+    padding: 5px 6px;
+  }
+  .containerNav img {
+    top: 3px;
+    height: 40px;
+    width: 40px;
+  }
   section.diplomas{
     max-height: 538px;
   }
@@ -623,35 +655,109 @@ footer p {
   .containerCarousel{
     max-width: 1200px;
   }
-  #mojeProjekty {
-    height: 40px;
+  #myProjects, #quotes, #contact {
+    height: 46px;
   }
   .centerNavSliderCarousel {
     margin-top: 7px;
   }
+  .navigation ul li a {
+    font-size: 20px;
+  }
+  #myDiplomas, #about {
+    height: 60px;
+  }
+
 }
 
 // DO ZROBIENIA
-@media (max-width: 920px){
-  section {
-    padding: 30px 0;
+@media only screen and (max-width: 960px){
+
+  .containerNav {
+    height: 320px;
+    width: 250px;
+    position: absolute;
+    right: 20px;
+    top: 44px;
+    // border: 2px solid #ffc312;
+    // display: none;
   }
-  .main-title {
-    font-size: 50px;
+  .containerNav img {
+    top: -30px;
+    right: -8px;
+    height: 35px;
+    width: 35px;
   }
-  .main-subtitle {
-    font-size: 32px;
+
+
+
+  nav {
+    // display:none;
+    position:absolute;
+    margin: 0;
+    top: 0;
+    width: 100%;
+    float: none;
+    // background:#fff;
+    // padding:10px 0;
   }
+
+  .containerNav ul li {
+    float: left;
+    width: 100%;
+    border: 2px solid #ffc312;
+    margin: -1px;
+    background-color: rgba(255,255,255,0.8);
+    // border-radius: 8px;
+  }
+
+  .containerNav ul li:first-child {
+    // background-color: blue;
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  .containerNav ul li:last-child {
+    // background-color: blue;
+    border-radius: 0px 0px 8px 8px;
+  }
+
+  .containerNav ul li:hover {
+    background-color: #ffc312;
+    color: white;
+    transition: $transition;
+    // background-color: rgba(255,255,255,0.8);
+    // margin: 2px 0px;
+  }
+
+  .containerNav ul {
+    // border: 2px solid #ffc312;
+  }
+
+  .btnNav {
+    width: 100%;
+    // float: left;
+    padding: 0px 0px;
+    margin: 4px 0px;
+    border-radius: 0;
+    }
+
+    // .btnNav:hover {
+    //   margin: 0px 0px;
+    // }
+      
+  .hide {display:block;}
+  .show {display:none;}
+
+
+  section {padding: 30px 0;}
+  .main-title {font-size: 50px;}
+  .main-subtitle {font-size: 32px;}
   .section-title {
     font-size: 2rem;
     margin: 0 0 30px 0;
   }
-  .statement p, strong {
-    font-size: 2rem;
-  }
-  .containerCarousel{
-    width: 100%;
-  }
+  .statement p, strong {font-size: 2rem;}
+  .containerCarousel{width: 100%;}
   .container {
     width: 100%;
     padding: 0 10%;
@@ -670,9 +776,7 @@ footer p {
     height: 200px; 
     width: 300px;
   }
-  .boxes .container {
-    max-width: 80%;
-  }
+  .boxes .container {max-width: 80%;}
   // #scroll-to-top {
   //   width: 35px;
   //   height: 35px;

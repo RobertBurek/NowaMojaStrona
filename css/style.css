@@ -178,6 +178,10 @@ h2.section-title {
   padding: 0 24px;
 }
 
+#about {
+  height: 50px;
+}
+
 .statement {
   background-image: url("../img/Tlo.png");
   background-repeat: no-repeat;
@@ -282,7 +286,7 @@ figure {
   display: block;
 }
 
-#mojeDyplomy {
+#myDiplomas {
   height: 50px;
 }
 
@@ -293,12 +297,63 @@ figure {
 
 .navigation {
   background-color: white;
-  padding: 12px 0;
   text-align: right;
   position: fixed;
   width: 100%;
   z-index: 9999;
   border-bottom: 1px solid black;
+}
+
+.btnNav {
+  display: block;
+  float: left;
+  position: relative;
+  padding: 4px 20px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btnNav:hover {
+  background-color: #ffc312;
+  color: white;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.btnNav:active {
+  top: 3px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.showMenu {
+  cursor: pointer;
+}
+
+.containerNav img {
+  text-align: left;
+  height: 44px;
+  width: 44px;
+  z-index: 19999;
+  border-radius: 8px;
+  border: 2px solid #ffc312;
+  position: absolute;
+  top: 4px;
+  right: 30px;
+}
+
+.containerNav img:hover {
+  background-color: #ffedc8;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .navigation ul {
@@ -315,13 +370,6 @@ figure {
 .navigation ul li a {
   font-size: 25px;
   color: black;
-  margin: 0 10px 0 10px;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.navigation ul li a:hover {
-  color: #FFC312;
 }
 
 .i-animation {
@@ -388,11 +436,11 @@ figure {
   opacity: 0.8;
 }
 
-#mojeProjekty {
+#myProjects {
   height: 50px;
 }
 
-#mojeProjekty p {
+#myProjects p {
   margin-bottom: 60px;
 }
 
@@ -524,7 +572,7 @@ section {
           transform: translateX(-50%) translateY(-50%) scale(2, 2);
 }
 
-#wsieci {
+#onTheWeb {
   height: 50px;
 }
 
@@ -629,7 +677,7 @@ footer p {
   .containerCarousel {
     max-width: 1600px;
   }
-  #mojeProjekty {
+  #myProjects {
     height: 65px;
   }
   .centerNavSliderCarousel {
@@ -638,6 +686,14 @@ footer p {
 }
 
 @media (max-width: 1600px) {
+  .btnNav {
+    padding: 5px 6px;
+  }
+  .containerNav img {
+    top: 3px;
+    height: 40px;
+    width: 40px;
+  }
   section.diplomas {
     max-height: 538px;
   }
@@ -655,15 +711,72 @@ footer p {
   .containerCarousel {
     max-width: 1200px;
   }
-  #mojeProjekty {
-    height: 40px;
+  #myProjects, #quotes, #contact {
+    height: 46px;
   }
   .centerNavSliderCarousel {
     margin-top: 7px;
   }
+  .navigation ul li a {
+    font-size: 20px;
+  }
+  #myDiplomas, #about {
+    height: 60px;
+  }
 }
 
-@media (max-width: 920px) {
+@media only screen and (max-width: 960px) {
+  .containerNav {
+    height: 320px;
+    width: 250px;
+    position: absolute;
+    right: 20px;
+    top: 44px;
+  }
+  .containerNav img {
+    top: -30px;
+    right: -8px;
+    height: 35px;
+    width: 35px;
+  }
+  nav {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    width: 100%;
+    float: none;
+  }
+  .containerNav ul li {
+    float: left;
+    width: 100%;
+    border: 2px solid #ffc312;
+    margin: -1px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .containerNav ul li:first-child {
+    border-radius: 8px 8px 0px 0px;
+  }
+  .containerNav ul li:last-child {
+    border-radius: 0px 0px 8px 8px;
+  }
+  .containerNav ul li:hover {
+    background-color: #ffc312;
+    color: white;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .btnNav {
+    width: 100%;
+    padding: 0px 0px;
+    margin: 4px 0px;
+    border-radius: 0;
+  }
+  .hide {
+    display: block;
+  }
+  .show {
+    display: none;
+  }
   section {
     padding: 30px 0;
   }
