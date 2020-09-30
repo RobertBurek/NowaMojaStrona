@@ -17,3 +17,10 @@ var href = $(this).attr('href');
 };
   
 $('a[href*="#"]').click(scroll);
+
+
+$(document).ready(function(){
+  $('.showMenu').click(function(){
+    $('.containerNav ul').toggleClass('show').toggleClass('hide');
+  });
+});
