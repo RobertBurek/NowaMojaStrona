@@ -727,7 +727,6 @@ footer p {
 
 @media only screen and (max-width: 960px) {
   .containerNav {
-    height: 320px;
     width: 250px;
     position: absolute;
     right: 20px;
@@ -768,8 +767,13 @@ footer p {
   .btnNav {
     width: 100%;
     padding: 0px 0px;
-    margin: 4px 0px;
+    margin: 0px 0px;
     border-radius: 0;
+  }
+  a.btnNav {
+    display: block;
+    height: 27px;
+    padding-top: 2px;
   }
   section {
     padding: 30px 0;

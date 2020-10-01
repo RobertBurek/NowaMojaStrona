@@ -6,6 +6,9 @@ $(window).on( 'scroll', function () {
     }
 });
 
+function hideMenu(){
+    $('.containerNav ul').toggleClass('show').toggleClass('hide');
+}
 
 function scroll(event) {
 var href = $(this).attr('href');
@@ -13,6 +16,7 @@ var href = $(this).attr('href');
     $('html, body').animate({
       scrollTop: $(href).offset().top
     }, 1000);
+    if ($(this).attr("class") =='btnNav') hideMenu();
   location.hash = href;
 };
   
@@ -21,6 +25,6 @@ $('a[href*="#"]').click(scroll);
 
 $(document).ready(function(){
   $('.showMenu').click(function(){
-    $('.containerNav ul').toggleClass('show').toggleClass('hide');
+    hideMenu();
   });
 });
