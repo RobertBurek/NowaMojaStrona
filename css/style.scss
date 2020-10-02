@@ -13,7 +13,8 @@ $color-main-subtitle: #1B1464;
 $color-splash: #f7f1e3;
 $color-quote: lighten(yellow, 45%);
 $transition: all 1s;
-$heightDiv: 50px;
+$heightDiv: 0px;
+$background-color-menu: rgba(255,255,255,0.8);
 
 * {
   box-sizing: border-box;
@@ -187,6 +188,7 @@ h2.section-title {
 
 .section-intro {
   margin: 36px 0 0 0;
+  text-align: justify;
 }
 
 .features-wrapper {
@@ -339,7 +341,8 @@ figure {
   padding: 0 20px;
 }
 .navigation {
-  background-color: white;
+  // background-color: white;
+  background-color: $background-color-menu;
   text-align: right;
   position: fixed;
   width: 100%; 
@@ -621,9 +624,9 @@ footer p {
   .containerCarousel{
     max-width: 1600px;
   }
-  #myProjects {
-    height: 65px;
-  }
+  // #myProjects {
+  //   height: 65px;
+  // }
   .centerNavSliderCarousel {
     margin-top: 10px;
   }
@@ -655,18 +658,18 @@ footer p {
   .containerCarousel{
     max-width: 1200px;
   }
-  #myProjects, #quotes, #contact {
-    height: 46px;
-  }
+  // #myProjects, #quotes, #contact {
+  //   height: 46px;
+  // }
   .centerNavSliderCarousel {
     margin-top: 7px;
   }
   .navigation ul li a {
     font-size: 20px;
   }
-  #myDiplomas, #about {
-    height: 60px;
-  }
+  // #myDiplomas, #about {
+  //   height: 60px;
+  // }
 
 }
 
@@ -703,7 +706,7 @@ footer p {
     width: 100%;
     border: 2px solid #ffc312;
     margin: -1px;
-    background-color: rgba(255,255,255,0.8);
+    background-color: $background-color-menu;
     // border-radius: 8px;
   }
 
@@ -749,6 +752,18 @@ footer p {
       
   // .hide {display:block;}
   // .show {display:none;}
+
+  .features-wrapper {
+    padding: 0px;
+    display: block;
+  }
+
+  .feature {
+    max-width: 100%;
+    text-align: center;
+    margin: 95px 10% 25px 10%;
+  }
+
 
 
   section {padding: 30px 0;}
@@ -804,14 +819,17 @@ footer p {
     display: block;
     margin-bottom: 10px;
   }
-  .features-wrapper {
-    display: block;
-  }
-  .feature {
-    max-width: 100%;
-    text-align: center;
-    margin: 120px 10% 0 10%;
-  }
+  .container img {
+    width: 37%;
+}
+  // .features-wrapper {
+  //   display: block;
+  // }
+  // .feature {
+  //   max-width: 100%;
+  //   text-align: center;
+  //   margin: 120px 10% 0 10%;
+  // }
   .quote blockquote {
     padding: 0 0px;
     margin: 40px 0 0 0;

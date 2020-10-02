@@ -137,6 +137,7 @@ h2.section-title {
 
 .section-intro {
   margin: 36px 0 0 0;
+  text-align: justify;
 }
 
 .features-wrapper {
@@ -156,7 +157,7 @@ h2.section-title {
 }
 
 #features {
-  height: 50px;
+  height: 0px;
 }
 
 .feature a > i {
@@ -179,7 +180,7 @@ h2.section-title {
 }
 
 #about {
-  height: 50px;
+  height: 0px;
 }
 
 .statement {
@@ -225,7 +226,7 @@ h2.section-title {
 }
 
 #quotes {
-  height: 50px;
+  height: 0px;
 }
 
 section.diplomas {
@@ -287,7 +288,7 @@ figure {
 }
 
 #myDiplomas {
-  height: 50px;
+  height: 0px;
 }
 
 .containerNav {
@@ -296,7 +297,7 @@ figure {
 }
 
 .navigation {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   text-align: right;
   position: fixed;
   width: 100%;
@@ -437,7 +438,7 @@ figure {
 }
 
 #myProjects {
-  height: 50px;
+  height: 0px;
 }
 
 #myProjects p {
@@ -573,7 +574,7 @@ section {
 }
 
 #onTheWeb {
-  height: 50px;
+  height: 0px;
 }
 
 #mapid {
@@ -622,7 +623,7 @@ footer p {
 }
 
 #contact {
-  height: 50px;
+  height: 0px;
 }
 
 .social-links {
@@ -677,9 +678,6 @@ footer p {
   .containerCarousel {
     max-width: 1600px;
   }
-  #myProjects {
-    height: 65px;
-  }
   .centerNavSliderCarousel {
     margin-top: 10px;
   }
@@ -711,17 +709,11 @@ footer p {
   .containerCarousel {
     max-width: 1200px;
   }
-  #myProjects, #quotes, #contact {
-    height: 46px;
-  }
   .centerNavSliderCarousel {
     margin-top: 7px;
   }
   .navigation ul li a {
     font-size: 20px;
-  }
-  #myDiplomas, #about {
-    height: 60px;
   }
 }
 
@@ -775,6 +767,15 @@ footer p {
     height: 27px;
     padding-top: 2px;
   }
+  .features-wrapper {
+    padding: 0px;
+    display: block;
+  }
+  .feature {
+    max-width: 100%;
+    text-align: center;
+    margin: 95px 10% 25px 10%;
+  }
   section {
     padding: 30px 0;
   }
@@ -826,13 +827,8 @@ footer p {
     display: block;
     margin-bottom: 10px;
   }
-  .features-wrapper {
-    display: block;
-  }
-  .feature {
-    max-width: 100%;
-    text-align: center;
-    margin: 120px 10% 0 10%;
+  .container img {
+    width: 37%;
   }
   .quote blockquote {
     padding: 0 0px;
