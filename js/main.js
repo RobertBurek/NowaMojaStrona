@@ -6,8 +6,19 @@ $(window).on( 'scroll', function () {
     }
 });
 
+
+let iconMenu = document.getElementById('iconMenu');
+let showIconMenu = true;
 function hideMenu(){
     $('.containerNav ul').toggleClass('show').toggleClass('hide');
+    if (showIconMenu) {
+      iconMenu.setAttribute("src", "img/iconMenuClose.png");
+      showIconMenu = false;
+    }
+    else {
+      iconMenu.setAttribute("src", "img/iconMenu.png");
+      showIconMenu = true;
+    };
 }
 
 function scroll(event) {
