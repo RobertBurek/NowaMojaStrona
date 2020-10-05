@@ -291,6 +291,10 @@ figure {
   height: 0px;
 }
 
+#onTheWeb {
+  height: 0px;
+}
+
 .containerNav {
   margin: 0 auto;
   padding: 0 20px;
@@ -481,11 +485,11 @@ section {
 }
 
 .pion {
-  width: 32.2222222%;
+  width: 25%;
 }
 
 .poziom {
-  width: 42.222222222%;
+  width: 37.5%;
 }
 
 /* 1 kolumna */
@@ -571,10 +575,6 @@ section {
   transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
   -webkit-transform: translateX(-50%) translateY(-50%) scale(2, 2);
           transform: translateX(-50%) translateY(-50%) scale(2, 2);
-}
-
-#onTheWeb {
-  height: 0px;
 }
 
 #mapid {
@@ -815,6 +815,9 @@ footer p {
   }
   .boxes .container {
     max-width: 80%;
+  }
+  section.diplomas {
+    max-height: 640px;
   }
 }
 

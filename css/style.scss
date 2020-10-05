@@ -334,6 +334,10 @@ figure {
   height: $heightDiv;
 }
 
+#onTheWeb {
+  height: $heightDiv;
+}
+
 
 //NAWIGACJA
 .containerNav{
@@ -487,10 +491,10 @@ section {
 //   width: 16.666666666%;
 // }
 .pion {
-  width: 32.2222222%;
+  width: 25%;
 }
 .poziom {
-  width: 42.222222222%;
+  width: 37.5%;
 }
 /* 1 kolumna */
 .dyplomPion.leftTop:hover {
@@ -533,9 +537,6 @@ section {
     transform: translateX(-50%) translateY(-50%) scale(2,2);
 }
 
-#onTheWeb {
-  height: $heightDiv;
-}
 
 
 //MAP
@@ -808,6 +809,10 @@ footer p {
   //   bottom: 30px;
   //   right: 30px;
   // }
+
+  section.diplomas {
+    max-height: 640px;
+  }
 }
 
 @media (max-width: 720px){
