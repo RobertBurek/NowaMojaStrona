@@ -133,6 +133,46 @@ imgk7w2Slide1.alt = ("dyplom");
 imgk7w2Slide1.src = dyplomyPion[6];
 document.querySelector("#k7w2Slide1").appendChild(imgk7w2Slide1);
 
+// Slide 1 A
+let imgk5w1Slide1a = document.createElement('img');
+imgk5w1Slide1a.alt = ("dyplom");
+imgk5w1Slide1a.src = dyplomyPoziom[21];
+document.querySelector("#k5w1Slide1a").appendChild(imgk5w1Slide1a);
+
+let imgk5w2Slide1a = document.createElement('img');
+imgk5w2Slide1a.alt = ("dyplom");
+imgk5w2Slide1a.src = dyplomyPoziom[17];
+document.querySelector("#k5w2Slide1a").appendChild(imgk5w2Slide1a);
+
+let imgk5w3Slide1a = document.createElement('img');
+imgk5w3Slide1a.alt = ("dyplom");
+imgk5w3Slide1a.src = dyplomyPoziom[13];
+document.querySelector("#k5w3Slide1a").appendChild(imgk5w3Slide1a);
+
+let imgk6w1Slide1a = document.createElement('img');
+imgk6w1Slide1a.alt = ("dyplom");
+imgk6w1Slide1a.src = dyplomyPoziom[20];
+document.querySelector("#k6w1Slide1a").appendChild(imgk6w1Slide1a);
+
+let imgk6w2Slide1a = document.createElement('img');
+imgk6w2Slide1a.alt = ("dyplom");
+imgk6w2Slide1a.src = dyplomyPoziom[16];
+document.querySelector("#k6w2Slide1a").appendChild(imgk6w2Slide1a);
+
+let imgk6w3Slide1a = document.createElement('img');
+imgk6w3Slide1a.alt = ("dyplom");
+imgk6w3Slide1a.src = dyplomyPoziom[12];
+document.querySelector("#k6w3Slide1a").appendChild(imgk6w3Slide1a);
+
+let imgk7w1Slide1a = document.createElement('img');
+imgk7w1Slide1a.alt = ("dyplom");
+imgk7w1Slide1a.src = dyplomyPion[9];
+document.querySelector("#k7w1Slide1a").appendChild(imgk7w1Slide1a);
+
+let imgk7w2Slide1a = document.createElement('img');
+imgk7w2Slide1a.alt = ("dyplom");
+imgk7w2Slide1a.src = dyplomyPion[6];
+document.querySelector("#k7w2Slide1a").appendChild(imgk7w2Slide1a);
 
 // Slide 2
 let imgk1w1Slide2 = document.createElement('img');
@@ -224,3 +264,44 @@ let imgk7w2Slide2 = document.createElement('img');
 imgk7w2Slide2.alt = ("dyplom");
 imgk7w2Slide2.src = dyplomyPion[0];
 document.querySelector("#k7w2Slide2").appendChild(imgk7w2Slide2);
+
+// Slide 2 A
+let imgk5w1Slide2a = document.createElement('img');
+imgk5w1Slide2a.alt = ("dyplom");
+imgk5w1Slide2a.src = dyplomyPoziom[9];
+document.querySelector("#k5w1Slide2a").appendChild(imgk5w1Slide2a);
+
+let imgk5w2Slide2a = document.createElement('img');
+imgk5w2Slide2a.alt = ("dyplom");
+imgk5w2Slide2a.src = dyplomyPoziom[5];
+document.querySelector("#k5w2Slide2a").appendChild(imgk5w2Slide2a);
+
+let imgk5w3Slide2a = document.createElement('img');
+imgk5w3Slide2a.alt = ("dyplom");
+imgk5w3Slide2a.src = dyplomyPoziom[1];
+document.querySelector("#k5w3Slide2a").appendChild(imgk5w3Slide2a);
+
+let imgk6w1Slide2a = document.createElement('img');
+imgk6w1Slide2a.alt = ("dyplom");
+imgk6w1Slide2a.src = dyplomyPoziom[8];
+document.querySelector("#k6w1Slide2a").appendChild(imgk6w1Slide2a);
+
+let imgk6w2Slide2a = document.createElement('img');
+imgk6w2Slide2a.alt = ("dyplom");
+imgk6w2Slide2a.src = dyplomyPoziom[4];
+document.querySelector("#k6w2Slide2a").appendChild(imgk6w2Slide2a);
+
+let imgk6w3Slide2a = document.createElement('img');
+imgk6w3Slide2a.alt = ("dyplom");
+imgk6w3Slide2a.src = dyplomyPoziom[0];
+document.querySelector("#k6w3Slide2a").appendChild(imgk6w3Slide2a);
+
+let imgk7w1Slide2a = document.createElement('img');
+imgk7w1Slide2a.alt = ("dyplom");
+imgk7w1Slide2a.src = dyplomyPion[3];
+document.querySelector("#k7w1Slide2a").appendChild(imgk7w1Slide2a);
+
+let imgk7w2Slide2a = document.createElement('img');
+imgk7w2Slide2a.alt = ("dyplom");
+imgk7w2Slide2a.src = dyplomyPion[0];
+document.querySelector("#k7w2Slide2a").appendChild(imgk7w2Slide2a);
