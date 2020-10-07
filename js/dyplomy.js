@@ -1,3 +1,5 @@
+let elementCarousel = document.querySelector('#multi-item-example');
+
 const dyplomyPion = [];
 dyplomyPion[11] = ['img/Dyplomy/ProgramistaJavaWEB_1str_altkom.jpg']
 dyplomyPion[10] = ['img/Dyplomy/OcenaKompetencjiZawodowychDC_altkom.jpg']
@@ -40,6 +42,98 @@ dyplomyPoziom[10] = ['img/Dyplomy/BeginnerJavaJavaFXMavenJenkins_udemy.jpg']
  dyplomyPoziom[2] = ['img/Dyplomy/KursJavaNarzędziaDevelopera_strefaKursow.jpg']
  dyplomyPoziom[1] = ['img/Dyplomy/FundamentyJezykaJava_strefaKursow.jpg']
  dyplomyPoziom[0] = ['img/Dyplomy/KursProgramowaniaWJava_strefaKursow.jpg']
+
+
+
+ let carouselMax =  
+//  '<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">'+
+'      <ol class="carousel-indicators hide">'+
+'        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>'+
+'        <li data-target="#multi-item-example" data-slide-to="1"></li>'+
+'      </ol>'+
+'      <div class="carousel-inner" role="listbox">'+
+'        <div class="carousel-item active">'+
+'          <section class="diplomas">'+
+'            <div class="flex-container">'+
+'              <div class="flex-item pion" id="k1w1S1">'+
+'                <div class="dyplomPion leftTop" id="k1w1Slide1"><img src=' + dyplomyPion[11] + ' alt="dyplom"></div>'+
+'                <div class="dyplomPion leftBottom" id="k1w2Slide1"><img src=' + dyplomyPion[11] + ' alt="dyplom"></div>'+
+'              </div>'+
+'              <div class="flex-item poziom" id="k2w1S1">'+
+'                <div class="dyplomPoziom Top" id="k2w1Slide1"><img src=' + dyplomyPoziom[23] + ' alt="dyplom"></div>'+
+'                <div class="dyplomPoziom Center" id="k2w2Slide1"><img src=' + dyplomyPoziom[19] + ' alt="dyplom"></div>'+
+'                <div class="dyplomPoziom Bottom" id="k2w3Slide1"><img src=' + dyplomyPoziom[15] + ' alt="dyplom"></div>'+
+'              </div>'+
+'              <div class="flex-item poziom" id="k3w1S1">'+
+'                <div class="dyplomPoziom Top" id="k3w1Slide1"><img src=' + dyplomyPoziom[11] + ' alt="dyplom"></div>'+
+'                <div class="dyplomPoziom Center" id="k3w2Slide1"><img src=' + dyplomyPoziom[11] + ' alt="dyplom"></div>'+
+'                <div class="dyplomPoziom Bottom" id="k3w3Slide1"><img src=' + dyplomyPoziom[11] + ' alt="dyplom"></div>'+
+'              </div>'+
+'              <div class="flex-item pion" id="k4w1S1">'+
+'                <div class="dyplomPion Top" id="k4w1Slide1"><img src=' + dyplomyPion[11] + ' alt="dyplom"></div>'+
+'                <div class="dyplomPion Bottom" id="k4w2Slide1"><img src=' + dyplomyPion[11] + ' alt="dyplom"></div>'+
+'              </div>'+
+'              <div class="flex-item poziom" id="k5w1S1">'+
+'                <div class="dyplomPoziom Top" id="k5w1Slide1"><img src=' + dyplomyPoziom[11] + ' alt="dyplom"></div>'+
+'                <div class="dyplomPoziom Center" id="k5w2Slide1"><img src=' + dyplomyPoziom[11] + ' alt="dyplom"></div>'+
+'                <div class="dyplomPoziom Bottom" id="k5w3Slide1"><img src=' + dyplomyPoziom[11] + ' alt="dyplom"></div>'+
+'              </div>'+
+'               <div class="flex-item poziom" id="k6w1S1">'+
+'                  <div class="dyplomPoziom Top" id="k6w1Slide1"><img src=' + dyplomyPoziom[11] + ' alt="dyplom"></div>'+
+'                  <div class="dyplomPoziom Center" id="k6w2Slide1"><img src=' + dyplomyPoziom[11] + ' alt="dyplom"></div>'+
+'                  <div class="dyplomPoziom Bottom" id="k6w3Slide1"><img src=' + dyplomyPoziom[11] + ' alt="dyplom"></div>'+
+'              </div>'+
+'              <div class="flex-item pion" id="k7w1S1">'+
+'                <div class="dyplomPion rightTop" id="k7w1Slide1"><img src=' + dyplomyPion[11] + ' alt="dyplom"></div>'+
+'                <div class="dyplomPion rightBottom" id="k7w2Slide1"><img src=' + dyplomyPion[11] + ' alt="dyplom"></div>'+
+'              </div>'+
+'            </div>'+
+'          </section>'+
+'        </div>'+
+'        <div class="carousel-item">'+
+'          <section class="diplomas">'+
+'            <div class="flex-container">'+
+'              <div class="flex-item pion" id="k1w1S2">'+
+'                <div class="dyplomPion leftTop" id="k1w1Slide2"></div>'+
+'                <div class="dyplomPion leftBottom" id="k1w2Slide2"></div>'+
+'              </div>'+
+'              <div class="flex-item poziom" id="k2w1S2">'+
+'                <div class="dyplomPoziom Top" id="k2w1Slide2"></div>'+
+'                <div class="dyplomPoziom Center" id="k2w2Slide2"></div>'+
+'                <div class="dyplomPoziom Bottom" id="k2w3Slide2"></div>'+
+'              </div>'+
+'              <div class="flex-item poziom"  id="k3w1S2">'+
+'                <div class="dyplomPoziom Top" id="k3w1Slide2"> </div>'+
+'                <div class="dyplomPoziom Center" id="k3w2Slide2"></div>'+
+'                <div class="dyplomPoziom Bottom" id="k3w3Slide2"></div>'+
+'              </div>'+
+'              <div class="flex-item pion"  id="k4w1S2">'+
+'                <div class="dyplomPion Top" id="k4w1Slide2"></div>'+
+'                <div class="dyplomPion Bottom" id="k4w2Slide2"></div>'+
+'              </div>'+
+'              <div class="flex-item poziom" id="k5w1S2">'+
+'                <div class="dyplomPoziom Top" id="k5w1Slide2"></div>'+
+'                <div class="dyplomPoziom Center" id="k5w2Slide2"></div>'+
+'                <div class="dyplomPoziom Bottom" id="k5w3Slide2"></div>'+
+'              </div>'+
+'              <div class="flex-item poziom"  id="k6w1S2">'+
+'                  <div class="dyplomPoziom Top" id="k6w1Slide2"></div>'+
+'                  <div class="dyplomPoziom Center" id="k6w2Slide2"></div>'+
+'                  <div class="dyplomPoziom Bottom" id="k6w3Slide2"></div>'+
+'              </div>'+
+'              <div class="flex-item pion"  id="k7w1S2">'+
+'                <div class="dyplomPion rightTop" id="k7w1Slide2"></div>'+
+'                <div class="dyplomPion rightBottom" id="k7w2Slide2"></div>'+
+'              </div>'+
+'            </div>'+
+'          </section>'+
+'        </div>'+
+'      </div>';
+
+document.addEventListener('DOMContentLoaded', function() {
+console.log(elementCarousel);
+elementCarousel.innerHTML = carouselMax;
+});
 
 
 // Slide 1
@@ -166,12 +260,12 @@ document.querySelector("#k6w3Slide1a").appendChild(imgk6w3Slide1a);
 
 let imgk7w1Slide1a = document.createElement('img');
 imgk7w1Slide1a.alt = ("dyplom");
-imgk7w1Slide1a.src = dyplomyPion[9];
+imgk7w1Slide1a.src = dyplomyPion[10];
 document.querySelector("#k7w1Slide1a").appendChild(imgk7w1Slide1a);
 
 let imgk7w2Slide1a = document.createElement('img');
 imgk7w2Slide1a.alt = ("dyplom");
-imgk7w2Slide1a.src = dyplomyPion[6];
+imgk7w2Slide1a.src = dyplomyPion[7];
 document.querySelector("#k7w2Slide1a").appendChild(imgk7w2Slide1a);
 
 // Slide 2
@@ -298,10 +392,10 @@ document.querySelector("#k6w3Slide2a").appendChild(imgk6w3Slide2a);
 
 let imgk7w1Slide2a = document.createElement('img');
 imgk7w1Slide2a.alt = ("dyplom");
-imgk7w1Slide2a.src = dyplomyPion[3];
+imgk7w1Slide2a.src = dyplomyPion[4];
 document.querySelector("#k7w1Slide2a").appendChild(imgk7w1Slide2a);
 
 let imgk7w2Slide2a = document.createElement('img');
 imgk7w2Slide2a.alt = ("dyplom");
-imgk7w2Slide2a.src = dyplomyPion[0];
+imgk7w2Slide2a.src = dyplomyPion[1];
 document.querySelector("#k7w2Slide2a").appendChild(imgk7w2Slide2a);

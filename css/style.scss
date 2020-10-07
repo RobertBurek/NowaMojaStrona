@@ -484,18 +484,18 @@ section {
   height: 33.3333333%;
   border: 1px solid #3c3838;
 }
-// .pion {
-//   width: 11.1111111%;
-// }
-// .poziom {
-//   width: 16.666666666%;
-// }
 .pion {
-  width: 25%;
+  width: 11.1111111%;
 }
 .poziom {
-  width: 37.5%;
+  width: 16.666666666%;
 }
+// .pion {
+//   width: 25%;
+// }
+// .poziom {
+//   width: 37.5%;
+// }
 /* 1 kolumna */
 .dyplomPion.leftTop:hover {
     transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
