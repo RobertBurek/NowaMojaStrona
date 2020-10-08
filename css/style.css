@@ -844,6 +844,12 @@ footer p {
 }
 
 @media (max-width: 420px) {
+  .pion {
+    width: 25%;
+  }
+  .poziom {
+    width: 37.5%;
+  }
   .boxes .container {
     max-width: 100%;
     padding-left: 4%;

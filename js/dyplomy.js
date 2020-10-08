@@ -2,10 +2,10 @@ let elementCarousel = document.querySelector('#multi-item-example');
 
 const dyplomyPion = [];
 dyplomyPion[11] = ['img/Dyplomy/ProgramistaJavaWEB_1str_altkom.jpg']
-dyplomyPion[10] = ['img/Dyplomy/OcenaKompetencjiZawodowychDC_altkom.jpg']
- dyplomyPion[9] = ['img/Dyplomy/RoleWZespoleProgramistycznym_altkom.jpg']
- dyplomyPion[8] = ['img/Dyplomy/ProgramistaJavaWEB_2str_altkom.jpg']
- dyplomyPion[7] = ['img/Dyplomy/Wzorce projektowe, narzędzia pracy grupowej_altkom.jpg']
+dyplomyPion[10] = ['img/Dyplomy/ProgramistaJavaWEB_2str_altkom.jpg']
+ dyplomyPion[9] = ['img/Dyplomy/OcenaKompetencjiZawodowychDC_altkom.jpg']
+ dyplomyPion[8] = ['img/Dyplomy/RoleWZespoleProgramistycznym_altkom.jpg']
+ dyplomyPion[7] = ['img/Dyplomy/WzorceProjektoweNarzędziaPracyGrupowej_altkom.jpg']
  dyplomyPion[6] = ['img/Dyplomy/AplikacjeWeboweWJezykuJava.jpg']
  dyplomyPion[5] = ['img/Dyplomy/BazyDanychRelacyjneINierelacyjneJęzykSQL_altkom.jpg']
  dyplomyPion[4] = ['img/Dyplomy/PodstawyProgramowania-BackEnd_altkom.jpg']
@@ -38,7 +38,7 @@ dyplomyPoziom[10] = ['img/Dyplomy/BeginnerJavaJavaFXMavenJenkins_udemy.jpg']
  dyplomyPoziom[6] = ['img/Dyplomy/JavaŚredniozaawansowana_strefaKursow.jpg']
  dyplomyPoziom[5] = ['img/Dyplomy/DobrePraktykiPracyWZespole_strefaKursow.jpg']
  dyplomyPoziom[4] = ['img/Dyplomy/JDBCandMySQL_udemy.jpg']
- dyplomyPoziom[3] = ['img/Dyplomy/JDBCinSimpleWay _udemy.jpg']
+ dyplomyPoziom[3] = ['img/Dyplomy/JDBCinSimpleWay_udemy.jpg']
  dyplomyPoziom[2] = ['img/Dyplomy/KursJavaNarzędziaDevelopera_strefaKursow.jpg']
  dyplomyPoziom[1] = ['img/Dyplomy/FundamentyJezykaJava_strefaKursow.jpg']
  dyplomyPoziom[0] = ['img/Dyplomy/KursProgramowaniaWJava_strefaKursow.jpg']
@@ -46,356 +46,91 @@ dyplomyPoziom[10] = ['img/Dyplomy/BeginnerJavaJavaFXMavenJenkins_udemy.jpg']
 
 
  let carouselMax =  
-//  '<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">'+
-'      <ol class="carousel-indicators hide">'+
-'        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>'+
-'        <li data-target="#multi-item-example" data-slide-to="1"></li>'+
-'      </ol>'+
-'      <div class="carousel-inner" role="listbox">'+
-'        <div class="carousel-item active">'+
-'          <section class="diplomas">'+
-'            <div class="flex-container">'+
-'              <div class="flex-item pion" id="k1w1S1">'+
-'                <div class="dyplomPion leftTop" id="k1w1Slide1"><img src=' + dyplomyPion[11] + ' alt="dyplom"></div>'+
-'                <div class="dyplomPion leftBottom" id="k1w2Slide1"><img src=' + dyplomyPion[11] + ' alt="dyplom"></div>'+
-'              </div>'+
-'              <div class="flex-item poziom" id="k2w1S1">'+
-'                <div class="dyplomPoziom Top" id="k2w1Slide1"><img src=' + dyplomyPoziom[23] + ' alt="dyplom"></div>'+
-'                <div class="dyplomPoziom Center" id="k2w2Slide1"><img src=' + dyplomyPoziom[19] + ' alt="dyplom"></div>'+
-'                <div class="dyplomPoziom Bottom" id="k2w3Slide1"><img src=' + dyplomyPoziom[15] + ' alt="dyplom"></div>'+
-'              </div>'+
-'              <div class="flex-item poziom" id="k3w1S1">'+
-'                <div class="dyplomPoziom Top" id="k3w1Slide1"><img src=' + dyplomyPoziom[11] + ' alt="dyplom"></div>'+
-'                <div class="dyplomPoziom Center" id="k3w2Slide1"><img src=' + dyplomyPoziom[11] + ' alt="dyplom"></div>'+
-'                <div class="dyplomPoziom Bottom" id="k3w3Slide1"><img src=' + dyplomyPoziom[11] + ' alt="dyplom"></div>'+
-'              </div>'+
-'              <div class="flex-item pion" id="k4w1S1">'+
-'                <div class="dyplomPion Top" id="k4w1Slide1"><img src=' + dyplomyPion[11] + ' alt="dyplom"></div>'+
-'                <div class="dyplomPion Bottom" id="k4w2Slide1"><img src=' + dyplomyPion[11] + ' alt="dyplom"></div>'+
-'              </div>'+
-'              <div class="flex-item poziom" id="k5w1S1">'+
-'                <div class="dyplomPoziom Top" id="k5w1Slide1"><img src=' + dyplomyPoziom[11] + ' alt="dyplom"></div>'+
-'                <div class="dyplomPoziom Center" id="k5w2Slide1"><img src=' + dyplomyPoziom[11] + ' alt="dyplom"></div>'+
-'                <div class="dyplomPoziom Bottom" id="k5w3Slide1"><img src=' + dyplomyPoziom[11] + ' alt="dyplom"></div>'+
-'              </div>'+
-'               <div class="flex-item poziom" id="k6w1S1">'+
-'                  <div class="dyplomPoziom Top" id="k6w1Slide1"><img src=' + dyplomyPoziom[11] + ' alt="dyplom"></div>'+
-'                  <div class="dyplomPoziom Center" id="k6w2Slide1"><img src=' + dyplomyPoziom[11] + ' alt="dyplom"></div>'+
-'                  <div class="dyplomPoziom Bottom" id="k6w3Slide1"><img src=' + dyplomyPoziom[11] + ' alt="dyplom"></div>'+
-'              </div>'+
-'              <div class="flex-item pion" id="k7w1S1">'+
-'                <div class="dyplomPion rightTop" id="k7w1Slide1"><img src=' + dyplomyPion[11] + ' alt="dyplom"></div>'+
-'                <div class="dyplomPion rightBottom" id="k7w2Slide1"><img src=' + dyplomyPion[11] + ' alt="dyplom"></div>'+
-'              </div>'+
-'            </div>'+
-'          </section>'+
-'        </div>'+
-'        <div class="carousel-item">'+
-'          <section class="diplomas">'+
-'            <div class="flex-container">'+
-'              <div class="flex-item pion" id="k1w1S2">'+
-'                <div class="dyplomPion leftTop" id="k1w1Slide2"></div>'+
-'                <div class="dyplomPion leftBottom" id="k1w2Slide2"></div>'+
-'              </div>'+
-'              <div class="flex-item poziom" id="k2w1S2">'+
-'                <div class="dyplomPoziom Top" id="k2w1Slide2"></div>'+
-'                <div class="dyplomPoziom Center" id="k2w2Slide2"></div>'+
-'                <div class="dyplomPoziom Bottom" id="k2w3Slide2"></div>'+
-'              </div>'+
-'              <div class="flex-item poziom"  id="k3w1S2">'+
-'                <div class="dyplomPoziom Top" id="k3w1Slide2"> </div>'+
-'                <div class="dyplomPoziom Center" id="k3w2Slide2"></div>'+
-'                <div class="dyplomPoziom Bottom" id="k3w3Slide2"></div>'+
-'              </div>'+
-'              <div class="flex-item pion"  id="k4w1S2">'+
-'                <div class="dyplomPion Top" id="k4w1Slide2"></div>'+
-'                <div class="dyplomPion Bottom" id="k4w2Slide2"></div>'+
-'              </div>'+
-'              <div class="flex-item poziom" id="k5w1S2">'+
-'                <div class="dyplomPoziom Top" id="k5w1Slide2"></div>'+
-'                <div class="dyplomPoziom Center" id="k5w2Slide2"></div>'+
-'                <div class="dyplomPoziom Bottom" id="k5w3Slide2"></div>'+
-'              </div>'+
-'              <div class="flex-item poziom"  id="k6w1S2">'+
-'                  <div class="dyplomPoziom Top" id="k6w1Slide2"></div>'+
-'                  <div class="dyplomPoziom Center" id="k6w2Slide2"></div>'+
-'                  <div class="dyplomPoziom Bottom" id="k6w3Slide2"></div>'+
-'              </div>'+
-'              <div class="flex-item pion"  id="k7w1S2">'+
-'                <div class="dyplomPion rightTop" id="k7w1Slide2"></div>'+
-'                <div class="dyplomPion rightBottom" id="k7w2Slide2"></div>'+
-'              </div>'+
-'            </div>'+
-'          </section>'+
-'        </div>'+
+'      <ol class="carousel-indicators hide">' +
+'        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>' +
+'        <li data-target="#multi-item-example" data-slide-to="1"></li>' +
+'      </ol>' +
+'      <div class="carousel-inner" role="listbox">' +
+'        <div class="carousel-item active">' +
+'          <section class="diplomas">' +
+'            <div class="flex-container">' +
+'              <div class="flex-item pion">' +
+'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[11] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[10] + ' alt="dyplom"></div>' +
+'              </div>' +
+'              <div class="flex-item poziom">' +
+'                <div class="dyplomPoziom Top"><img src=' + dyplomyPoziom[23] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPoziom Center"><img src=' + dyplomyPoziom[19] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPoziom Bottom"><img src=' + dyplomyPoziom[15] + ' alt="dyplom"></div>' +
+'              </div>' +
+'              <div class="flex-item poziom">' +
+'                <div class="dyplomPoziom Top"><img src=' + dyplomyPoziom[22] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPoziom Center"><img src=' + dyplomyPoziom[18] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPoziom Bottom"><img src=' + dyplomyPoziom[14] + ' alt="dyplom"></div>' +
+'              </div>' +
+'              <div class="flex-item pion">' +
+'                <div class="dyplomPion Top"><img src=' + dyplomyPion[8] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion Bottom"><img src=' + dyplomyPion[7] + ' alt="dyplom"></div>' +
+'              </div>' +
+'              <div class="flex-item poziom">' +
+'                <div class="dyplomPoziom Top"><img src=' + dyplomyPoziom[21] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPoziom Center"><img src=' + dyplomyPoziom[17] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPoziom Bottom"><img src=' + dyplomyPoziom[13] + ' alt="dyplom"></div>' +
+'              </div>' +
+'               <div class="flex-item poziom">' +
+'                  <div class="dyplomPoziom Top"><img src=' + dyplomyPoziom[20] + ' alt="dyplom"></div>' +
+'                  <div class="dyplomPoziom Center"><img src=' + dyplomyPoziom[16] + ' alt="dyplom"></div>' +
+'                  <div class="dyplomPoziom Bottom"><img src=' + dyplomyPoziom[12] + ' alt="dyplom"></div>' +
+'              </div>' +
+'              <div class="flex-item pion">' +
+'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[9] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[6] + ' alt="dyplom"></div>' +
+'              </div>' +
+'            </div>' +
+'          </section>' +
+'        </div>' +
+'        <div class="carousel-item">' +
+'          <section class="diplomas">' +
+'            <div class="flex-container">' +
+'              <div class="flex-item pion">' +
+'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[5] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[2] + ' alt="dyplom"></div>' +
+'              </div>' +
+'              <div class="flex-item poziom">' +
+'                <div class="dyplomPoziom Top"><img src=' + dyplomyPoziom[11] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPoziom Center"><img src=' + dyplomyPoziom[7] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPoziom Bottom"><img src=' + dyplomyPoziom[3] + ' alt="dyplom"></div>' +
+'              </div>' +
+'              <div class="flex-item poziom">' +
+'                <div class="dyplomPoziom Top"><img src=' + dyplomyPoziom[10] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPoziom Center"><img src=' + dyplomyPoziom[6] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPoziom Bottom"><img src=' + dyplomyPoziom[2] + ' alt="dyplom"></div>' +
+'              </div>' +
+'              <div class="flex-item pion">' +
+'                <div class="dyplomPion Top"><img src=' + dyplomyPion[4] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion Bottom"><img src=' + dyplomyPion[1] + ' alt="dyplom"></div>' +
+'              </div>' +
+'              <div class="flex-item poziom">' +
+'                <div class="dyplomPoziom Top"><img src=' + dyplomyPoziom[9] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPoziom Center"><img src=' + dyplomyPoziom[5] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPoziom Bottom"><img src=' + dyplomyPoziom[1] + ' alt="dyplom"></div>' +
+'              </div>' +
+'              <div class="flex-item poziom">' +
+'                  <div class="dyplomPoziom Top"><img src=' + dyplomyPoziom[8] + ' alt="dyplom"></div>' +
+'                  <div class="dyplomPoziom Center"><img src=' + dyplomyPoziom[4] + ' alt="dyplom"></div>' +
+'                  <div class="dyplomPoziom Bottom"><img src=' + dyplomyPoziom[0] + ' alt="dyplom"></div>' +
+'              </div>' +
+'              <div class="flex-item pion">' +
+'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[3] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[0] + ' alt="dyplom"></div>' +
+'              </div>' +
+'            </div>' +
+'          </section>' +
+'        </div>' +
 '      </div>';
 
+
+
 document.addEventListener('DOMContentLoaded', function() {
-console.log(elementCarousel);
-elementCarousel.innerHTML = carouselMax;
+    elementCarousel.innerHTML = carouselMax;
 });
-
-
-// Slide 1
-let imgk1w1Slide1 = document.createElement('img');
-imgk1w1Slide1.alt = ("dyplom");
-imgk1w1Slide1.src = dyplomyPion[11];
-document.querySelector("#k1w1Slide1").appendChild(imgk1w1Slide1);
-
-let imgk1w2Slide1 = document.createElement('img');
-imgk1w2Slide1.alt = ("dyplom");
-imgk1w2Slide1.src = dyplomyPion[8];
-document.querySelector("#k1w2Slide1").appendChild(imgk1w2Slide1);
-
-let imgk2w1Slide1 = document.createElement('img');
-imgk2w1Slide1.alt = ("dyplom");
-imgk2w1Slide1.src = dyplomyPoziom[23];
-document.querySelector("#k2w1Slide1").appendChild(imgk2w1Slide1);
-
-let imgk2w2Slide1 = document.createElement('img');
-imgk2w2Slide1.alt = ("dyplom");
-imgk2w2Slide1.src = dyplomyPoziom[19];
-document.querySelector("#k2w2Slide1").appendChild(imgk2w2Slide1);
-
-let imgk2w3Slide1 = document.createElement('img');
-imgk2w3Slide1.alt = ("dyplom");
-imgk2w3Slide1.src = dyplomyPoziom[15];
-document.querySelector("#k2w3Slide1").appendChild(imgk2w3Slide1);
-
-let imgk3w1Slide1 = document.createElement('img');
-imgk3w1Slide1.alt = ("dyplom");
-imgk3w1Slide1.src = dyplomyPoziom[22];
-document.querySelector("#k3w1Slide1").appendChild(imgk3w1Slide1);
-
-let imgk3w2Slide1 = document.createElement('img');
-imgk3w2Slide1.alt = ("dyplom");
-imgk3w2Slide1.src = dyplomyPoziom[18];
-document.querySelector("#k3w2Slide1").appendChild(imgk3w2Slide1);
-
-let imgk3w3Slide1 = document.createElement('img');
-imgk3w3Slide1.alt = ("dyplom");
-imgk3w3Slide1.src = dyplomyPoziom[14];
-document.querySelector("#k3w3Slide1").appendChild(imgk3w3Slide1);
-
-let imgk4w1Slide1 = document.createElement('img');
-imgk4w1Slide1.alt = ("dyplom");
-imgk4w1Slide1.src = dyplomyPion[10];
-document.querySelector("#k4w1Slide1").appendChild(imgk4w1Slide1);
-
-let imgk4w2Slide1 = document.createElement('img');
-imgk4w2Slide1.alt = ("dyplom");
-imgk4w2Slide1.src = dyplomyPion[7];
-document.querySelector("#k4w2Slide1").appendChild(imgk4w2Slide1);
-
-let imgk5w1Slide1 = document.createElement('img');
-imgk5w1Slide1.alt = ("dyplom");
-imgk5w1Slide1.src = dyplomyPoziom[21];
-document.querySelector("#k5w1Slide1").appendChild(imgk5w1Slide1);
-
-let imgk5w2Slide1 = document.createElement('img');
-imgk5w2Slide1.alt = ("dyplom");
-imgk5w2Slide1.src = dyplomyPoziom[17];
-document.querySelector("#k5w2Slide1").appendChild(imgk5w2Slide1);
-
-let imgk5w3Slide1 = document.createElement('img');
-imgk5w3Slide1.alt = ("dyplom");
-imgk5w3Slide1.src = dyplomyPoziom[13];
-document.querySelector("#k5w3Slide1").appendChild(imgk5w3Slide1);
-
-let imgk6w1Slide1 = document.createElement('img');
-imgk6w1Slide1.alt = ("dyplom");
-imgk6w1Slide1.src = dyplomyPoziom[20];
-document.querySelector("#k6w1Slide1").appendChild(imgk6w1Slide1);
-
-let imgk6w2Slide1 = document.createElement('img');
-imgk6w2Slide1.alt = ("dyplom");
-imgk6w2Slide1.src = dyplomyPoziom[16];
-document.querySelector("#k6w2Slide1").appendChild(imgk6w2Slide1);
-
-let imgk6w3Slide1 = document.createElement('img');
-imgk6w3Slide1.alt = ("dyplom");
-imgk6w3Slide1.src = dyplomyPoziom[12];
-document.querySelector("#k6w3Slide1").appendChild(imgk6w3Slide1);
-
-let imgk7w1Slide1 = document.createElement('img');
-imgk7w1Slide1.alt = ("dyplom");
-imgk7w1Slide1.src = dyplomyPion[9];
-document.querySelector("#k7w1Slide1").appendChild(imgk7w1Slide1);
-
-let imgk7w2Slide1 = document.createElement('img');
-imgk7w2Slide1.alt = ("dyplom");
-imgk7w2Slide1.src = dyplomyPion[6];
-document.querySelector("#k7w2Slide1").appendChild(imgk7w2Slide1);
-
-// Slide 1 A
-let imgk5w1Slide1a = document.createElement('img');
-imgk5w1Slide1a.alt = ("dyplom");
-imgk5w1Slide1a.src = dyplomyPoziom[21];
-document.querySelector("#k5w1Slide1a").appendChild(imgk5w1Slide1a);
-
-let imgk5w2Slide1a = document.createElement('img');
-imgk5w2Slide1a.alt = ("dyplom");
-imgk5w2Slide1a.src = dyplomyPoziom[17];
-document.querySelector("#k5w2Slide1a").appendChild(imgk5w2Slide1a);
-
-let imgk5w3Slide1a = document.createElement('img');
-imgk5w3Slide1a.alt = ("dyplom");
-imgk5w3Slide1a.src = dyplomyPoziom[13];
-document.querySelector("#k5w3Slide1a").appendChild(imgk5w3Slide1a);
-
-let imgk6w1Slide1a = document.createElement('img');
-imgk6w1Slide1a.alt = ("dyplom");
-imgk6w1Slide1a.src = dyplomyPoziom[20];
-document.querySelector("#k6w1Slide1a").appendChild(imgk6w1Slide1a);
-
-let imgk6w2Slide1a = document.createElement('img');
-imgk6w2Slide1a.alt = ("dyplom");
-imgk6w2Slide1a.src = dyplomyPoziom[16];
-document.querySelector("#k6w2Slide1a").appendChild(imgk6w2Slide1a);
-
-let imgk6w3Slide1a = document.createElement('img');
-imgk6w3Slide1a.alt = ("dyplom");
-imgk6w3Slide1a.src = dyplomyPoziom[12];
-document.querySelector("#k6w3Slide1a").appendChild(imgk6w3Slide1a);
-
-let imgk7w1Slide1a = document.createElement('img');
-imgk7w1Slide1a.alt = ("dyplom");
-imgk7w1Slide1a.src = dyplomyPion[10];
-document.querySelector("#k7w1Slide1a").appendChild(imgk7w1Slide1a);
-
-let imgk7w2Slide1a = document.createElement('img');
-imgk7w2Slide1a.alt = ("dyplom");
-imgk7w2Slide1a.src = dyplomyPion[7];
-document.querySelector("#k7w2Slide1a").appendChild(imgk7w2Slide1a);
-
-// Slide 2
-let imgk1w1Slide2 = document.createElement('img');
-imgk1w1Slide2.alt = ("dyplom");
-imgk1w1Slide2.src = dyplomyPion[5];
-document.querySelector("#k1w1Slide2").appendChild(imgk1w1Slide2);
-
-let imgk1w2Slide2 = document.createElement('img');
-imgk1w2Slide2.alt = ("dyplom");
-imgk1w2Slide2.src = dyplomyPion[2];
-document.querySelector("#k1w2Slide2").appendChild(imgk1w2Slide2);
-
-let imgk2w1Slide2 = document.createElement('img');
-imgk2w1Slide2.alt = ("dyplom");
-imgk2w1Slide2.src = dyplomyPoziom[11];
-document.querySelector("#k2w1Slide2").appendChild(imgk2w1Slide2);
-
-let imgk2w2Slide2 = document.createElement('img');
-imgk2w2Slide2.alt = ("dyplom");
-imgk2w2Slide2.src = dyplomyPoziom[7];
-document.querySelector("#k2w2Slide2").appendChild(imgk2w2Slide2);
-
-let imgk2w3Slide2 = document.createElement('img');
-imgk2w3Slide2.alt = ("dyplom");
-imgk2w3Slide2.src = dyplomyPoziom[3];
-document.querySelector("#k2w3Slide2").appendChild(imgk2w3Slide2);
-
-let imgk3w1Slide2 = document.createElement('img');
-imgk3w1Slide2.alt = ("dyplom");
-imgk3w1Slide2.src = dyplomyPoziom[10];
-document.querySelector("#k3w1Slide2").appendChild(imgk3w1Slide2);
-
-let imgk3w2Slide2 = document.createElement('img');
-imgk3w2Slide2.alt = ("dyplom");
-imgk3w2Slide2.src = dyplomyPoziom[6];
-document.querySelector("#k3w2Slide2").appendChild(imgk3w2Slide2);
-
-let imgk3w3Slide2 = document.createElement('img');
-imgk3w3Slide2.alt = ("dyplom");
-imgk3w3Slide2.src = dyplomyPoziom[2];
-document.querySelector("#k3w3Slide2").appendChild(imgk3w3Slide2);
-
-let imgk4w1Slide2 = document.createElement('img');
-imgk4w1Slide2.alt = ("dyplom");
-imgk4w1Slide2.src = dyplomyPion[4];
-document.querySelector("#k4w1Slide2").appendChild(imgk4w1Slide2);
-
-let imgk4w2Slide2 = document.createElement('img');
-imgk4w2Slide2.alt = ("dyplom");
-imgk4w2Slide2.src = dyplomyPion[1];
-document.querySelector("#k4w2Slide2").appendChild(imgk4w2Slide2);
-
-let imgk5w1Slide2 = document.createElement('img');
-imgk5w1Slide2.alt = ("dyplom");
-imgk5w1Slide2.src = dyplomyPoziom[9];
-document.querySelector("#k5w1Slide2").appendChild(imgk5w1Slide2);
-
-let imgk5w2Slide2 = document.createElement('img');
-imgk5w2Slide2.alt = ("dyplom");
-imgk5w2Slide2.src = dyplomyPoziom[5];
-document.querySelector("#k5w2Slide2").appendChild(imgk5w2Slide2);
-
-let imgk5w3Slide2 = document.createElement('img');
-imgk5w3Slide2.alt = ("dyplom");
-imgk5w3Slide2.src = dyplomyPoziom[1];
-document.querySelector("#k5w3Slide2").appendChild(imgk5w3Slide2);
-
-let imgk6w1Slide2 = document.createElement('img');
-imgk6w1Slide2.alt = ("dyplom");
-imgk6w1Slide2.src = dyplomyPoziom[8];
-document.querySelector("#k6w1Slide2").appendChild(imgk6w1Slide2);
-
-let imgk6w2Slide2 = document.createElement('img');
-imgk6w2Slide2.alt = ("dyplom");
-imgk6w2Slide2.src = dyplomyPoziom[4];
-document.querySelector("#k6w2Slide2").appendChild(imgk6w2Slide2);
-
-let imgk6w3Slide2 = document.createElement('img');
-imgk6w3Slide2.alt = ("dyplom");
-imgk6w3Slide2.src = dyplomyPoziom[0];
-document.querySelector("#k6w3Slide2").appendChild(imgk6w3Slide2);
-
-let imgk7w1Slide2 = document.createElement('img');
-imgk7w1Slide2.alt = ("dyplom");
-imgk7w1Slide2.src = dyplomyPion[3];
-document.querySelector("#k7w1Slide2").appendChild(imgk7w1Slide2);
-
-let imgk7w2Slide2 = document.createElement('img');
-imgk7w2Slide2.alt = ("dyplom");
-imgk7w2Slide2.src = dyplomyPion[0];
-document.querySelector("#k7w2Slide2").appendChild(imgk7w2Slide2);
-
-// Slide 2 A
-let imgk5w1Slide2a = document.createElement('img');
-imgk5w1Slide2a.alt = ("dyplom");
-imgk5w1Slide2a.src = dyplomyPoziom[9];
-document.querySelector("#k5w1Slide2a").appendChild(imgk5w1Slide2a);
-
-let imgk5w2Slide2a = document.createElement('img');
-imgk5w2Slide2a.alt = ("dyplom");
-imgk5w2Slide2a.src = dyplomyPoziom[5];
-document.querySelector("#k5w2Slide2a").appendChild(imgk5w2Slide2a);
-
-let imgk5w3Slide2a = document.createElement('img');
-imgk5w3Slide2a.alt = ("dyplom");
-imgk5w3Slide2a.src = dyplomyPoziom[1];
-document.querySelector("#k5w3Slide2a").appendChild(imgk5w3Slide2a);
-
-let imgk6w1Slide2a = document.createElement('img');
-imgk6w1Slide2a.alt = ("dyplom");
-imgk6w1Slide2a.src = dyplomyPoziom[8];
-document.querySelector("#k6w1Slide2a").appendChild(imgk6w1Slide2a);
-
-let imgk6w2Slide2a = document.createElement('img');
-imgk6w2Slide2a.alt = ("dyplom");
-imgk6w2Slide2a.src = dyplomyPoziom[4];
-document.querySelector("#k6w2Slide2a").appendChild(imgk6w2Slide2a);
-
-let imgk6w3Slide2a = document.createElement('img');
-imgk6w3Slide2a.alt = ("dyplom");
-imgk6w3Slide2a.src = dyplomyPoziom[0];
-document.querySelector("#k6w3Slide2a").appendChild(imgk6w3Slide2a);
-
-let imgk7w1Slide2a = document.createElement('img');
-imgk7w1Slide2a.alt = ("dyplom");
-imgk7w1Slide2a.src = dyplomyPion[4];
-document.querySelector("#k7w1Slide2a").appendChild(imgk7w1Slide2a);
-
-let imgk7w2Slide2a = document.createElement('img');
-imgk7w2Slide2a.alt = ("dyplom");
-imgk7w2Slide2a.src = dyplomyPion[1];
-document.querySelector("#k7w2Slide2a").appendChild(imgk7w2Slide2a);
