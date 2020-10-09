@@ -843,7 +843,7 @@ footer p {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 460px) {
   .pion {
     width: 25%;
   }
