@@ -31,4 +31,6 @@
     height: 1.56rem;
     background-color: #FFC312;
     border-radius: 50%;
+    position: relative;
+    top: -3px;
   }
