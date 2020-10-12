@@ -12,8 +12,8 @@
 html {
 	/* line-height: 0; /* 1 /* */
 	line-height: 0; 
-	-ms-text-size-adjust: 100%; /* 2 */
-	-webkit-text-size-adjust: 100%; /* 2 */
+	-ms-text-size-adjust: 100%; 
+	-webkit-text-size-adjust: 100%; 
 	margin: 0;
 	padding: 0;
 }
@@ -107,7 +107,7 @@ pre {
 
 a {
 	background-color: transparent; /* 1 */
-	-webkit-text-decoration-skip: objects; /* 2 */
+	-webkit-text-decoration-skip: objects;
 }
 
 /**
@@ -280,10 +280,10 @@ select { /* 1 */
 */
 
 button,
-html [type="button"], /* 1 */
+html [type="button"], 
 [type="reset"],
 [type="submit"] {
-	-webkit-appearance: button; /* 2 */
+	-webkit-appearance: button; 
 }
 
 /**

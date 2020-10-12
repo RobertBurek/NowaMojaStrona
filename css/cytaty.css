@@ -4,13 +4,13 @@
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-timing-function: ease-in-out;
-    -webkit-animation-name: ukryj;
+    /* -webkit-animation-name: ukryj;
     -webkit-animation-duration: 3s;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: linear;
-    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out; */
   }
-@-webkit-keyframes ukryj {
+/* @-webkit-keyframes ukryj {
   0% {
     opacity: 100%;
     opacity: 100%;
@@ -19,7 +19,7 @@
     opacity: 0%;
     opacity: 0%;
   }
-}
+} */
 @keyframes ukryj {
   0% {
       opacity: 100%;
@@ -37,13 +37,13 @@
   animation-iteration-count: 1;
   animation-timing-function: linear;
   animation-timing-function: ease-in-out;
-  -webkit-animation-name: pokaz;
+  /* -webkit-animation-name: pokaz;
   -webkit-animation-duration: 3s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out; */
 }
-@-webkit-keyframes pokaz {
+/* @-webkit-keyframes pokaz {
   0% {
     opacity: 0%;
     opacity: 0%;
@@ -52,7 +52,7 @@
     opacity: 100%;
     opacity: 100%;
   }
-}
+} */
 @keyframes pokaz {
   0% {
       opacity: 0%;
