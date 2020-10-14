@@ -1,17 +1,13 @@
 (function($) {
-
 	function Reflection(imageReflection, reflectionHeight, opacity, widthMax, heightMax) {
-		
 		let	reflection;
 		let newReflectionImage;
 		let widthImage = widthMax;
 		let heightImage = heightMax;
 		let gradient;
 		let parent;
-	
 		parent = $(imageReflection.parentNode);
 		this.element = reflection = parent.append("<canvas class='reflection' style='position:absolute'/>").find(':last')[0];
-
 		newReflectionImage = reflection.getContext("2d");
 		try {
 			$(reflection).attr({width: widthImage, height: reflectionHeight});
@@ -30,7 +26,6 @@
 			return;
 		};
 	};
-
 	let	Item = function(imageInner, options) {
 		this.orginalWidth = options.widthMax;
 		this.orginalHeight = options.heightMax;
@@ -39,15 +34,12 @@
 		this.imageOK = false;
 		this.options = options;
 		this.imageOK = true;
-		
 		if (this.options.reflectionHeight > 0) {
 			this.reflection = new Reflection(this.image, this.options.reflectionHeight, this.options.reflectionOpacity, this.orginalWidth, this.orginalHeight);
 		};
-
 		$(this.image).css('position', 'absolute');
 		$(this.image).css('border', options.border);
 	};
-	
 	let ControllerSlider = function(container, images, options) {
 		let	items = [];
 		let	contextInterval = this;
@@ -56,9 +48,7 @@
 		} 
 		if (options.heightMax === 0) {
 			options.heightMax = (container.offsetHeight - 25 ) / 1.65;
-			// console.log(options.heightMax);
 		} 
-		// console.log(options.widthMax);
 		this.controlTimer = 0;
 		this.stopped = false;
 		this.xRadius = options.xRadius;
@@ -73,10 +63,6 @@
 		if (options.yRadius === 0) {
 			this.yRadius = ($(container).height() / 15.0);
 		};
-
-		// console.log(" "+container.offsetWidth/2);
-		// console.log(" "+container.offsetHeight/8);
-
 		if (options.xPosition === 0) options.xPosition = container.offsetWidth / 2;
 		this.xCentre = options.xPosition;
 		if (options.yPosition === 0) options.yPosition = container.offsetHeight / 8;
@@ -84,27 +70,21 @@
 		this.rotation = Math.PI / 2;
 		this.destRotation = Math.PI / 2;
 		this.delayTime = 25;
-
 		$(container).css({ position:'relative', overflow:'hidden'});
 		$(options.leftButton).css('display', 'inline');
 		$(options.rightButton).css('display', 'inline');
-		
 		$(options.leftButton).bind('mouseup', this, function(event) {
 			event.data.rotate(1);
 			return false;
 		});
-
 		$(options.rightButton).bind('mouseup', this, function(event) {
 			event.data.rotate(-1);
 			return false;
 		});
-
 		this.innerWrapper = $(container).wrapInner('<div style="height:100%; width:100%; position:absolute;"/>').children()[0];
-
 		this.rotate = function(towards) {
 			this.destRotation += (Math.PI / items.length) * (2 * towards);
 		};
-
 		this.updateAll = function() {
 			let	minimumScale = options.minimumScale;
 			let smallRange = (1 - minimumScale) * 0.5;
@@ -116,27 +96,20 @@
 			let	item;
 			let	sinusValue;
 			let	change = (this.destRotation - this.rotation);
-
 			this.rotation += change * options.speedRotation;
-
 			let	itemsLen = items.length;
 			let	radians = this.rotation;
 			let	spacing = (Math.PI / itemsLen) * 2;
-
 			this.innerWrapper.style.display = 'none';
-
 			let	style;
 			let reflectionHeight;
 			let context = this;
-
 			for (let i = 0; i<itemsLen; i++) {
 				item = items[i];
 				sinusValue =  Math.sin(radians);
 				scaleImg = ((sinusValue + 1) * smallRange) + minimumScale;
-				
 				x = this.xCentre + (((Math.cos(radians) * this.xRadius) - (item.orginalWidth * 0.5)) * scaleImg);
 				y = this.yCentre + (((sinusValue * this.yRadius)) * scaleImg);
-				
 				if (item.imageOK) {
 					let	img = item.image;
 					w = img.width = item.orginalWidth * scaleImg;
@@ -165,7 +138,6 @@
 				context.updateAll();
 			}, this.delayTime);
 		};
-
 		this.imagesLoaded = function() {
 			for(let i=0; i<images.length; i++) {
 				if ((images[i].width === undefined) || ((images[i].complete !== undefined) && (!images[i].complete))) {
@@ -179,12 +151,10 @@
 			clearInterval(this.timeI);
 			this.updateAll();
 		};
-
 		this.timeI = setInterval(function() {
 			contextInterval.imagesLoaded();
 		}, 60);
 	};
-	
 	$.fn.SliderCarousel = function(options) {
 		this.each(function() {
 			options = $.extend({}, {

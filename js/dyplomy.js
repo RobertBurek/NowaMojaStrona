@@ -42,8 +42,7 @@ dyplomyPoziom[10] = ['img/Dyplomy/BeginnerJavaJavaFXMavenJenkins_udemy.jpg']
  dyplomyPoziom[1] = ['img/Dyplomy/FundamentyJezykaJava_strefaKursow.jpg']
  dyplomyPoziom[0] = ['img/Dyplomy/KursProgramowaniaWJava_strefaKursow.jpg']
 
-
- let carouselMax =  
+let carouselMax =  
 '      <ol class="carousel-indicators">' +
 '        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>' +
 '        <li data-target="#multi-item-example" data-slide-to="1"></li>' +
@@ -233,7 +232,6 @@ let carouselMin =
 '        </div>' +
 '      </div>';
 
-
 let carouselMinMin =  
 '      <ol class="carousel-indicators">' +
 '        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>' +
@@ -323,7 +321,6 @@ let carouselMinMin =
 '          </section>' +
 '        </div>' +
 '      </div>';
-
 
 let elementCarousel = document.querySelector('#multi-item-example');
 

@@ -6,7 +6,6 @@ $(window).on( 'scroll', function () {
     }
 });
 
-
 let iconMenu = document.getElementById('iconMenu');
 let showIconMenu = true;
 function hideMenu(){
@@ -30,9 +29,8 @@ var href = $(this).attr('href');
     if ($(this).attr("class") =='btnNav') hideMenu();
   location.hash = href;
 };
-  
-$('a[href*="#"]').click(scroll);
 
+$('a[href*="#"]').click(scroll);
 
 $(document).ready(function(){
   $('.showMenu').click(function(){

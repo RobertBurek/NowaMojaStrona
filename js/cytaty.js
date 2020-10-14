@@ -31,16 +31,11 @@ quote3Element.innerHTML = tablica[i-2][0];
 autor3Element.innerHTML = tablica[i-2][1];
 
 function odliczanie() {
-
-	// console.log(document.getElementById("sliderCarousel").offsetWidth);
-	// console.log(document.body.offsetWidth);
 	if (document.body.offsetWidth != currentWidth) {
 		currentWidth = document.body.offsetWidth;
 		location.reload(true);
 	}
-
 	let sekunda = new Date().getSeconds();
-
 	if (((sekunda - start + 60) % coIle) == 0 ) {
 		quote1Element.classList.remove("pokaz");
 		autor1Element.classList.remove("pokaz");
