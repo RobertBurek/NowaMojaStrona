@@ -60,6 +60,7 @@
       height: 380px;
   }
 }
+
 @media (max-width: 1600px){
   #sliderMyWorks {
     width: 1200px;
@@ -70,7 +71,6 @@
   }
 }
 
-/* DO ZROBIENIA */
 @media (max-width: 920px){
 	#sliderMyWorks {
 	  width: 100%;
@@ -81,6 +81,7 @@
 		height: 280px;
 	}
 }
+
 @media (max-width: 720px){
 	#sliderMyWorks {
 	  width: 100%;
