@@ -761,4 +761,79 @@ footer p {
     bottom: 30px;
     right: 30px;
   }
+  .dyplomPoziom.minLeftTop:hover {
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateX(20%) translateY(60%) scale(2.2,2.2);
+  }
+  .dyplomPoziom.minLeftCenter:hover {
+      transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+      transform: translateX(20%) scale(2.2,2.2);
+  }
+  .dyplomPoziom.minLeftBottom:hover {
+      transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+      transform: translateX(20%) translateY(-60%) scale(2.2,2.2);
+  }
+  .dyplomPoziom.minRightTop:hover {
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateX(-20%) translateY(60%) scale(2.2,2.2);
+  }
+  .dyplomPoziom.minRightCenter:hover {
+      transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+      transform: translateX(-20%) scale(2.2,2.2);
+  }
+  .dyplomPoziom.minRightBottom:hover {
+      transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+      transform: translateX(-20%) translateY(-60%) scale(2.2,2.2);
+  }
+}
+
+@media (max-width: 320px){
+  .dyplomPoziom.rightTop:hover {
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateX(-50%) translateY(60%) scale(2.2,2.2);
+  }
+  .dyplomPoziom.rightCenter:hover {
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateX(-50%) scale(2.2,2.2);
+  }
+  .dyplomPoziom.rightBottom:hover {
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateX(-50%) translateY(-60%) scale(2.2,2.2);
+  }
+  .dyplomPoziom.leftTop:hover {
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateX(50%) translateY(60%) scale(2.2,2.2);
+  }
+  .dyplomPoziom.leftCenter:hover {
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateX(50%) scale(2.2,2.2);
+  }
+  .dyplomPoziom.leftBottom:hover {
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateX(50%) translateY(-60%) scale(2.2,2.2);
+  }
+  .dyplomPoziom.minLeftTop:hover {
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateX(-20%) translateY(60%) scale(2.2,2.2);
+  }
+  .dyplomPoziom.minLeftCenter:hover {
+      transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+      transform: translateX(-20%) scale(2.2,2.2);
+  }
+  .dyplomPoziom.minLeftBottom:hover {
+      transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+      transform: translateX(-20%) translateY(-60%) scale(2.2,2.2);
+  }
+  .dyplomPoziom.minRightTop:hover {
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transform: translateX(20%) translateY(60%) scale(2.2,2.2);
+  }
+  .dyplomPoziom.minRightCenter:hover {
+      transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+      transform: translateX(20%) scale(2.2,2.2);
+  }
+  .dyplomPoziom.minRightBottom:hover {
+      transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+      transform: translateX(20%) translateY(-60%) scale(2.2,2.2);
+  }
 }
