@@ -152,8 +152,8 @@ let carouselMin =
 '                <div class="dyplomPoziom Bottom"><img src=' + dyplomyPoziom[18] + ' alt="dyplom"></div>' +
 '              </div>' +
 '              <div class="flex-item pion">' +
-'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[9] + ' alt="dyplom"></div>' +
-'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[8] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[9] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[8] + ' alt="dyplom"></div>' +
 '              </div>' +
 '            </div>' +
 '          </section>' +
@@ -176,8 +176,8 @@ let carouselMin =
 '                  <div class="dyplomPoziom Bottom"><img src=' + dyplomyPoziom[12] + ' alt="dyplom"></div>' +
 '              </div>' +
 '              <div class="flex-item pion">' +
-'                <div class="dyplomPion Top"><img src=' + dyplomyPion[6] + ' alt="dyplom"></div>' +
-'                <div class="dyplomPion Bottom"><img src=' + dyplomyPion[4] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[6] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[4] + ' alt="dyplom"></div>' +
 '              </div>' +
 '            </div>' +
 '          </section>' +
@@ -200,8 +200,8 @@ let carouselMin =
 '                <div class="dyplomPoziom Bottom"><img src=' + dyplomyPoziom[6] + ' alt="dyplom"></div>' +
 '              </div>' +
 '              <div class="flex-item pion">' +
-'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[2] + ' alt="dyplom"></div>' +
-'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[0] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[2] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[0] + ' alt="dyplom"></div>' +
 '              </div>' +
 '            </div>' +
 '          </section>' +
