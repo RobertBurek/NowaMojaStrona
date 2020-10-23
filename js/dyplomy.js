@@ -1,20 +1,20 @@
-const dyplomyPion = [];
-dyplomyPion[11] = ['img/Dyplomy/ProgramistaJavaWEB_1str_altkom.jpg']
-dyplomyPion[10] = ['img/Dyplomy/ProgramistaJavaWEB_2str_altkom.jpg']
- dyplomyPion[9] = ['img/Dyplomy/OcenaKompetencjiZawodowychDC_altkom.jpg']
- dyplomyPion[8] = ['img/Dyplomy/RoleWZespoleProgramistycznym_altkom.jpg']
- dyplomyPion[7] = ['img/Dyplomy/WzorceProjektoweNarzędziaPracyGrupowej_altkom.jpg']
- dyplomyPion[6] = ['img/Dyplomy/AplikacjeWeboweWJezykuJava.jpg']
- dyplomyPion[5] = ['img/Dyplomy/BazyDanychRelacyjneINierelacyjneJęzykSQL_altkom.jpg']
- dyplomyPion[4] = ['img/Dyplomy/PodstawyProgramowania-BackEnd_altkom.jpg']
- dyplomyPion[3] = ['img/Dyplomy/EComerceWPraktyce_uouw.jpg']
- dyplomyPion[2] = ['img/Dyplomy/CertyfikatGIT_eduwebpl.jpg']
- dyplomyPion[1] = ['img/Dyplomy/AngOdZeraDoBohatIA2_uouw.jpg']
- dyplomyPion[0] = ['img/Dyplomy/AngielskiPoLatachA1_uouw.jpg']
- dyplomyPion[12] = ['img/Dyplomy/AngOdZeraDoBohatIIIA1A2_uouw.jpg']
- dyplomyPion[13] = ['img/Dyplomy/JakCięWidząAutoprezentacja_uouw.jpg']
- dyplomyPion[14] = ['img/Dyplomy/AngOdZeraDoBohatIIA1_uouw.jpg']
- dyplomyPion[15] = ['img/Dyplomy/AngielskiPoLatachA1_uouw.jpg']
+const dyplomyPion = [[],[]];
+dyplomyPion[11] = ['img/Dyplomy/ProgramistaJavaWEB_1str_altkom.jpg','Programista Java WEB strona 1 w altkom']
+dyplomyPion[10] = ['img/Dyplomy/ProgramistaJavaWEB_2str_altkom.jpg','Programista Java WEB strona 2 w altkom']
+ dyplomyPion[9] = ['img/Dyplomy/OcenaKompetencjiZawodowychDC_altkom.jpg','tytul']
+ dyplomyPion[8] = ['img/Dyplomy/RoleWZespoleProgramistycznym_altkom.jpg','tytul']
+ dyplomyPion[7] = ['img/Dyplomy/WzorceProjektoweNarzędziaPracyGrupowej_altkom.jpg','tytul']
+ dyplomyPion[6] = ['img/Dyplomy/AplikacjeWeboweWJezykuJava.jpg','tytul']
+ dyplomyPion[5] = ['img/Dyplomy/BazyDanychRelacyjneINierelacyjneJęzykSQL_altkom.jpg','tytul']
+ dyplomyPion[4] = ['img/Dyplomy/PodstawyProgramowania-BackEnd_altkom.jpg','tytul']
+ dyplomyPion[3] = ['img/Dyplomy/EComerceWPraktyce_uouw.jpg','tytul']
+ dyplomyPion[2] = ['img/Dyplomy/CertyfikatGIT_eduwebpl.jpg','tytul']
+ dyplomyPion[1] = ['img/Dyplomy/AngOdZeraDoBohatIA2_uouw.jpg','tytul']
+ dyplomyPion[0] = ['img/Dyplomy/AngielskiPoLatachA1_uouw.jpg','tytul']
+ dyplomyPion[12] = ['img/Dyplomy/AngOdZeraDoBohatIIIA1A2_uouw.jpg','tytul']
+ dyplomyPion[13] = ['img/Dyplomy/JakCięWidząAutoprezentacja_uouw.jpg','tytul']
+ dyplomyPion[14] = ['img/Dyplomy/AngOdZeraDoBohatIIA1_uouw.jpg','tytul']
+ dyplomyPion[15] = ['img/Dyplomy/AngielskiPoLatachA1_uouw.jpg','tytul']
 
 const dyplomyPoziom = [];
 dyplomyPoziom[23] = ['img/Dyplomy/SzybkiKursHTML5CSS3_udemy.jpg']
@@ -52,8 +52,8 @@ let carouselMax =
 '          <section class="diplomas">' +
 '            <div class="flex-container">' +
 '              <div class="flex-item pion">' +
-'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[11] + ' alt="dyplom"></div>' +
-'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[10] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[11][0] + ' alt="' + dyplomyPion[11][1] + '"></div>' +
+'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[10][0] + ' alt="' + dyplomyPion[10][1] + '"></div>' +
 '              </div>' +
 '              <div class="flex-item poziom">' +
 '                <div class="dyplomPoziom Top"><img src=' + dyplomyPoziom[23] + ' alt="dyplom"></div>' +
@@ -66,8 +66,8 @@ let carouselMax =
 '                <div class="dyplomPoziom Bottom"><img src=' + dyplomyPoziom[14] + ' alt="dyplom"></div>' +
 '              </div>' +
 '              <div class="flex-item pion">' +
-'                <div class="dyplomPion Top"><img src=' + dyplomyPion[8] + ' alt="dyplom"></div>' +
-'                <div class="dyplomPion Bottom"><img src=' + dyplomyPion[7] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion Top"><img src=' + dyplomyPion[8][0] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion Bottom"><img src=' + dyplomyPion[7][0] + ' alt="dyplom"></div>' +
 '              </div>' +
 '              <div class="flex-item poziom">' +
 '                <div class="dyplomPoziom Top"><img src=' + dyplomyPoziom[21] + ' alt="dyplom"></div>' +
@@ -80,8 +80,8 @@ let carouselMax =
 '                  <div class="dyplomPoziom Bottom"><img src=' + dyplomyPoziom[12] + ' alt="dyplom"></div>' +
 '              </div>' +
 '              <div class="flex-item pion">' +
-'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[9] + ' alt="dyplom"></div>' +
-'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[6] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[9][0] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[6][0] + ' alt="dyplom"></div>' +
 '              </div>' +
 '            </div>' +
 '          </section>' +
@@ -90,8 +90,8 @@ let carouselMax =
 '          <section class="diplomas">' +
 '            <div class="flex-container">' +
 '              <div class="flex-item pion">' +
-'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[5] + ' alt="dyplom"></div>' +
-'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[2] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[5][0] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[2][0] + ' alt="dyplom"></div>' +
 '              </div>' +
 '              <div class="flex-item poziom">' +
 '                <div class="dyplomPoziom Top"><img src=' + dyplomyPoziom[11] + ' alt="dyplom"></div>' +
@@ -104,8 +104,8 @@ let carouselMax =
 '                <div class="dyplomPoziom Bottom"><img src=' + dyplomyPoziom[2] + ' alt="dyplom"></div>' +
 '              </div>' +
 '              <div class="flex-item pion">' +
-'                <div class="dyplomPion Top"><img src=' + dyplomyPion[4] + ' alt="dyplom"></div>' +
-'                <div class="dyplomPion Bottom"><img src=' + dyplomyPion[1] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion Top"><img src=' + dyplomyPion[4][0] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion Bottom"><img src=' + dyplomyPion[1][0] + ' alt="dyplom"></div>' +
 '              </div>' +
 '              <div class="flex-item poziom">' +
 '                <div class="dyplomPoziom Top"><img src=' + dyplomyPoziom[9] + ' alt="dyplom"></div>' +
@@ -118,8 +118,8 @@ let carouselMax =
 '                  <div class="dyplomPoziom Bottom"><img src=' + dyplomyPoziom[0] + ' alt="dyplom"></div>' +
 '              </div>' +
 '              <div class="flex-item pion">' +
-'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[3] + ' alt="dyplom"></div>' +
-'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[0] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[3][0] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[0][0] + ' alt="dyplom"></div>' +
 '              </div>' +
 '            </div>' +
 '          </section>' +
@@ -138,8 +138,8 @@ let carouselMin =
 '          <section class="diplomas">' +
 '            <div class="flex-container">' +
 '              <div class="flex-item pion">' +
-'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[11] + ' alt="dyplom"></div>' +
-'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[10] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[11][0] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[10][0] + ' alt="dyplom"></div>' +
 '              </div>' +
 '              <div class="flex-item poziom">' +
 '                <div class="dyplomPoziom minLeftTop"><img src=' + dyplomyPoziom[23] + ' alt="dyplom"></div>' +
@@ -152,8 +152,8 @@ let carouselMin =
 '                <div class="dyplomPoziom minRightBottom"><img src=' + dyplomyPoziom[18] + ' alt="dyplom"></div>' +
 '              </div>' +
 '              <div class="flex-item pion">' +
-'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[9] + ' alt="dyplom"></div>' +
-'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[8] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[9][0] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[8][0] + ' alt="dyplom"></div>' +
 '              </div>' +
 '            </div>' +
 '          </section>' +
@@ -162,8 +162,8 @@ let carouselMin =
 '          <section class="diplomas">' +
 '            <div class="flex-container">' +
 '              <div class="flex-item pion">' +
-'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[7] + ' alt="dyplom"></div>' +
-'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[5] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[7][0] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[5][0] + ' alt="dyplom"></div>' +
 '              </div>' +
 '              <div class="flex-item poziom">' +
 '                <div class="dyplomPoziom minLeftTop"><img src=' + dyplomyPoziom[17] + ' alt="dyplom"></div>' +
@@ -176,8 +176,8 @@ let carouselMin =
 '                  <div class="dyplomPoziom minRightBottom"><img src=' + dyplomyPoziom[12] + ' alt="dyplom"></div>' +
 '              </div>' +
 '              <div class="flex-item pion">' +
-'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[6] + ' alt="dyplom"></div>' +
-'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[4] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[6][0] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[4][0] + ' alt="dyplom"></div>' +
 '              </div>' +
 '            </div>' +
 '          </section>' +
@@ -186,8 +186,8 @@ let carouselMin =
 '          <section class="diplomas">' +
 '            <div class="flex-container">' +
 '              <div class="flex-item pion">' +
-'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[3] + ' alt="dyplom"></div>' +
-'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[1] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[3][0] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[1][0] + ' alt="dyplom"></div>' +
 '              </div>' +
 '              <div class="flex-item poziom">' +
 '                <div class="dyplomPoziom minLeftTop"><img src=' + dyplomyPoziom[11] + ' alt="dyplom"></div>' +
@@ -200,8 +200,8 @@ let carouselMin =
 '                <div class="dyplomPoziom minRightBottom"><img src=' + dyplomyPoziom[6] + ' alt="dyplom"></div>' +
 '              </div>' +
 '              <div class="flex-item pion">' +
-'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[2] + ' alt="dyplom"></div>' +
-'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[0] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[2][0] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[0][0] + ' alt="dyplom"></div>' +
 '              </div>' +
 '            </div>' +
 '          </section>' +
@@ -210,8 +210,8 @@ let carouselMin =
 '          <section class="diplomas">' +
 '            <div class="flex-container">' +
 '              <div class="flex-item pion">' +
-'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[12] + ' alt="dyplom"></div>' +
-'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[13] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[12][0] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[13][0] + ' alt="dyplom"></div>' +
 '              </div>' +
 '              <div class="flex-item poziom">' +
 '                <div class="dyplomPoziom minLeftTop"><img src=' + dyplomyPoziom[5] + ' alt="dyplom"></div>' +
@@ -224,8 +224,8 @@ let carouselMin =
 '                  <div class="dyplomPoziom minRightBottom"><img src=' + dyplomyPoziom[0] + ' alt="dyplom"></div>' +
 '              </div>' +
 '              <div class="flex-item pion">' +
-'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[14] + ' alt="dyplom"></div>' +
-'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[15] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[14][0] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[15][0] + ' alt="dyplom"></div>' +
 '              </div>' +
 '            </div>' +
 '          </section>' +
@@ -244,8 +244,8 @@ let carouselMinMin =
 '          <section class="diplomas">' +
 '            <div class="flex-container">' +
 '              <div class="flex-item pion">' +
-'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[11] + ' alt="dyplom"></div>' +
-'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[10] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[11][0] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[10][0] + ' alt="dyplom"></div>' +
 '              </div>' +
 '              <div class="flex-item poziom">' +
 '                <div class="dyplomPoziom minRightTop"><img src=' + dyplomyPoziom[23] + ' alt="dyplom"></div>' +
@@ -274,8 +274,8 @@ let carouselMinMin =
 '                  <div class="dyplomPoziom minLeftBottom"><img src=' + dyplomyPoziom[12] + ' alt="dyplom"></div>' +
 '              </div>' +
 '              <div class="flex-item pion">' +
-'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[9] + ' alt="dyplom"></div>' +
-'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[8] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[9][0] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[8][0] + ' alt="dyplom"></div>' +
 '              </div>' +
 '            </div>' +
 '          </section>' +
@@ -284,8 +284,8 @@ let carouselMinMin =
 '          <section class="diplomas">' +
 '            <div class="flex-container">' +
 '              <div class="flex-item pion">' +
-'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[7] + ' alt="dyplom"></div>' +
-'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[6] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[7][0] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[6][0] + ' alt="dyplom"></div>' +
 '              </div>' +
 '              <div class="flex-item poziom">' +
 '                <div class="dyplomPoziom minRightTop"><img src=' + dyplomyPoziom[11] + ' alt="dyplom"></div>' +
@@ -314,8 +314,8 @@ let carouselMinMin =
 '                  <div class="dyplomPoziom minLeftBottom"><img src=' + dyplomyPoziom[0] + ' alt="dyplom"></div>' +
 '              </div>' +
 '              <div class="flex-item pion">' +
-'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[5] + ' alt="dyplom"></div>' +
-'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[4] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[5][0] + ' alt="dyplom"></div>' +
+'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[4][0] + ' alt="dyplom"></div>' +
 '              </div>' +
 '            </div>' +
 '          </section>' +

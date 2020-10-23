@@ -3,7 +3,7 @@ $(window).on( 'scroll', function () {
         $('#scroll-to-top').fadeIn();
     } else {
         $('#scroll-to-top').fadeOut();
-    }
+    };
 });
 
 let iconMenu = document.getElementById('iconMenu');
@@ -18,7 +18,7 @@ function hideMenu(){
       iconMenu.setAttribute("src", "img/iconMenu.png");
       showIconMenu = true;
     };
-}
+};
 
 function scroll(event) {
 var href = $(this).attr('href');
