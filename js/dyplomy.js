@@ -322,17 +322,155 @@ let carouselMidMin =
 '        </div>' +
 '      </div>';
 
+let carouselMinMin =  
+'      <ol class="carousel-indicators">' +
+'        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>' +
+'        <li data-target="#multi-item-example" data-slide-to="1"></li>' +
+'        <li data-target="#multi-item-example" data-slide-to="2"></li>' +
+'        <li data-target="#multi-item-example" data-slide-to="3"></li>' +
+'        <li data-target="#multi-item-example" data-slide-to="4"></li>' +
+'        <li data-target="#multi-item-example" data-slide-to="5"></li>' +
+'        <li data-target="#multi-item-example" data-slide-to="6"></li>' +
+'        <li data-target="#multi-item-example" data-slide-to="7"></li>' +
+'      </ol>' + window.innerWidth+
+'      <div class="carousel-inner" role="listbox">' +
+'        <div class="carousel-item active">' +
+'          <section class="diplomas">' +
+'            <div class="flex-container">' +
+'              <div class="flex-item pion">' +
+'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[15][0] + ' alt="' + dyplomyPion[15][1] + '"></div>' +
+'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[14][0] + ' alt="' + dyplomyPion[14][1] + '"></div>' +
+'              </div>' +
+'              <div class="flex-item poziom">' +
+'                <div class="dyplomPoziom minRightTop"><img src=' + dyplomyPoziom[23][0] + ' alt="' + dyplomyPoziom[23][1] + '"></div>' +
+'                <div class="dyplomPoziom minRightCenter"><img src=' + dyplomyPoziom[21][0] + ' alt="' + dyplomyPoziom[21][1] + '"></div>' +
+'                <div class="dyplomPoziom minRightBottom"><img src=' + dyplomyPoziom[19][0] + ' alt="' + dyplomyPoziom[19][1] + '"></div>' +
+'              </div>' +
+'            </div>' +
+'          </section>' +
+'        </div>' +
+'        <div class="carousel-item">' +
+'          <section class="diplomas">' +
+'            <div class="flex-container">' +
+'               <div class="flex-item poziom">' +
+'                  <div class="dyplomPoziom minLeftTop"><img src=' + dyplomyPoziom[16][0] + ' alt="' + dyplomyPoziom[16][1] + '"></div>' +
+'                  <div class="dyplomPoziom minLeftCenter"><img src=' + dyplomyPoziom[14][0] + ' alt="' + dyplomyPoziom[14][1] + '"></div>' +
+'                  <div class="dyplomPoziom minLeftBottom"><img src=' + dyplomyPoziom[12][0] + ' alt="' + dyplomyPoziom[12][1] + '"></div>' +
+'              </div>' +
+'              <div class="flex-item pion">' +
+'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[13][0] + ' alt="' + dyplomyPion[13][1] + '"></div>' +
+'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[12][0] + ' alt="' + dyplomyPion[12][1] + '"></div>' +
+'              </div>' +
+'            </div>' +
+'          </section>' +
+'        </div>' +
+'        <div class="carousel-item">' +
+'          <section class="diplomas">' +
+'            <div class="flex-container">' +
+'              <div class="flex-item pion">' +
+'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[11][0] + ' alt="' + dyplomyPion[11][1] + '"></div>' +
+'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[10][0] + ' alt="' + dyplomyPion[10][1] + '"></div>' +
+'              </div>' +
+'              <div class="flex-item poziom">' +
+'                <div class="dyplomPoziom minRightTop"><img src=' + dyplomyPoziom[11][0] + ' alt="' + dyplomyPoziom[11][1] + '"></div>' +
+'                <div class="dyplomPoziom minRightCenter"><img src=' + dyplomyPoziom[9][0] + ' alt="' + dyplomyPoziom[9][1] + '"></div>' +
+'                <div class="dyplomPoziom minRightBottom"><img src=' + dyplomyPoziom[7][0] + ' alt="' + dyplomyPoziom[7][1] + '"></div>' +
+'              </div>' +
+'            </div>' +
+'          </section>' +
+'        </div>' +
+'        <div class="carousel-item">' +
+'          <section class="diplomas">' +
+'            <div class="flex-container">' +
+'              <div class="flex-item poziom">' +
+'                  <div class="dyplomPoziom minLeftTop"><img src=' + dyplomyPoziom[4][0] + ' alt="' + dyplomyPoziom[4][1] + '"></div>' +
+'                  <div class="dyplomPoziom minLeftCenter"><img src=' + dyplomyPoziom[2][0] + ' alt="' + dyplomyPoziom[2][1] + '"></div>' +
+'                  <div class="dyplomPoziom minLeftBottom"><img src=' + dyplomyPoziom[0][0]+ ' alt="' + dyplomyPoziom[0][1] + '"></div>' +
+'              </div>' +
+'              <div class="flex-item pion">' +
+'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[9][0] + ' alt="' + dyplomyPion[9][1] + '"></div>' +
+'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[8][0] + ' alt="' + dyplomyPion[8][1] + '"></div>' +
+'              </div>' +
+'            </div>' +
+'          </section>' +
+'        </div>' +
+'        <div class="carousel-item">' +
+'          <section class="diplomas">' +
+'            <div class="flex-container">' +
+'              <div class="flex-item pion">' +
+'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[15][0] + ' alt="' + dyplomyPion[15][1] + '"></div>' +
+'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[14][0] + ' alt="' + dyplomyPion[14][1] + '"></div>' +
+'              </div>' +
+'              <div class="flex-item poziom">' +
+'                <div class="dyplomPoziom minRightTop"><img src=' + dyplomyPoziom[23][0] + ' alt="' + dyplomyPoziom[23][1] + '"></div>' +
+'                <div class="dyplomPoziom minRightCenter"><img src=' + dyplomyPoziom[21][0] + ' alt="' + dyplomyPoziom[21][1] + '"></div>' +
+'                <div class="dyplomPoziom minRightBottom"><img src=' + dyplomyPoziom[19][0] + ' alt="' + dyplomyPoziom[19][1] + '"></div>' +
+'              </div>' +
+'            </div>' +
+'          </section>' +
+'        </div>' +
+'        <div class="carousel-item">' +
+'          <section class="diplomas">' +
+'            <div class="flex-container">' +
+'               <div class="flex-item poziom">' +
+'                  <div class="dyplomPoziom minLeftTop"><img src=' + dyplomyPoziom[16][0] + ' alt="' + dyplomyPoziom[16][1] + '"></div>' +
+'                  <div class="dyplomPoziom minLeftCenter"><img src=' + dyplomyPoziom[14][0] + ' alt="' + dyplomyPoziom[14][1] + '"></div>' +
+'                  <div class="dyplomPoziom minLeftBottom"><img src=' + dyplomyPoziom[12][0] + ' alt="' + dyplomyPoziom[12][1] + '"></div>' +
+'              </div>' +
+'              <div class="flex-item pion">' +
+'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[13][0] + ' alt="' + dyplomyPion[13][1] + '"></div>' +
+'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[12][0] + ' alt="' + dyplomyPion[12][1] + '"></div>' +
+'              </div>' +
+'            </div>' +
+'          </section>' +
+'        </div>' +
+'        <div class="carousel-item">' +
+'          <section class="diplomas">' +
+'            <div class="flex-container">' +
+'              <div class="flex-item pion">' +
+'                <div class="dyplomPion leftTop"><img src=' + dyplomyPion[11][0] + ' alt="' + dyplomyPion[11][1] + '"></div>' +
+'                <div class="dyplomPion leftBottom"><img src=' + dyplomyPion[10][0] + ' alt="' + dyplomyPion[10][1] + '"></div>' +
+'              </div>' +
+'              <div class="flex-item poziom">' +
+'                <div class="dyplomPoziom minRightTop"><img src=' + dyplomyPoziom[11][0] + ' alt="' + dyplomyPoziom[11][1] + '"></div>' +
+'                <div class="dyplomPoziom minRightCenter"><img src=' + dyplomyPoziom[9][0] + ' alt="' + dyplomyPoziom[9][1] + '"></div>' +
+'                <div class="dyplomPoziom minRightBottom"><img src=' + dyplomyPoziom[7][0] + ' alt="' + dyplomyPoziom[7][1] + '"></div>' +
+'              </div>' +
+'            </div>' +
+'          </section>' +
+'        </div>' +
+'        <div class="carousel-item">' +
+'          <section class="diplomas">' +
+'            <div class="flex-container">' +
+'              <div class="flex-item poziom">' +
+'                  <div class="dyplomPoziom minLeftTop"><img src=' + dyplomyPoziom[4][0] + ' alt="' + dyplomyPoziom[4][1] + '"></div>' +
+'                  <div class="dyplomPoziom minLeftCenter"><img src=' + dyplomyPoziom[2][0] + ' alt="' + dyplomyPoziom[2][1] + '"></div>' +
+'                  <div class="dyplomPoziom minLeftBottom"><img src=' + dyplomyPoziom[0][0]+ ' alt="' + dyplomyPoziom[0][1] + '"></div>' +
+'              </div>' +
+'              <div class="flex-item pion">' +
+'                <div class="dyplomPion rightTop"><img src=' + dyplomyPion[9][0] + ' alt="' + dyplomyPion[9][1] + '"></div>' +
+'                <div class="dyplomPion rightBottom"><img src=' + dyplomyPion[8][0] + ' alt="' + dyplomyPion[8][1] + '"></div>' +
+'              </div>' +
+'            </div>' +
+'          </section>' +
+'        </div>' +
+'      </div>';
+
 let elementCarousel = document.querySelector('#multi-item-example');
 
 document.addEventListener('DOMContentLoaded', function() {
     elementCarousel.innerHTML = carouselMax;
     console.log(window.innerWidth);
-    if (window.innerWidth < 460) {
+    if (window.innerWidth < 720) {
         elementCarousel.innerHTML = carouselMid;
         console.log(window.innerWidth);
     };
-    if (window.innerWidth < 320) {
+    if (window.innerWidth < 460) {
         elementCarousel.innerHTML = carouselMidMin;
+        console.log(window.innerWidth);
+    };
+    if (window.innerWidth < 320) {
+        elementCarousel.innerHTML = carouselMinMin;
         console.log(window.innerWidth);
     };
 });
