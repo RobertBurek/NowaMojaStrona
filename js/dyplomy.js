@@ -46,7 +46,7 @@ let carouselMax =
 '      <ol class="carousel-indicators">' +
 '        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>' +
 '        <li data-target="#multi-item-example" data-slide-to="1"></li>' +
-'      </ol>' +window.innerWidth+
+'      </ol>' +
 '      <div class="carousel-inner" role="listbox">' +
 '        <div class="carousel-item active">' +
 '          <section class="diplomas">' +
@@ -132,7 +132,7 @@ let carouselMid =
 '        <li data-target="#multi-item-example" data-slide-to="1"></li>' +
 '        <li data-target="#multi-item-example" data-slide-to="2"></li>' +
 '        <li data-target="#multi-item-example" data-slide-to="3"></li>' +
-'      </ol>' +window.innerWidth+
+'      </ol>' +
 '      <div class="carousel-inner" role="listbox">' +
 '        <div class="carousel-item active">' +
 '          <section class="diplomas">' +
@@ -238,7 +238,7 @@ let carouselMidMin =
 '        <li data-target="#multi-item-example" data-slide-to="1"></li>' +
 '        <li data-target="#multi-item-example" data-slide-to="2"></li>' +
 '        <li data-target="#multi-item-example" data-slide-to="3"></li>' +
-'      </ol>' + window.innerWidth+
+'      </ol>' + 
 '      <div class="carousel-inner" role="listbox">' +
 '        <div class="carousel-item active">' +
 '          <section class="diplomas">' +
@@ -332,7 +332,7 @@ let carouselMinMin =
 '        <li data-target="#multi-item-example" data-slide-to="5"></li>' +
 '        <li data-target="#multi-item-example" data-slide-to="6"></li>' +
 '        <li data-target="#multi-item-example" data-slide-to="7"></li>' +
-'      </ol>' + window.innerWidth+
+'      </ol>' + 
 '      <div class="carousel-inner" role="listbox">' +
 '        <div class="carousel-item active">' +
 '          <section class="diplomas">' +

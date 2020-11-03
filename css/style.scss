@@ -704,6 +704,15 @@ footer p {
 }
 
 @media (max-width: 720px){
+  .pion {
+    width: 20%;
+  }
+  .poziom {
+    width: 30%;
+  }
+  section.diplomas {
+    max-height: 390px;
+}
   .section-title {
     font-size: 1.6rem;
   }
@@ -725,6 +734,12 @@ footer p {
   }
 }
 
+@media (max-width: 580px){
+  section.diplomas {
+    max-height: 420px;
+  }
+}
+
 @media (max-width: 460px){
   .pion {
     width: 25%;
@@ -732,6 +747,9 @@ footer p {
   .poziom {
     width: 37.5%;
   }
+  section.diplomas {
+    max-height: 360px;
+}
   .boxes .container {
     max-width: 100%;
     padding-left: 4%;
@@ -788,6 +806,15 @@ footer p {
 }
 
 @media (max-width: 320px){
+  .pion {
+    width: 38%;
+  }
+  .poziom {
+    width: 62%;
+  }
+  section.diplomas {
+    max-height: 390px;
+}
   .dyplomPoziom.rightTop:hover {
     transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
     transform: translateX(-50%) translateY(60%) scale(2.2,2.2);
