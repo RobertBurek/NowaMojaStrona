@@ -831,6 +831,54 @@ footer p {
   section.diplomas {
     max-height: 390px;
   }
+  .dyplomPoziom.minLeftTop:hover {
+    -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    -webkit-transform: translateX(20%) translateY(60%) scale(2.2, 2.2);
+            transform: translateX(20%) translateY(60%) scale(2.2, 2.2);
+  }
+  .dyplomPoziom.minLeftCenter:hover {
+    -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    -webkit-transform: translateX(20%) scale(2.2, 2.2);
+            transform: translateX(20%) scale(2.2, 2.2);
+  }
+  .dyplomPoziom.minLeftBottom:hover {
+    -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    -webkit-transform: translateX(20%) translateY(-60%) scale(2.2, 2.2);
+            transform: translateX(20%) translateY(-60%) scale(2.2, 2.2);
+  }
+  .dyplomPoziom.minRightTop:hover {
+    -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    -webkit-transform: translateX(-20%) translateY(60%) scale(2.2, 2.2);
+            transform: translateX(-20%) translateY(60%) scale(2.2, 2.2);
+  }
+  .dyplomPoziom.minRightCenter:hover {
+    -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    -webkit-transform: translateX(-20%) scale(2.2, 2.2);
+            transform: translateX(-20%) scale(2.2, 2.2);
+  }
+  .dyplomPoziom.minRightBottom:hover {
+    -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
+    -webkit-transform: translateX(-20%) translateY(-60%) scale(2.2, 2.2);
+            transform: translateX(-20%) translateY(-60%) scale(2.2, 2.2);
+  }
   .section-title {
     font-size: 1.6rem;
   }
@@ -896,54 +944,6 @@ footer p {
     font-size: 19px;
     bottom: 30px;
     right: 30px;
-  }
-  .dyplomPoziom.minLeftTop:hover {
-    -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    -webkit-transform: translateX(20%) translateY(60%) scale(2.2, 2.2);
-            transform: translateX(20%) translateY(60%) scale(2.2, 2.2);
-  }
-  .dyplomPoziom.minLeftCenter:hover {
-    -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    -webkit-transform: translateX(20%) scale(2.2, 2.2);
-            transform: translateX(20%) scale(2.2, 2.2);
-  }
-  .dyplomPoziom.minLeftBottom:hover {
-    -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    -webkit-transform: translateX(20%) translateY(-60%) scale(2.2, 2.2);
-            transform: translateX(20%) translateY(-60%) scale(2.2, 2.2);
-  }
-  .dyplomPoziom.minRightTop:hover {
-    -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    -webkit-transform: translateX(-20%) translateY(60%) scale(2.2, 2.2);
-            transform: translateX(-20%) translateY(60%) scale(2.2, 2.2);
-  }
-  .dyplomPoziom.minRightCenter:hover {
-    -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    -webkit-transform: translateX(-20%) scale(2.2, 2.2);
-            transform: translateX(-20%) scale(2.2, 2.2);
-  }
-  .dyplomPoziom.minRightBottom:hover {
-    -webkit-transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transition: -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    transition: transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35), -webkit-transform 1s cubic-bezier(0.93, 0.44, 0.46, 1.35);
-    -webkit-transform: translateX(-20%) translateY(-60%) scale(2.2, 2.2);
-            transform: translateX(-20%) translateY(-60%) scale(2.2, 2.2);
   }
 }
 

@@ -463,14 +463,11 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log(window.innerWidth);
     if (window.innerWidth < 720) {
         elementCarousel.innerHTML = carouselMid;
-        console.log(window.innerWidth);
     };
     if (window.innerWidth < 460) {
         elementCarousel.innerHTML = carouselMidMin;
-        console.log(window.innerWidth);
     };
     if (window.innerWidth < 320) {
         elementCarousel.innerHTML = carouselMinMin;
-        console.log(window.innerWidth);
     };
 });
