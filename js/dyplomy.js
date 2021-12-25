@@ -462,13 +462,13 @@ let elementCarousel = document.querySelector('#multi-item-example');
 document.addEventListener('DOMContentLoaded', function() {
     elementCarousel.innerHTML = carouselMax;
     console.log(window.innerWidth);
-    if (window.innerWidth < 720) {
+    if (window.innerWidth <= 720) {
         elementCarousel.innerHTML = carouselMid;
     };
-    if (window.innerWidth < 460) {
+    if (window.innerWidth <= 460) {
         elementCarousel.innerHTML = carouselMidMin;
     };
-    if (window.innerWidth < 320) {
+    if (window.innerWidth <= 320) {
         elementCarousel.innerHTML = carouselMinMin;
     };
 });
