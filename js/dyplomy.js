@@ -462,13 +462,16 @@ let elementCarousel = document.querySelector('#multi-item-example');
 document.addEventListener('DOMContentLoaded', function() {
     elementCarousel.innerHTML = carouselMax;
     console.log(window.innerWidth);
-    if (window.innerWidth <= 720) {
+    if (window.innerWidth <= 720 && window.innerWidth > 460) {
         elementCarousel.innerHTML = carouselMid;
+        console.log("carouselMid");
     };
-    if (window.innerWidth <= 460) {
+    if (window.innerWidth <= 460 && window.innerWidth > 320) {
         elementCarousel.innerHTML = carouselMidMin;
+        console.log("carouselMidMin");
     };
     if (window.innerWidth <= 320) {
         elementCarousel.innerHTML = carouselMinMin;
+        console.log("carouselMinMin");
     };
 });
